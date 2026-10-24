@@ -70,13 +70,13 @@ for i, s in enumerate(scenes):
     d = s['_d']; bg = s['bg']; seg = f'{OUT}/b{i}.mp4'
     if bg['kind'] == 'video':
         sp = bg.get('speed', 1.0)
-        run(f"ffmpeg -v error -y -ss {bg['start']} -t {d*sp+0.3} -i {bg['file']} -an -vf \"setpts=PTS/{sp},{VF},trim=duration={d}\" -c:v libx264 -crf 18 -preset veryfast {seg}")
+        run(f"ffmpeg -v error -y -ss {bg['start']} -t {d*sp+0.3} -i {bg['file']} -an -vf \"setpts=PTS/{sp},{VF},trim=duration={d}\" -c:v libx264 -crf 14 -preset veryfast {seg}")
     else:
         fr = int(round(d * 30))
         z = bg.get('zoom', 0.06); ox = bg.get('x', 0.5); oy = bg.get('y', 0.5)
-        run(f"ffmpeg -v error -y -loop 1 -i {bg['file']} -vf \"scale=-2:2400,crop='min(iw,ih*9/16)':'min(ih,iw*16/9)':'(iw-min(iw,ih*9/16))*{ox}':'(ih-min(ih,iw*16/9))*{oy}',scale=1620:2880,zoompan=z='1+{z}*on/{fr}':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':d={fr}:s={W}x{H}:fps=30,format=yuv420p,setsar=1\" -frames:v {fr} -c:v libx264 -crf 18 -preset veryfast {seg}")
+        run(f"ffmpeg -v error -y -loop 1 -i {bg['file']} -vf \"scale=-2:2400,crop='min(iw,ih*9/16)':'min(ih,iw*16/9)':'(iw-min(iw,ih*9/16))*{ox}':'(ih-min(ih,iw*16/9))*{oy}',scale=1620:2880,zoompan=z='1+{z}*on/{fr}':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':d={fr}:s={W}x{H}:fps=30,format=yuv420p,setsar=1\" -frames:v {fr} -c:v libx264 -crf 14 -preset veryfast {seg}")
     # overlay text with fade in (0.35s) and fade out at end (0.3s)
-    run(f"ffmpeg -v error -y -i {seg} -loop 1 -t {d} -i {OUT}/t{i}.png -filter_complex \"[1]format=rgba,fade=in:st=0.15:d=0.4:alpha=1,fade=out:st={d-0.35}:d=0.3:alpha=1[o];[0][o]overlay=0:0:shortest=1\" -c:v libx264 -crf 18 -preset veryfast -t {d} {OUT}/V{i}.mp4")
+    run(f"ffmpeg -v error -y -i {seg} -loop 1 -t {d} -i {OUT}/t{i}.png -filter_complex \"[1]format=rgba,fade=in:st=0.15:d=0.4:alpha=1,fade=out:st={d-0.35}:d=0.3:alpha=1[o];[0][o]overlay=0:0:shortest=1\" -c:v libx264 -crf 14 -preset veryfast -t {d} {OUT}/V{i}.mp4")
 # crossfade-free concat with short dip: just concat
 open(f'{OUT}/list.txt', 'w').write(''.join(f"file 'V{i}.mp4'\n" for i in range(len(scenes))))
 run(f"ffmpeg -v error -y -f concat -safe 0 -i {OUT}/list.txt -c copy {OUT}/silent.mp4")
@@ -84,6 +84,15 @@ ins = ''.join(f' -i {OUT}/v{i}.wav' for i in range(len(scenes)))
 fl = ';'.join(f"[{i}]adelay={int((starts[i]+0.35)*1000)}|{int((starts[i]+0.35)*1000)}[a{i}]" for i in range(len(scenes)))
 mix = ''.join(f'[a{i}]' for i in range(len(scenes)))
 run(f"ffmpeg -v error -y{ins} -filter_complex \"{fl};{mix}amix=inputs={len(scenes)}:normalize=0,apad=whole_dur={T},atrim=0:{T},loudnorm=I=-15\" -ar 44100 -ac 2 {OUT}/voice.wav")
-run(f"ffmpeg -v error -y -i {OUT}/silent.mp4 -i {OUT}/voice.wav -map 0:v -map 1:a -t {T} -c:v libx264 -crf 25 -preset medium -pix_fmt yuv420p -c:a aac -b:a 96k -movflags +faststart {CFG['out']}")
+# 10/24 17:58 藤原さん「画質が低下する」：前は crf 25 のうえ 8MB に押しこんでいて粗くなっていた。
+# いまは crf 18・preset slow で書き出し、司令室の置き場の上限（20MB）をこえるときだけ 19MB に入るビットレートで2回書き出す。
+MAXB = 19 * 1024 * 1024
+run(f"ffmpeg -v error -y -i {OUT}/silent.mp4 -i {OUT}/voice.wav -map 0:v -map 1:a -t {T} -c:v libx264 -crf 18 -preset slow -tune film -profile:v high -pix_fmt yuv420p -c:a aac -b:a 160k -movflags +faststart {CFG['out']}")
+if os.path.getsize(CFG['out']) > MAXB:
+    vb = int((MAXB * 8 / T - 170000) * 0.97)
+    for ps in (1, 2):
+        dst = '/dev/null' if ps == 1 else CFG['out']
+        a = '-an -f mp4' if ps == 1 else f'-map 0:v -map 1:a -c:a aac -b:a 160k -movflags +faststart'
+        run(f"ffmpeg -v error -y -i {OUT}/silent.mp4 -i {OUT}/voice.wav -t {T} -c:v libx264 -b:v {vb} -pass {ps} -passlogfile {OUT}/x264 -preset slow -tune film -profile:v high -pix_fmt yuv420p {a} {dst}")
 json.dump({'starts': starts, 'durs': [s['_d'] for s in scenes], 'T': T, 'lines': [s['voice'] for s in scenes]}, open(f'{OUT}/timing.json', 'w'), ensure_ascii=False)
 print('done', CFG['out'], os.path.getsize(CFG['out']))

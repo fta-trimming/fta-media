@@ -1,0 +1,133 @@
+{
+ "out": "TikTok_OLLIE_1027_hq.mp4",
+ "brand": "Dog salon OLLIE MAGIC",
+ "tag": "泡でこすらないシャンプーをするサロン",
+ "speed": 1.05,
+ "color": {
+  "card": "rgba(122,78,62,.84)",
+  "pill": "rgba(122,78,62,.92)",
+  "lab": "#f1e1d8",
+  "labfg": "#7a4e3e",
+  "hl": "#f1e1d8",
+  "hlfg": "#6b4334"
+ },
+ "scenes": [
+  {
+   "type": "title",
+   "y": 1150,
+   "html": "<div style='font-size:78px;font-weight:700'>うちの子も</div><div style='font-size:92px;font-weight:700;margin-top:8px'>こんなに<span class=hl>かわいく</span></div><div style='font-size:86px;font-weight:700;margin-top:4px'>なる？</div><div style='margin-top:24px'><span class=pill>こすらないシャンプーをするサロン</span></div>",
+   "bg": {
+    "kind": "video",
+    "file": "<材料>/615de31ffe76ca23106e656ff3efa7e6.mp4",
+    "start": 3.53
+   },
+   "min": 3.8,
+   "voice": "うちの子も、こんなに、かわいくなるのかな？"
+  },
+  {
+   "type": "title",
+   "html": "<div style='font-size:64px;font-weight:700'><span class=hl>北上市</span>の Dog salon</div><div style='font-size:100px;font-weight:700;margin-top:12px'>OLLIE MAGIC</div>",
+   "y": 330,
+   "voice": "きたかみしの、ドッグサロン、オーリーマジックです。",
+   "bg": {
+    "kind": "photo",
+    "file": "<材料>/e4590e826537c0135450607fcf49b5ae.jpg",
+    "x": 0.5,
+    "y": 0.6,
+    "zoom": 0.07
+   },
+   "min": 3.6
+  },
+  {
+   "type": "card",
+   "num": 1,
+   "y": 1230,
+   "lab": "来た時",
+   "text": "毛がのびて<br>もこもこ",
+   "bg": {
+    "kind": "video",
+    "file": "<材料>/049ed3029a990adde3f2e3d1558f05a8.mp4",
+    "start": 0
+   },
+   "voice": "来た時は、けが、のびて、もこもこでした。"
+  },
+  {
+   "type": "card",
+   "num": 1,
+   "y": 280,
+   "lab": "当店の洗い方",
+   "text": "たっぷりの泡で<br>やさしく洗います",
+   "bg": {
+    "kind": "video",
+    "file": "<材料>/0c62b533675cd91825bf200727442698.mp4",
+    "start": 0
+   },
+   "voice": "まずは、たっぷりの泡のお風呂で、やさしく洗います。"
+  },
+  {
+   "type": "card",
+   "num": 1,
+   "y": 1190,
+   "text": "乾かすと<br>ふわっふわに",
+   "bg": {
+    "kind": "video",
+    "file": "<材料>/d7b96f7ef58679760e4a9b32edc0f7dd.mp4",
+    "start": 9.2
+   },
+   "voice": "ドライヤーで乾かすと、ふわっふわに、なりました。"
+  },
+  {
+   "type": "card",
+   "num": 1,
+   "y": 1190,
+   "lab": "カット",
+   "text": "お耳がぴょこっと<br>まんまるのお顔に",
+   "bg": {
+    "kind": "video",
+    "file": "<材料>/9205575d11180dcced2b88bf3acbc390.mp4",
+    "start": 0
+   },
+   "voice": "カットで、お耳がぴょこっと出る、まんまるのお顔に。"
+  },
+  {
+   "type": "big",
+   "num": 1,
+   "y": 1200,
+   "html": "<span class=pill>仕上がり例</span><div style='font-size:70px;font-weight:700;margin-top:14px'>仕上がりは</div><div style='font-size:116px;font-weight:700'><span class=hl>耳ぴょこ</span>。</div>",
+   "bg": {
+    "kind": "photo",
+    "file": "<材料>/1326619bab0a536c2b7241e102c197bc.jpg",
+    "x": 0.5,
+    "y": 0.45,
+    "zoom": 0.07
+   },
+   "voice": "仕上がりは、お耳がぴょこっと、かわいいね。"
+  },
+  {
+   "type": "card",
+   "num": 1,
+   "y": 1280,
+   "text": "最後に<br>記念写真、パシャ",
+   "bg": {
+    "kind": "photo",
+    "file": "<材料>/996cba09c62a1521fa70be576c5615af.jpg",
+    "x": 0.5,
+    "y": 0.4,
+    "zoom": 0.07
+   },
+   "voice": "最後に、記念写真を、パシャ。"
+  },
+  {
+   "type": "end",
+   "bg": {
+    "kind": "photo",
+    "file": "<材料>/end27.jpg",
+    "x": 0.5,
+    "y": 0.5,
+    "zoom": 0.0001
+   },
+   "pad": 1.2,
+   "voice": "きたかみしの、ドッグサロン。プロフィールのラインから、予約できます。"
+  }
+ ]
+}
