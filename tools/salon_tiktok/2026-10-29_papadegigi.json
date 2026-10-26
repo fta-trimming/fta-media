@@ -1,0 +1,121 @@
+{
+ "out": "TikTok_PAPA_1029_hq.mp4",
+ "brand": "dog care salon PAPA de GIGI",
+ "tag": "泡でこすらないシャンプーをするサロン",
+ "speed": 1.05,
+ "color": {
+  "card": "rgba(108,88,138,.84)",
+  "pill": "rgba(108,88,138,.92)",
+  "lab": "#ece4f4",
+  "labfg": "#5f4b80",
+  "hl": "#ece4f4",
+  "hlfg": "#56427a"
+ },
+ "scenes": [
+  {
+   "type": "title",
+   "y": 1150,
+   "html": "<div style='font-size:84px;font-weight:700'>もこもこさん、</div><div style='font-size:92px;font-weight:700;margin-top:8px'>どこまで<span class=hl>まんまる</span>に</div><div style='font-size:86px;font-weight:700;margin-top:4px'>なる？</div><div style='margin-top:24px'><span class=pill>こすらないシャンプーをするサロン</span></div>",
+   "bg": {
+    "kind": "video",
+    "file": "<材料>/666d7c6c9311bf826bdb77e43756a119.mp4",
+    "start": 25.5
+   },
+   "min": 3.8,
+   "voice": "もこもこさん、どこまで、まんまるに、なるのかな？"
+  },
+  {
+   "type": "title",
+   "y": 1330,
+   "html": "<div style='font-size:60px;font-weight:700'><span class=hl>盛岡市菜園</span>の dog care salon</div><div style='font-size:96px;font-weight:700;margin-top:12px'>PAPA de GIGI</div>",
+   "bg": {
+    "kind": "photo",
+    "file": "<材料>/5f65c07b4b33a5a6113a36894264a869.jpg",
+    "x": 0.75,
+    "y": 0.5,
+    "zoom": 0.07
+   },
+   "min": 3.6,
+   "voice": "もりおか、さいえんの、ドッグケアサロン、ぱぱでじじです。"
+  },
+  {
+   "type": "card",
+   "num": 1,
+   "y": 1330,
+   "lab": "来た時",
+   "text": "毛がのびて<br>もこもこ",
+   "bg": {
+    "kind": "photo",
+    "file": "<材料>/184cb6ae45b8684b4b499874edfd539c.jpg",
+    "x": 0.0,
+    "y": 0.3,
+    "zoom": 0.07
+   },
+   "voice": "来た時は、けが、のびて、もこもこでした。"
+  },
+  {
+   "type": "card",
+   "num": 1,
+   "y": 1330,
+   "lab": "当店の洗い方",
+   "text": "たっぷりの泡のクッションで<br>こすらずに洗います",
+   "bg": {
+    "kind": "video",
+    "file": "<材料>/1e6b198b12dc403fdb0a3f0b56c453e7.mp4",
+    "start": 0.3
+   },
+   "voice": "シャンプーは、たっぷりの泡のクッションで、こすらずに洗います。"
+  },
+  {
+   "type": "card",
+   "num": 1,
+   "y": 1400,
+   "text": "ぬれた姿も<br>かわいいね",
+   "bg": {
+    "kind": "video",
+    "file": "<材料>/1e6b198b12dc403fdb0a3f0b56c453e7.mp4",
+    "start": 17.3
+   },
+   "voice": "ぬれた姿も、とってもかわいいですね。"
+  },
+  {
+   "type": "card",
+   "num": 1,
+   "y": 1330,
+   "lab": "カット",
+   "text": "お顔を まんまるに<br>ととのえます",
+   "bg": {
+    "kind": "video",
+    "file": "<材料>/666d7c6c9311bf826bdb77e43756a119.mp4",
+    "start": 2.0
+   },
+   "voice": "カットで、お顔を、まんまるに、ととのえます。"
+  },
+  {
+   "type": "big",
+   "num": 1,
+   "y": 1260,
+   "html": "<span class=pill>仕上がり例</span><div style='font-size:70px;font-weight:700;margin-top:14px'>仕上がりは</div><div style='font-size:116px;font-weight:700'><span class=hl>まんまる</span>。</div>",
+   "bg": {
+    "kind": "photo",
+    "file": "<材料>/a8af589a1f5fd5b369835c03d0d1dcca.jpg",
+    "x": 0.5,
+    "y": 0.3,
+    "zoom": 0.07
+   },
+   "voice": "仕上がりは、まんまるの、ふわっふわ。はじめての子も、どうぞ、ご相談ください。"
+  },
+  {
+   "type": "end",
+   "bg": {
+    "kind": "photo",
+    "file": "<材料>/end29.jpg",
+    "x": 0.5,
+    "y": 0.5,
+    "zoom": 0.0001
+   },
+   "pad": 1.2,
+   "voice": "もりおか、さいえんの、ドッグケアサロン。プロフィールのラインから、予約できます。"
+  }
+ ]
+}
