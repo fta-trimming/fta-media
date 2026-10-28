@@ -1,8 +1,10 @@
 #!/bin/bash
-# VOICEVOX（四国めたん）を使えるようにする。毎回の作業の最初に1回だけ実行する。
+# VOICEVOX（四国めたん・青山龍星）を使えるようにする。毎回の作業の最初に1回だけ実行する。
 # 使い方: bash tools/voicevox/setup.sh  → /tmp/vv に入る
 set -e
 V=/tmp/vv; mkdir -p $V; cd $V
+[ -f done ] && [ -f 15.vvm ] && exit 0
+[ -f 15.vvm ] || curl -sSLO https://github.com/VOICEVOX/voicevox_vvm/releases/download/0.16.1/15.vvm  # 青山龍星
 [ -f done ] && exit 0
 curl -sSLO https://github.com/VOICEVOX/voicevox_core/releases/download/0.16.2/voicevox_core-0.16.2-cp310-abi3-manylinux_2_34_x86_64.whl
 curl -sSL https://github.com/VOICEVOX/onnxruntime-builder/releases/download/voicevox_onnxruntime-1.17.3/voicevox_onnxruntime-linux-x64-1.17.3.tgz | tar xz
