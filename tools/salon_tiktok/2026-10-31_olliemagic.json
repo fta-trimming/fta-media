@@ -1,0 +1,122 @@
+{
+ "out": "TikTok_OLLIE_1031_hq.mp4",
+ "brand": "Dog salon OLLIE MAGIC",
+ "tag": "泡でこすらないシャンプーをするサロン",
+ "speed": 1.05,
+ "color": {
+  "card": "rgba(122,78,62,.84)",
+  "pill": "rgba(122,78,62,.92)",
+  "lab": "#f1e1d8",
+  "labfg": "#7a4e3e",
+  "hl": "#f1e1d8",
+  "hlfg": "#6b4334"
+ },
+ "scenes": [
+  {
+   "type": "title",
+   "y": 1150,
+   "html": "<div style='font-size:84px;font-weight:700'>はじめてのお店、</div><div style='font-size:96px;font-weight:700;margin-top:8px'>ちょっと<span class=hl>ドキドキ</span>？</div><div style='margin-top:28px'><span class=pill>こすらないシャンプーをするサロン</span></div>",
+   "bg": {
+    "kind": "video",
+    "file": "<材料>/d56c76ce269fdd9f75ff23e37f756bf0.mp4",
+    "start": 5.5
+   },
+   "min": 3.8,
+   "voice": "はじめてのお店って、ちょっと、ドキドキしますよね。"
+  },
+  {
+   "type": "title",
+   "y": 330,
+   "html": "<div style='font-size:64px;font-weight:700'><span class=hl>北上市</span>の Dog salon</div><div style='font-size:100px;font-weight:700;margin-top:12px'>OLLIE MAGIC</div>",
+   "bg": {
+    "kind": "photo",
+    "file": "<材料>/367447b79bd577cfc055058f511e620f.jpg",
+    "x": 0.45,
+    "y": 0.5,
+    "zoom": 0.07
+   },
+   "min": 3.6,
+   "voice": "きたかみしの、ドッグサロン、オーリーマジックです。"
+  },
+  {
+   "type": "card",
+   "num": 1,
+   "y": 1330,
+   "lab": "駐車場",
+   "text": "お店の前に 2台<br>離れに 1台",
+   "bg": {
+    "kind": "video",
+    "file": "<材料>/d56c76ce269fdd9f75ff23e37f756bf0.mp4",
+    "start": 0.0
+   },
+   "voice": "駐車場は、お店の前に2台と、離れに1台あります。"
+  },
+  {
+   "type": "card",
+   "num": 1,
+   "y": 1330,
+   "lab": "入口",
+   "text": "明るい入口から<br>どうぞ",
+   "bg": {
+    "kind": "video",
+    "file": "<材料>/d56c76ce269fdd9f75ff23e37f756bf0.mp4",
+    "start": 10.5
+   },
+   "voice": "入口は、こちらです。どうぞ、お気軽に。"
+  },
+  {
+   "type": "card",
+   "num": 1,
+   "y": 1330,
+   "lab": "受付",
+   "text": "その日の様子を<br>ゆっくり聞かせてね",
+   "bg": {
+    "kind": "video",
+    "file": "<材料>/c6299ab132b20969f2f77158afa5a738.mp4",
+    "start": 0.0
+   },
+   "voice": "受付で、その日の様子や、気になることを、ゆっくり聞かせてください。"
+  },
+  {
+   "type": "card",
+   "num": 1,
+   "y": 1330,
+   "lab": "ケア用品・フード",
+   "text": "おうちで使えるものも<br>そろっています",
+   "bg": {
+    "kind": "photo",
+    "file": "<材料>/3402e4e18256219dab3cd52f4bddfeba.jpg",
+    "x": 0.3,
+    "y": 0.5,
+    "zoom": 0.07
+   },
+   "voice": "おうちで使える、ケア用品や、フードも、そろっています。"
+  },
+  {
+   "type": "big",
+   "num": 1,
+   "y": 1260,
+   "html": "<span class=pill>はじめての子も</span><div style='font-size:70px;font-weight:700;margin-top:14px'>はじめてでも</div><div style='font-size:116px;font-weight:700'><span class=hl>安心</span>。</div>",
+   "bg": {
+    "kind": "photo",
+    "file": "<材料>/202580d8168b8f33030636264d9c1dae.jpg",
+    "x": 0.25,
+    "y": 0.5,
+    "zoom": 0.07
+   },
+   "voice": "はじめての子も、どうぞ、安心して、来てくださいね。"
+  },
+  {
+   "type": "end",
+   "bg": {
+    "kind": "photo",
+    "file": "<材料>/end31.jpg",
+    "x": 0.5,
+    "y": 0.5,
+    "zoom": 0.0001
+   },
+   "pad": 1.2,
+   "voice": "きたかみしの、ドッグサロン。プロフィールのラインから、予約できます。"
+  }
+ ]
+}
