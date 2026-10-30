@@ -124,11 +124,9 @@
    "y": 1260,
    "html": "<span class=pill>はじめての子も</span><div style='font-size:70px;font-weight:700;margin-top:14px'>はじめてでも</div><div style='font-size:116px;font-weight:700'><span class=hl>安心</span>。</div>",
    "bg": {
-    "kind": "photo",
-    "file": "<材料>/202580d8168b8f33030636264d9c1dae.jpg",
-    "x": 0.25,
-    "y": 0.5,
-    "zoom": 0.07
+    "kind": "video",
+    "file": "<材料>/1d58f584f9a47c43eba9647de0f02ff2.mp4",
+    "start": 16.5
    },
    "voice": "はじめての子も、どうぞ、安心して、来てくださいね。"
   },
