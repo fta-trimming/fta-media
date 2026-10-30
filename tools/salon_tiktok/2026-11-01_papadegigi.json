@@ -1,0 +1,115 @@
+{
+ "out": "TikTok_PAPA_1101_hq.mp4",
+ "brand": "dog care salon PAPA de GIGI",
+ "tag": "泡でこすらないシャンプーをするサロン",
+ "speed": 1.05,
+ "color": {
+  "card": "rgba(108,88,138,.84)",
+  "pill": "rgba(108,88,138,.92)",
+  "lab": "#ece4f4",
+  "labfg": "#5f4b80",
+  "hl": "#ece4f4",
+  "hlfg": "#56427a"
+ },
+ "scenes": [
+  {
+   "type": "title",
+   "y": 1150,
+   "html": "<div style='font-size:84px;font-weight:700'>はじめてのお店、</div><div style='font-size:96px;font-weight:700;margin-top:8px'><span class=hl>中</span>は どんな感じ？</div><div style='margin-top:28px'><span class=pill>こすらないシャンプーをするサロン</span></div>",
+   "bg": {
+    "kind": "photo",
+    "file": "<材料>/a2763b645222966a1b7b889a982a99c7.jpg",
+    "x": 0.25,
+    "y": 0.5,
+    "zoom": 0.07
+   },
+   "min": 3.8,
+   "voice": "はじめてのお店って、中がどんな感じか、気になりますよね。"
+  },
+  {
+   "type": "title",
+   "y": 1330,
+   "html": "<div style='font-size:60px;font-weight:700'><span class=hl>盛岡市菜園</span>の dog care salon</div><div style='font-size:96px;font-weight:700;margin-top:12px'>PAPA de GIGI</div>",
+   "bg": {
+    "kind": "photo",
+    "file": "<材料>/exterior.jpg",
+    "x": 0.5,
+    "y": 0.5,
+    "zoom": 0.05
+   },
+   "min": 3.6,
+   "voice": "もりおか、さいえんの、ドッグケアサロン、ぱぱでじじです。"
+  },
+  {
+   "type": "card",
+   "num": 1,
+   "y": 1330,
+   "lab": "受付",
+   "text": "その日の様子を<br>ゆっくり聞かせてね",
+   "bg": {
+    "kind": "photo",
+    "file": "<材料>/022b3a0431f6844d2966cef89865138a.jpg",
+    "x": 0.5,
+    "y": 0.5,
+    "zoom": 0.07
+   },
+   "voice": "入ってすぐが、受付です。その日の様子や、気になることを、ゆっくり聞かせてください。"
+  },
+  {
+   "type": "card",
+   "num": 1,
+   "y": 1330,
+   "lab": "当店の洗い方",
+   "text": "たっぷりの泡で<br>こすらずに洗います",
+   "bg": {
+    "kind": "photo",
+    "file": "<材料>/wash.jpg",
+    "x": 0.5,
+    "y": 0.5,
+    "zoom": 0.06
+   },
+   "voice": "シャンプーは、たっぷりの泡で、こすらずに、やさしく洗います。"
+  },
+  {
+   "type": "card",
+   "num": 1,
+   "y": 1330,
+   "lab": "ケア用品",
+   "text": "おうちで使えるものも<br>そろっています",
+   "bg": {
+    "kind": "photo",
+    "file": "<材料>/8c5ec9ab6fc304312ed7d369ec6a1c05.jpg",
+    "x": 0.55,
+    "y": 0.5,
+    "zoom": 0.07
+   },
+   "voice": "おうちで使える、ケア用品も、そろっています。"
+  },
+  {
+   "type": "big",
+   "num": 1,
+   "y": 1260,
+   "html": "<span class=pill>はじめての子も</span><div style='font-size:70px;font-weight:700;margin-top:14px'>はじめてでも</div><div style='font-size:116px;font-weight:700'><span class=hl>安心</span>。</div>",
+   "bg": {
+    "kind": "photo",
+    "file": "<材料>/bc63daf15194e2b44a08d7b8e8fdea12.jpg",
+    "x": 0.5,
+    "y": 0.5,
+    "zoom": 0.07
+   },
+   "voice": "はじめての子も、どうぞ、安心して、来てくださいね。"
+  },
+  {
+   "type": "end",
+   "bg": {
+    "kind": "photo",
+    "file": "<材料>/end01.jpg",
+    "x": 0.5,
+    "y": 0.5,
+    "zoom": 0.0001
+   },
+   "pad": 1.2,
+   "voice": "もりおか、さいえんの、ドッグケアサロン。プロフィールのラインから、予約できます。"
+  }
+ ]
+}
