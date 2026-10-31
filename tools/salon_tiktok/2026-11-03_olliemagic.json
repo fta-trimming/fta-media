@@ -1,0 +1,143 @@
+{
+ "out": "TikTok_OLLIE_1103_hq.mp4",
+ "brand": "Dog salon OLLIE MAGIC",
+ "tag": "泡でこすらないシャンプーをするサロン",
+ "speed": 1.05,
+ "color": {
+  "card": "rgba(122,78,62,.84)",
+  "pill": "rgba(122,78,62,.92)",
+  "lab": "#f1e1d8",
+  "labfg": "#7a4e3e",
+  "hl": "#f1e1d8",
+  "hlfg": "#6b4334"
+ },
+ "scenes": [
+  {
+   "type": "title",
+   "y": 1240,
+   "html": "<div style='font-size:88px;font-weight:700'>お顔まわりで</div><div style='font-size:100px;font-weight:700;margin-top:8px'>こんなに<span class=hl>変わる</span>？</div><div style='margin-top:26px'><span class=pill>こすらないシャンプーをするサロン</span></div>",
+   "bg": {
+    "kind": "photo",
+    "file": "<材料>/o_3031.jpg",
+    "x": 0.5,
+    "y": 0.3,
+    "zoom": 0.07
+   },
+   "min": 3.8,
+   "voice": "お顔まわりのカットで、こんなに、印象が変わるんです。"
+  },
+  {
+   "type": "title",
+   "y": 330,
+   "html": "<div style='font-size:64px;font-weight:700'><span class=hl>北上市</span>の Dog salon</div><div style='font-size:100px;font-weight:700;margin-top:12px'>OLLIE MAGIC</div>",
+   "bg": {
+    "kind": "photo",
+    "file": "<材料>/o_gaikan.jpg",
+    "x": 0.88,
+    "y": 0.5,
+    "zoom": 0.07
+   },
+   "min": 3.6,
+   "voice": "きたかみしの、ドッグサロン、オーリーマジックです。"
+  },
+  {
+   "type": "card",
+   "num": 1,
+   "y": 1360,
+   "lab": "頭",
+   "text": "まあるく<br>ふんわりと",
+   "bg": {
+    "kind": "photo",
+    "file": "<材料>/o_head.jpg",
+    "x": 0.5,
+    "y": 0.3,
+    "zoom": 0.05
+   },
+   "voice": "頭は、まあるく、ふんわりと、ととのえます。"
+  },
+  {
+   "type": "card",
+   "num": 1,
+   "y": 1360,
+   "lab": "お耳",
+   "text": "ふわっと<br>広がるように",
+   "bg": {
+    "kind": "photo",
+    "file": "<材料>/o_ear.jpg",
+    "x": 0.5,
+    "y": 0.3,
+    "zoom": 0.05
+   },
+   "voice": "お耳は、ふわっと、広がるように。"
+  },
+  {
+   "type": "card",
+   "num": 1,
+   "y": 1360,
+   "lab": "口もと",
+   "text": "ころんと丸く<br>やさしいお顔に",
+   "bg": {
+    "kind": "photo",
+    "file": "<材料>/o_muzzle.jpg",
+    "x": 0.5,
+    "y": 0.2,
+    "zoom": 0.05
+   },
+   "voice": "口もとは、ころんと丸く。やさしいお顔に、見えますね。"
+  },
+  {
+   "type": "card",
+   "num": 1,
+   "y": 1360,
+   "lab": "うしろ姿",
+   "text": "うしろから見ても<br>まんまる",
+   "bg": {
+    "kind": "photo",
+    "file": "<材料>/o_3022.jpg",
+    "x": 0.3,
+    "y": 0.4,
+    "zoom": 0.06
+   },
+   "voice": "うしろ姿も、まんまるで、かわいいですね。"
+  },
+  {
+   "type": "big",
+   "num": 1,
+   "y": 1380,
+   "html": "<span class=pill>仕上がり</span><div style='font-size:70px;font-weight:700;margin-top:14px'>仕上がりは</div><div style='font-size:110px;font-weight:700'><span class=hl>まんまる</span>。</div>",
+   "bg": {
+    "kind": "photo",
+    "file": "<材料>/o_3034.jpg",
+    "x": 0.5,
+    "y": 0.2,
+    "zoom": 0.06
+   },
+   "voice": "仕上がりは、まんまるの、やさしいお顔。"
+  },
+  {
+   "type": "card",
+   "num": 1,
+   "y": 1360,
+   "lab": "ほかの子の仕上がり例",
+   "text": "その子に合わせて<br>形を決めます",
+   "bg": {
+    "kind": "video",
+    "file": "<材料>/o_FN7w_b.mp4",
+    "start": 0.2
+   },
+   "voice": "同じまんまるでも、その子に合わせて、形を決めます。"
+  },
+  {
+   "type": "end",
+   "bg": {
+    "kind": "photo",
+    "file": "<材料>/end_o1103.jpg",
+    "x": 0.5,
+    "y": 0.5,
+    "zoom": 0.0001
+   },
+   "pad": 1.2,
+   "voice": "きたかみしの、ドッグサロン。プロフィールのラインから、予約できます。"
+  }
+ ]
+}
