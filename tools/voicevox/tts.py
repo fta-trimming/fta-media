@@ -15,6 +15,7 @@ syn = Synthesizer(ort, OpenJtalk(V + 'open_jtalk_dic_utf_8-1.11'))
 with VoiceModelFile.open(V + vvm) as m:
     syn.load_voice_model(m)
 text, out = sys.argv[1], sys.argv[2]
+text = text.replace('毛', 'け')  # 11/2 藤原さんの指示：毛は「もう」と読まれるので必ず「け」（今後も変えない）
 q = syn.create_audio_query(text, SID)
 q.speed_scale = float(sys.argv[3]) if len(sys.argv) > 3 else 1.1
 open(out, 'wb').write(syn.synthesis(q, SID))

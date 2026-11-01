@@ -5,6 +5,7 @@ ort=Onnxruntime.load_once(filename=V+'voicevox_onnxruntime-linux-x64-1.17.3/lib/
 syn=Synthesizer(ort,OpenJtalk(V+'open_jtalk_dic_utf_8-1.11'))
 with VoiceModelFile.open(V+'0.vvm') as m: syn.load_voice_model(m)
 text,out=sys.argv[1],sys.argv[2]
+text=text.replace('毛','け')  # 11/2 藤原さんの指示：毛は必ず「け」（今後も変えない）
 q=syn.create_audio_query(text,2)
 q.speed_scale=float(sys.argv[3]) if len(sys.argv)>3 else 1.0
 q.intonation_scale=1.3      # 抑揚を大きく（棒読み感を減らす）
