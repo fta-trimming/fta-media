@@ -6,6 +6,8 @@ SALON = sys.argv[1]
 CFG = json.load(open(f'{SALON}.json'))
 W, H = 1080, 1920
 TTS = os.path.join(os.path.dirname(HERE), 'voicevox', 'tts.py')
+# 11/2 藤原さんの指示：声は作りすぎずシンプルで自然に → 抑揚1.3・速さ1.0 の tts_natural.py を使う（設定に "natural": false で前の声）
+TTS_NATURAL = os.path.join(HERE, 'tts_natural.py')
 OUT = f'out_{SALON}'
 os.makedirs(OUT, exist_ok=True)
 def run(c): subprocess.run(c, shell=True, check=True)
@@ -58,7 +60,7 @@ with sync_playwright() as p:
 starts = []; t0 = 0.0; parts = []
 for i, s in enumerate(scenes):
     wav = f'{OUT}/v{i}.wav'
-    run(f'python3 {TTS} "{s["voice"]}" {wav} {CFG.get("speed",1.05)} >/dev/null 2>&1')
+    run(f'python3 {TTS_NATURAL if CFG.get("natural", True) else TTS} "{s["voice"]}" {wav} {CFG.get("speed", 1.0 if CFG.get("natural", True) else 1.05)} >/dev/null 2>&1')
     vd = dur(wav)
     d = max(s.get('min', 3.2), 0.35 + vd + s.get('pad', 0.9))
     s['_d'] = round(d, 2); starts.append(t0); t0 += s['_d']
