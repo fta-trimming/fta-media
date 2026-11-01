@@ -60,6 +60,7 @@ with sync_playwright() as p:
 starts = []; t0 = 0.0; parts = []
 for i, s in enumerate(scenes):
     wav = f'{OUT}/v{i}.wav'
+    s["voice"] = s["voice"].replace('毛', 'け')  # 11/2 藤原さんの指示：毛は「もう」と読まれるので必ず「け」に（今後も変えない）
     run(f'python3 {TTS_NATURAL if CFG.get("natural", True) else TTS} "{s["voice"]}" {wav} {CFG.get("speed", 1.0 if CFG.get("natural", True) else 1.05)} >/dev/null 2>&1')
     vd = dur(wav)
     d = max(s.get('min', 3.2), 0.35 + vd + s.get('pad', 0.9))
