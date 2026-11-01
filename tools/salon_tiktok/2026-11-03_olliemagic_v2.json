@@ -1,0 +1,129 @@
+{
+ "out": "TikTok_OLLIE_1103_v2.mp4",
+ "brand": "Dog salon OLLIE MAGIC",
+ "tag": "泡でこすらないシャンプーをするサロン",
+ "color": {
+  "card": "rgba(122,78,62,.84)",
+  "pill": "rgba(122,78,62,.92)",
+  "lab": "#f1e1d8",
+  "labfg": "#7a4e3e",
+  "hl": "#f1e1d8",
+  "hlfg": "#6b4334"
+ },
+ "scenes": [
+  {
+   "type": "title",
+   "y": 1240,
+   "html": "<div style='font-size:88px;font-weight:700'>お顔まわりと</div><div style='font-size:100px;font-weight:700;margin-top:8px'><span class=hl>おパンツ</span>カット</div><div style='margin-top:26px'><span class=pill>こすらないシャンプーをするサロン</span></div>",
+   "bg": {
+    "kind": "photo",
+    "file": "<材料>/o_3031.jpg",
+    "x": 0.5,
+    "y": 0.3,
+    "zoom": 0.07
+   },
+   "min": 3.8,
+   "voice": "今日は、お顔まわりと、おパンツカットを、お見せします。"
+  },
+  {
+   "type": "title",
+   "y": 330,
+   "html": "<div style='font-size:64px;font-weight:700'><span class=hl>北上市</span>の Dog salon</div><div style='font-size:100px;font-weight:700;margin-top:12px'>OLLIE MAGIC</div>",
+   "bg": {
+    "kind": "photo",
+    "file": "<材料>/o_gaikan.jpg",
+    "x": 0.88,
+    "y": 0.5,
+    "zoom": 0.07
+   },
+   "min": 3.6,
+   "voice": "きたかみしの、ドッグサロン、オーリーマジックです。"
+  },
+  {
+   "type": "card",
+   "num": 1,
+   "y": 1360,
+   "lab": "頭",
+   "text": "ふんわりと<br>ととのえます",
+   "bg": {
+    "kind": "photo",
+    "file": "<材料>/o_head.jpg",
+    "x": 0.5,
+    "y": 0.3,
+    "zoom": 0.05
+   },
+   "voice": "頭は、ふんわりと、ととのえます。"
+  },
+  {
+   "type": "card",
+   "num": 1,
+   "y": 1360,
+   "lab": "お耳",
+   "text": "ふわっと<br>広がるように",
+   "bg": {
+    "kind": "photo",
+    "file": "<材料>/o_ear.jpg",
+    "x": 0.5,
+    "y": 0.3,
+    "zoom": 0.05
+   },
+   "voice": "お耳は、ふわっと、広がるようにします。"
+  },
+  {
+   "type": "card",
+   "num": 1,
+   "y": 1360,
+   "lab": "口もと",
+   "text": "ころんと<br>やさしいお顔に",
+   "bg": {
+    "kind": "photo",
+    "file": "<材料>/o_muzzle.jpg",
+    "x": 0.5,
+    "y": 0.2,
+    "zoom": 0.05
+   },
+   "voice": "口もとは、ころんと、やさしい形に。"
+  },
+  {
+   "type": "card",
+   "num": 1,
+   "y": 1360,
+   "lab": "おパンツカット",
+   "text": "うしろ姿は<br>まあるく",
+   "bg": {
+    "kind": "photo",
+    "file": "<材料>/o_3022.jpg",
+    "x": 0.3,
+    "y": 0.4,
+    "zoom": 0.06
+   },
+   "voice": "おしりまわりは、おパンツカット。うしろ姿は、まあるく、ととのえます。"
+  },
+  {
+   "type": "big",
+   "num": 1,
+   "y": 1380,
+   "html": "<span class=pill>仕上がり</span><div style='font-size:70px;font-weight:700;margin-top:14px'>仕上がりは</div><div style='font-size:100px;font-weight:700'><span class=hl>やさしいお顔</span>。</div>",
+   "bg": {
+    "kind": "photo",
+    "file": "<材料>/o_3034.jpg",
+    "x": 0.5,
+    "y": 0.2,
+    "zoom": 0.06
+   },
+   "voice": "仕上がりです。やさしいお顔に、なりました。"
+  },
+  {
+   "type": "end",
+   "bg": {
+    "kind": "photo",
+    "file": "<材料>/end_o1103.jpg",
+    "x": 0.5,
+    "y": 0.5,
+    "zoom": 0.0001
+   },
+   "pad": 1.2,
+   "voice": "きたかみしの、ドッグサロン、オーリーマジック。ご予約は、プロフィールのラインから、どうぞ。"
+  }
+ ]
+}
