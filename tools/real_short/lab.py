@@ -19,3 +19,10 @@ d.rectangle((538,0,542,1920),fill=W)
 for x,t,c in [(90,'BEFORE',W),(630,'AFTER',Y)]:
   d.text((x,300),t,font=ImageFont.truetype(B,52),fill=c,stroke_width=2,stroke_fill=(0,0,0,120))
 im.save('l_split.png')
+lab('l_sciF.png','02','SCISSORS','ハサミ｜前側 上→下')
+lab('l_sciB.png','03','SCISSORS','ハサミ｜後ろ側 上→下')
+im=Image.new('RGBA',(1080,1920),(0,0,0,0));d=ImageDraw.Draw(im);f=ImageFont.truetype(B,52);fj=ImageFont.truetype(L,28)
+for cx,t,j,c in [(270,'BEFORE','カット前',W),(810,'AFTER','仕上がり',Y)]:
+  w=d.textlength(t,font=f);d.text((cx-w/2,385),t,font=f,fill=c)
+  w=d.textlength(j,font=fj);d.text((cx-w/2,1475),j,font=fj,fill=W)
+im.save('l_split2.png')
