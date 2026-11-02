@@ -26,3 +26,5 @@ for cx,t,j,c in [(270,'BEFORE','カット前',W),(810,'AFTER','仕上がり',Y)]
   w=d.textlength(t,font=f);d.text((cx-w/2,385),t,font=f,fill=c)
   w=d.textlength(j,font=fj);d.text((cx-w/2,1475),j,font=fj,fill=W)
 im.save('l_split2.png')
+lab('l_attF.png','01','ATTACHMENT','バリカン｜前側')
+lab('l_attB.png','01','ATTACHMENT','バリカン｜後ろ側')

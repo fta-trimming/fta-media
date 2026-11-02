@@ -20,7 +20,7 @@ R(['-ss',str(sp['before']),'-i',src,'-frames:v','1','b.png']);R(['-ss',str(sp['a
 f=f'{tag}_split.mp4'
 # same source, same scale, side by side full frames (no crop -> no misalignment)
 R(['-loop','1','-t',str(d),'-i','b.png','-loop','1','-t',str(d),'-i','a.png','-filter_complex',
- f"[0:v]scale=536:952,pad=540:952:0:0:color=0x111111[x];[1:v]scale=536:952,pad=540:952:4:0:color=0x111111[y];[x][y]hstack,pad=1080:1920:0:500:color=0x111111,fade=t=in:st=0:d=0.2,fade=t=out:st={d-0.4}:d=0.4,setsar=1"]+enc+[f])
+ f"[0:v]crop={sp.get('bc','iw:ih:0:0')},scale=536:952,pad=540:952:0:0:color=0x111111[x];[1:v]crop={sp.get('ac','iw:ih:0:0')},scale=536:952,pad=540:952:4:0:color=0x111111[y];[x][y]hstack,pad=1080:1920:0:500:color=0x111111,fade=t=in:st=0:d=0.2,fade=t=out:st={d-0.4}:d=0.4,setsar=1"]+enc+[f])
 labels.append(('l_split2.png',t,t+d));files.append(f);t+=d
 open(f'{tag}_list.txt','w').write(''.join(f"file '{x}'\n" for x in files))
 R(['-f','concat','-safe','0','-i',f'{tag}_list.txt','-c','copy',f'{tag}_cat.mp4'])
