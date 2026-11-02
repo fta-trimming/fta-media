@@ -11,7 +11,10 @@ for i,s in enumerate(cfg['segs']):
     d=s['dur'];R(['-loop','1','-t',str(d+0.3),'-i','st.png','-vf',f"scale=1145:-2,crop=1080:1920,zoompan=z='1+0.03*on/{int(d*30)}':d=1:s=1080x1920:fps=30,setsar=1"]+enc+['-t',str(d),f])
   else:
     sp=s['speed'];d=(s['b']-s['a'])/sp
-    R(['-ss',str(s['a']),'-t',str(s['b']-s['a']),'-i',src,'-vf',f"{SC},setpts=PTS/{sp},fps=30,fade=t=in:st=0:d=0.12,fade=t=out:st={d-0.12:.2f}:d=0.12"]+enc+[f])
+    N=max(int(d*30),1);mv=s.get('move',['in','right','left','out'][i%4]);Z=1.08
+    zz={'in':f"1+{Z-1}*on/{N}",'out':f"{Z}-{Z-1}*on/{N}"}.get(mv,str(Z))
+    xx={'right':f"(iw-iw/zoom)*on/{N}",'left':f"(iw-iw/zoom)*(1-on/{N})"}.get(mv,"iw/2-iw/zoom/2")
+    R(['-ss',str(s['a']),'-t',str(s['b']-s['a']),'-i',src,'-vf',f"scale=2160:3840:flags=lanczos,setsar=1,setpts=PTS/{sp},fps=30,zoompan=z='{zz}':x='{xx}':y='ih/2-ih/zoom/2':d=1:s=1080x1920:fps=30,setsar=1,fade=t=in:st=0:d=0.12,fade=t=out:st={d-0.12:.2f}:d=0.12"]+enc+[f])
   d=float(subprocess.run(['ffprobe','-v','error','-show_entries','format=duration','-of','csv=p=0',f],capture_output=True,text=True).stdout)
   if s.get('label'): labels.append((s['label'],t,t+d))
   files.append(f);t+=d
