@@ -1,0 +1,106 @@
+{
+ "out": "TikTok_PAPA_1105_v3.mp4",
+ "brand": "dog care salon PAPA de GIGI",
+ "tag": "泡でこすらないシャンプーをするサロン",
+ "color": {
+  "card": "rgba(108,88,138,.84)",
+  "pill": "rgba(108,88,138,.92)",
+  "lab": "#ece4f4",
+  "labfg": "#5f4b80",
+  "hl": "#ece4f4",
+  "hlfg": "#56427a"
+ },
+ "scenes": [
+  {
+   "type": "title",
+   "y": 1240,
+   "html": "<div style='font-size:96px;font-weight:700'>お顔まわり</div><div style='font-size:100px;font-weight:700;margin-top:8px'><span class=hl>カット</span>の仕上がり</div><div style='margin-top:26px'><span class=pill>こすらないシャンプーをするサロン</span></div>",
+   "bg": {
+    "kind": "video",
+    "file": "<材料>/v5face.mp4",
+    "start": 9.5,
+    "speed": 0.85
+   },
+   "min": 3.8,
+   "voice": "今日は、お顔まわりの、カットの仕上がりを、お見せします。"
+  },
+  {
+   "type": "title",
+   "y": 1330,
+   "html": "<div style='font-size:60px;font-weight:700'><span class=hl>盛岡市菜園</span>の dog care salon</div><div style='font-size:96px;font-weight:700;margin-top:12px'>PAPA de GIGI</div>",
+   "bg": {
+    "kind": "photo",
+    "file": "<材料>/p_gaikan1906.jpg",
+    "x": 0.8,
+    "y": 0.45,
+    "zoom": 0.06
+   },
+   "min": 3.6,
+   "voice": "もりおか、さいえんの、ぱぱでじじです。"
+  },
+  {
+   "type": "card",
+   "num": 1,
+   "y": 1360,
+   "lab": "頭とお耳",
+   "text": "ふんわりと<br>ととのえます",
+   "bg": {
+    "kind": "video",
+    "file": "<材料>/v6face.mp4",
+    "start": 22.0
+   },
+   "voice": "頭と、お耳は、ふんわりと、ととのえます。"
+  },
+  {
+   "type": "card",
+   "num": 1,
+   "y": 1360,
+   "lab": "口もと",
+   "text": "口もとは<br>短めに",
+   "bg": {
+    "kind": "video",
+    "file": "<材料>/v5face.mp4",
+    "start": 1.5
+   },
+   "voice": "口もとは、短めに、ととのえます。"
+  },
+  {
+   "type": "card",
+   "num": 1,
+   "y": 1360,
+   "lab": "横顔",
+   "text": "横から<br>見たお顔",
+   "bg": {
+    "kind": "video",
+    "file": "<材料>/v6face.mp4",
+    "start": 15.0,
+    "speed": 0.6
+   },
+   "voice": "横から、見たお顔です。"
+  },
+  {
+   "type": "big",
+   "num": 1,
+   "y": 1400,
+   "html": "<span class=pill>仕上がり</span><div style='font-size:70px;font-weight:700;margin-top:14px'>仕上がりは</div><div style='font-size:100px;font-weight:700'><span class=hl>まあるいお顔</span>。</div>",
+   "bg": {
+    "kind": "video",
+    "file": "<材料>/v5face.mp4",
+    "start": 5.0
+   },
+   "voice": "仕上がりです。まあるいお顔に、なりました。"
+  },
+  {
+   "type": "end",
+   "bg": {
+    "kind": "photo",
+    "file": "<材料>/end_p1105.jpg",
+    "x": 0.5,
+    "y": 0.5,
+    "zoom": 0.0001
+   },
+   "pad": 1.2,
+   "voice": "もりおか、さいえんの、ドッグケアサロン、ぱぱでじじ。ご予約は、プロフィールのラインから、どうぞ。"
+  }
+ ]
+}
