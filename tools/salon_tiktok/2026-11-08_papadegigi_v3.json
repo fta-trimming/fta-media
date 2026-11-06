@@ -1,0 +1,133 @@
+{
+ "out": "TikTok_PAPA_1108_v3.mp4",
+ "brand": "dog care salon PAPA de GIGI",
+ "tag": "泡でこすらないシャンプーをするサロン",
+ "color": {
+  "card": "rgba(108,88,138,.84)",
+  "pill": "rgba(108,88,138,.92)",
+  "lab": "#ece4f4",
+  "labfg": "#5f4b80",
+  "hl": "#ece4f4",
+  "hlfg": "#56427a"
+ },
+ "scenes": [
+  {
+   "type": "title",
+   "y": 1300,
+   "html": "<div style='font-size:84px;font-weight:700'>ケアのご紹介</div><div style='font-size:104px;font-weight:700;margin-top:8px'><span class=hl>セレクト4点ケア</span></div><div style='margin-top:26px'><span class=pill>泡でこすらないシャンプーをするサロン</span></div>",
+   "bg": {
+    "kind": "video",
+    "file": "<材料>/v7.mp4",
+    "start": 16.5,
+    "speed": 0.85
+   },
+   "min": 3.8,
+   "voice": "セレクト4点ケアを、ご紹介します。"
+  },
+  {
+   "type": "end",
+   "bg": {
+    "kind": "video",
+    "file": "<材料>/gaikan_seg.mp4",
+    "start": 0
+   },
+   "min": 4.43,
+   "pad": 0.5,
+   "voice": "もりおか、さいえんの、ぱぱでじじです。",
+   "note": "11/5 v4 の外観の場面（文字入り）をそのまま使う"
+  },
+  {
+   "type": "card",
+   "num": 1,
+   "y": 1360,
+   "lab": "選べるケア",
+   "text": "被毛ケアか<br>皮膚ケアを選べます",
+   "bg": {
+    "kind": "video",
+    "file": "<材料>/v9.mp4",
+    "start": 16.0
+   },
+   "voice": "けのケアか、皮膚のケアを、えらべます。"
+  },
+  {
+   "type": "card",
+   "num": 1,
+   "y": 1360,
+   "lab": "その子に合わせて",
+   "text": "皮膚と毛の状態を<br>見て選びます",
+   "bg": {
+    "kind": "video",
+    "file": "<材料>/v7.mp4",
+    "start": 1.0
+   },
+   "voice": "その子の、皮膚と、けの状態に合わせて、ケアを選びます。"
+  },
+  {
+   "type": "card",
+   "num": 1,
+   "y": 330,
+   "lab": "泡のおふろ",
+   "text": "泡に<br>つかります",
+   "bg": {
+    "kind": "photo",
+    "file": "<材料>/p11.jpg",
+    "x": 0.5,
+    "y": 0.5,
+    "zoom": 0.06
+   },
+   "voice": "泡のおふろに、つかります。"
+  },
+  {
+   "type": "card",
+   "num": 1,
+   "y": 1360,
+   "lab": "美容液",
+   "text": "美容液を<br>かけていきます",
+   "bg": {
+    "kind": "photo",
+    "file": "<材料>/p13.jpg",
+    "x": 0.45,
+    "y": 0.5,
+    "zoom": 0.06
+   },
+   "voice": "美容液を、やさしく、かけていきます。"
+  },
+  {
+   "type": "card",
+   "num": 1,
+   "y": 1360,
+   "lab": "お口まわり",
+   "text": "お口まわりも<br>ケアします",
+   "bg": {
+    "kind": "video",
+    "file": "<材料>/v8.mp4",
+    "start": 6.0
+   },
+   "voice": "お口まわりも、ケアします。"
+  },
+  {
+   "type": "big",
+   "num": 1,
+   "y": 1380,
+   "html": "<span class=pill>ご相談ください</span><div style='font-size:72px;font-weight:700;margin-top:14px'>肌荒れ・かゆみも</div><div style='font-size:100px;font-weight:700'><span class=hl>お気軽に</span></div>",
+   "bg": {
+    "kind": "video",
+    "file": "<材料>/v7.mp4",
+    "start": 20.5
+   },
+   "voice": "肌荒れや、かゆみが気になる子も、ご相談ください。"
+  },
+  {
+   "type": "end",
+   "bg": {
+    "kind": "photo",
+    "file": "<材料>/end_p1108.jpg",
+    "x": 0.5,
+    "y": 0.5,
+    "zoom": 0.0001
+   },
+   "pad": 1.2,
+   "voice": "もりおか、さいえんの、ドッグケアサロン、ぱぱでじじ。ご予約は、プロフィールのラインから、どうぞ。"
+  }
+ ]
+}
