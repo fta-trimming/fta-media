@@ -1,3 +1,4 @@
 
 # サロンTikTokの書き出し（作業用。完成品は各日付のフォルダに置く）
 tools/salon_tiktok/*.mp4
+tools/salon_tiktok/out_*/
