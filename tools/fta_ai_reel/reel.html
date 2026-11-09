@@ -1,0 +1,174 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+*{margin:0;padding:0;box-sizing:border-box}
+html,body{width:1080px;height:1920px;overflow:hidden;font-family:'Noto Sans CJK JP',sans-serif;background:#fff;color:#333}
+.sc{position:absolute;inset:0;opacity:0}
+.bar{position:absolute;top:70px;left:90px;right:90px;height:10px;background:#e8f2ec;border-radius:5px;z-index:9}
+.bar i{display:block;height:100%;background:#3d6b4f;border-radius:5px;width:0}
+.num{position:absolute;top:100px;left:90px;font-size:34px;font-weight:700;color:#3d6b4f;letter-spacing:2px;z-index:9}
+.brand{position:absolute;top:100px;right:90px;font-size:26px;color:#6b6b6b;letter-spacing:3px;z-index:9}
+.ln{opacity:0;transform:translateY(30px)}
+.tag{display:inline-block;background:#3d6b4f;color:#fff;font-size:40px;font-weight:700;padding:10px 30px;border-radius:40px}
+h1{font-size:92px;line-height:1.3;font-weight:900;color:#24402f}
+h2{font-size:76px;line-height:1.35;font-weight:900;color:#24402f}
+.g{color:#3d6b4f}.y{background:linear-gradient(transparent 62%,#f6d77a 62%)}
+.box{position:absolute;left:90px;right:90px}
+.note{font-size:30px;color:#6b6b6b}
+.dark{background:#24402f}.dark h1,.dark h2{color:#fff}.dark .g{color:#f6d77a}
+.chk{display:flex;align-items:center;gap:30px;background:#e8f2ec;border-radius:24px;padding:36px 40px;font-size:54px;font-weight:700;color:#24402f}
+.chk b{flex:0 0 90px;height:90px;border-radius:50%;background:#3d6b4f;color:#fff;display:flex;align-items:center;justify-content:center;font-size:52px}
+</style></head><body>
+<div class="bar"><i id="pb"></i></div><div class="num" id="num">01 / 07</div><div class="brand" id="brand">FUJIWARA TRIMMING ACADEMY</div>
+
+<!-- 1 hook -->
+<div class="sc dark" id="s1">
+ <div class="box" style="top:330px">
+  <div class="ln"><span class="tag" style="background:#f6d77a;color:#24402f">新人さんの育成</span></div>
+  <h1 class="ln" style="margin-top:50px">新人のカットに<br>時間がかかるのは、</h1>
+  <h1 class="ln" style="margin-top:30px">技術不足より<br><span class="g">「順番」</span></h1>
+ </div>
+ <svg class="ln" id="clock1" style="position:absolute;left:330px;top:1080px" width="420" height="420" viewBox="0 0 200 200">
+  <circle cx="100" cy="100" r="88" fill="#fff" stroke="#f6d77a" stroke-width="10"/>
+  <g fill="#24402f"><circle cx="100" cy="24" r="5"/><circle cx="176" cy="100" r="5"/><circle cx="100" cy="176" r="5"/><circle cx="24" cy="100" r="5"/></g>
+  <line id="h1" x1="100" y1="100" x2="100" y2="55" stroke="#24402f" stroke-width="9" stroke-linecap="round"/>
+  <line id="m1" x1="100" y1="100" x2="100" y2="34" stroke="#3d6b4f" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="100" cy="100" r="8" fill="#c8700a"/>
+ </svg>
+</div>
+
+<!-- 2 cause -->
+<div class="sc" id="s2">
+ <div class="box" style="top:300px">
+  <div class="ln"><span class="tag">原因</span></div>
+  <h2 class="ln" style="margin-top:44px">荒刈りで、<br><span class="y">形を探している</span></h2>
+ </div>
+ <svg class="ln" style="position:absolute;left:140px;top:820px" width="800" height="700" viewBox="0 0 400 350" id="dog2">
+  <g fill="#cfe3d6">
+   <ellipse cx="205" cy="200" rx="105" ry="62"/>
+   <circle cx="110" cy="130" r="52"/><circle cx="90" cy="92" r="30"/><circle cx="130" cy="88" r="30"/>
+   <ellipse cx="80" cy="150" rx="22" ry="40"/>
+   <rect x="125" y="230" width="34" height="80" rx="17"/><rect x="175" y="235" width="34" height="78" rx="17"/>
+   <rect x="235" y="232" width="34" height="80" rx="17"/><rect x="275" y="228" width="34" height="80" rx="17"/>
+   <circle cx="318" cy="150" r="24"/>
+  </g>
+  <circle cx="98" cy="128" r="6" fill="#24402f"/><ellipse cx="62" cy="142" rx="10" ry="8" fill="#24402f"/>
+  <path d="M40 75 C 60 25, 160 20, 190 120 C 250 120, 330 110, 350 165 C 345 215, 330 240, 325 320 M 110 320 C 105 260, 30 230, 40 75" fill="none" stroke="#3d6b4f" stroke-width="5" stroke-dasharray="12 12"/>
+  <g font-size="54" font-weight="900" fill="#c8700a" font-family="Noto Sans CJK JP">
+   <text id="q1" x="40" y="70">?</text><text id="q2" x="330" y="60">?</text><text id="q3" x="350" y="230">?</text>
+  </g>
+ </svg>
+</div>
+
+<!-- 3 slowly -->
+<div class="sc" id="s3">
+ <div class="box" style="top:300px">
+  <div class="ln"><span class="tag">なぜ遅くなる？</span></div>
+  <h2 class="ln" style="margin-top:44px">仕上がりの<br>イメージがまだ少ない</h2>
+  <h2 class="ln" style="margin-top:30px;font-size:64px;color:#333">→ 少しずつ切り進める<br>→ <span class="y">形ができるまで長い</span></h2>
+ </div>
+ <svg style="position:absolute;left:90px;top:1150px" width="900" height="330" viewBox="0 0 900 330" class="ln" id="snipwrap">
+  <rect x="0" y="120" width="900" height="70" rx="35" fill="#e8f2ec"/>
+  <rect id="slowbar" x="0" y="120" width="0" height="70" rx="35" fill="#c8700a"/>
+  <g id="snips" fill="#3d6b4f"></g>
+  <text x="0" y="270" font-size="34" fill="#6b6b6b" font-family="Noto Sans CJK JP">少しずつ…少しずつ…（イメージ）</text>
+ </svg>
+</div>
+
+<!-- 4 attachment -->
+<div class="sc" id="s4">
+ <div class="box" style="top:300px">
+  <div class="ln"><span class="tag">そこで</span></div>
+  <h2 class="ln" style="margin-top:44px"><span class="g">アタッチメント</span>で<br>ミリ数を決める</h2>
+  <h2 class="ln" style="margin-top:30px;font-size:62px;color:#333">一定の長さまで、<span class="y">一気に刈れる</span></h2>
+ </div>
+ <svg style="position:absolute;left:90px;top:1060px" width="900" height="460" viewBox="0 0 900 460" class="ln">
+  <rect x="40" y="250" width="820" height="120" rx="60" fill="#e8f2ec"/>
+  <clipPath id="cp"><rect x="40" y="250" width="820" height="120" rx="60"/></clipPath>
+  <g clip-path="url(#cp)"><rect id="cutfill" x="40" y="250" width="0" height="120" fill="#3d6b4f"/></g>
+  <g id="clipper">
+   <rect x="-60" y="60" width="120" height="200" rx="40" fill="#24402f"/>
+   <rect x="-70" y="235" width="140" height="40" rx="8" fill="#9bb8a6"/>
+   <g stroke="#9bb8a6" stroke-width="7"><line x1="-55" y1="275" x2="-55" y2="300"/><line x1="-28" y1="275" x2="-28" y2="300"/><line x1="0" y1="275" x2="0" y2="300"/><line x1="28" y1="275" x2="28" y2="300"/><line x1="55" y1="275" x2="55" y2="300"/></g>
+   <circle cx="0" cy="120" r="14" fill="#f6d77a"/>
+  </g>
+  <g font-family="Noto Sans CJK JP" font-weight="900">
+   <rect x="40" y="20" width="230" height="110" rx="20" fill="#f6d77a"/>
+   <text x="155" y="98" font-size="64" fill="#24402f" text-anchor="middle">13mm</text>
+  </g>
+  <text x="40" y="430" font-size="32" fill="#6b6b6b" font-family="Noto Sans CJK JP">ミリ数は一例です</text>
+ </svg>
+</div>
+
+<!-- 5 compare -->
+<div class="sc" id="s5">
+ <div class="box" style="top:300px">
+  <div class="ln"><span class="tag">すると</span></div>
+  <h2 class="ln" style="margin-top:44px">荒刈りの時間が<br><span class="y">大きく減る</span></h2>
+  <h2 class="ln" style="margin-top:20px;font-size:62px;color:#333">急がなくても、時短に</h2>
+ </div>
+ <div class="box ln" style="top:1060px">
+  <div style="font-size:40px;font-weight:700;color:#6b6b6b">形を探しながら切る</div>
+  <div style="height:90px;background:#e8f2ec;border-radius:45px;margin:16px 0 50px"><div id="cb1" style="height:100%;width:0;background:#c8700a;border-radius:45px"></div></div>
+  <div style="font-size:40px;font-weight:700;color:#3d6b4f">ミリ数を決めて一気に刈る</div>
+  <div style="height:90px;background:#e8f2ec;border-radius:45px;margin-top:16px"><div id="cb2" style="height:100%;width:0;background:#3d6b4f;border-radius:45px"></div></div>
+  <div class="note" style="margin-top:30px">荒刈りにかかる時間のイメージ</div>
+ </div>
+</div>
+
+<!-- 6 todo -->
+<div class="sc" id="s6">
+ <div class="box" style="top:300px">
+  <div class="ln"><span class="tag">今日からできること</span></div>
+  <h2 class="ln" style="margin-top:40px;font-size:70px">新人さんに<br>「形の順番」を渡す</h2>
+ </div>
+ <div class="box" style="top:820px;display:flex;flex-direction:column;gap:40px">
+  <div class="chk ln"><b>1</b><span>よく来る犬種を<br>1つ決める</span></div>
+  <div class="chk ln"><b>2</b><span>部位ごとの<br>ミリ数と順番を書く</span></div>
+  <div class="chk ln"><b>3</b><span>新人さんには<br>ミリ数で伝える</span></div>
+ </div>
+</div>
+
+<!-- 7 cta -->
+<div class="sc dark" id="s7">
+ <div class="box" style="top:320px">
+  <div class="ln"><span class="tag" style="background:#f6d77a;color:#24402f">🎁 プレゼント</span></div>
+  <h2 class="ln" style="margin-top:44px">荒刈りミリ数<br>チェック表</h2>
+  <h2 class="ln" style="margin-top:30px;font-size:62px">コメントで<br><span class="g">「やってみる」</span></h2>
+ </div>
+ <svg class="ln" style="position:absolute;left:300px;top:1060px" width="480" height="380" viewBox="0 0 240 190">
+  <rect x="30" y="10" width="180" height="170" rx="12" fill="#fff"/>
+  <g stroke="#3d6b4f" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round">
+   <rect x="52" y="40" width="26" height="26" rx="5"/><path d="M57 53 l7 7 l12 -16"/>
+   <rect x="52" y="82" width="26" height="26" rx="5"/><path d="M57 95 l7 7 l12 -16"/>
+   <rect x="52" y="124" width="26" height="26" rx="5"/>
+  </g>
+  <g fill="#e8f2ec"><rect x="92" y="46" width="96" height="14" rx="7"/><rect x="92" y="88" width="80" height="14" rx="7"/><rect x="92" y="130" width="90" height="14" rx="7"/></g>
+ </svg>
+ <div class="box ln" style="top:1500px;text-align:center;color:#fff;font-size:52px;font-weight:900">💾 保存して見返してね</div>
+ <div style="position:absolute;top:1620px;left:90px;font-size:24px;color:#9bb8a6">VOICEVOX:青山龍星</div>
+</div>
+
+<script>
+const T=__TIMING__;const S=T.scenes;const TOT=S[S.length-1][1];
+const ease=x=>1-Math.pow(1-Math.min(Math.max(x,0),1),3);
+// snips
+const sg=document.getElementById('snips');for(let i=0;i<9;i++){const r=document.createElementNS('http://www.w3.org/2000/svg','rect');r.setAttribute('x',30+i*95);r.setAttribute('y',60);r.setAttribute('width',14);r.setAttribute('height',44);r.setAttribute('rx',7);r.setAttribute('opacity',0);sg.appendChild(r)}
+function setT(t){
+ document.getElementById('pb').style.width=(100*t/TOT)+'%';
+ let cur=0;S.forEach((s,i)=>{if(t>=s[0])cur=i});
+ document.getElementById('num').textContent='0'+(cur+1)+' / 07';
+ const dk=(cur==0||cur==6);document.getElementById('num').style.color=dk?'#f6d77a':'#3d6b4f';document.getElementById('brand').style.color=dk?'#9bb8a6':'#6b6b6b';
+ S.forEach((s,i)=>{
+  const el=document.getElementById('s'+(i+1));const lt=t-s[0],dur=s[1]-s[0];
+  let o=0; if(t>=s[0]&&t<s[1]){o=Math.min(1,lt/0.2); if(i<6&&dur-lt<0.3)o=Math.max(0,(dur-lt)/0.3)}
+  el.style.opacity=o; if(!o)return;
+  el.querySelectorAll('.ln').forEach((l,k)=>{const p=ease((lt-0.15-k*0.32)/0.45);l.style.opacity=p;l.style.transform=`translateY(${30*(1-p)}px)`});
+  if(i==0){const a=lt*120;document.getElementById('m1').setAttribute('transform',`rotate(${a} 100 100)`);document.getElementById('h1').setAttribute('transform',`rotate(${a/12} 100 100)`)}
+  if(i==1){['q1','q2','q3'].forEach((q,k)=>document.getElementById(q).setAttribute('opacity',(Math.sin(lt*4+k*2)+1)/2*0.9+0.1))}
+  if(i==2){const p=Math.min(1,Math.max(0,(lt-1.4)/(dur-2)));document.getElementById('slowbar').setAttribute('width',900*p);
+   [...sg.children].forEach((r,k)=>r.setAttribute('opacity',p*9>k?1:0))}
+  if(i==3){const p=ease((lt-2.6)/2.2);document.getElementById('cutfill').setAttribute('width',820*p);document.getElementById('clipper').setAttribute('transform',`translate(${100+700*p},0)`)}
+  if(i==4){document.getElementById('cb1').style.width=(100*ease((lt-1.2)/1.6))+'%';document.getElementById('cb2').style.width=(35*ease((lt-2.0)/0.9))+'%'}
+ });
+}
+window.setT=setT;setT(0);
+</script></body></html>
