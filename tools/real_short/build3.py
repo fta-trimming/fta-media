@@ -1,7 +1,7 @@
 import subprocess,sys,json,os
 cfg=json.load(open(sys.argv[1]));src=cfg['src'];out=cfg['out'];tag=out[:-4]
 R=lambda a:subprocess.run(['ffmpeg','-v','error','-y']+a,check=True)
-enc=['-an','-c:v','libx264','-crf','16','-preset','fast','-pix_fmt','yuv420p','-r','30']
+enc=['-an','-c:v','libx264','-qp','0','-preset','ultrafast','-pix_fmt','yuv420p','-r','30']  # 11/9 途中は劣化なし
 SC='scale=1080:1920:flags=lanczos,setsar=1'
 files=[];t=0;labels=[]
 for i,s in enumerate(cfg['segs']):
@@ -33,5 +33,11 @@ for k,(png,s0,s1) in enumerate(labels):
   fc.append(f"[{k+1}:v]format=rgba,fade=t=in:st={s0:.2f}:d=0.25:alpha=1,fade=t=out:st={s1-0.25:.2f}:d=0.25:alpha=1[l{k}]")
   fc.append(f"[{cur}][l{k}]overlay=0:0:enable='between(t,{s0:.2f},{s1:.2f})'[o{k}]");cur=f'o{k}'
 fc.append(f'[{cur}]format=yuv420p[out]')
-R(inp+['-filter_complex',';'.join(fc),'-map','[out]','-an','-c:v','libx264','-b:v','4500k','-maxrate','6000k','-bufsize','9000k','-preset','medium','-movflags','+faststart','-t',f'{t:.2f}',out])
+R(inp+['-filter_complex',';'.join(fc),'-map','[out]','-an','-c:v','libx264','-crf','16','-preset','slow','-tune','film','-profile:v','high','-movflags','+faststart','-t',f'{t:.2f}',out])
 print(out,round(t,2),os.path.getsize(out))
+# 11/9 藤原さん「とにかく画質が下がらない方法で」：本番は上の1回だけの書き出し（crf 16）。
+# 司令室（20MBまで）に入らないときだけ、見る用の軽い版 <out>_view.mp4 を別に作る（本番は GitHub に置く）。
+if os.path.getsize(out) > 19*1024*1024:
+  view=out[:-4]+'_view.mp4'
+  R(['-i',out,'-an','-c:v','libx264','-crf','23','-preset','slow','-movflags','+faststart',view])
+  print('view',view,os.path.getsize(view))
