@@ -1,0 +1,136 @@
+{
+ "out": "TikTok_PAPA_1109_v3.mp4",
+ "brand": "dog care salon PAPA de GIGI",
+ "tag": "泡でこすらないシャンプーをするサロン",
+ "color": {
+  "card": "rgba(108,88,138,.84)",
+  "pill": "rgba(108,88,138,.92)",
+  "lab": "#ece4f4",
+  "labfg": "#5f4b80",
+  "hl": "#ece4f4",
+  "hlfg": "#56427a"
+ },
+ "scenes": [
+  {
+   "type": "title",
+   "y": 1240,
+   "html": "<div style='font-size:88px;font-weight:700'>毛玉・もつれが</div><div style='font-size:100px;font-weight:700;margin-top:8px'><span class=hl>気になる子</span>へ</div><div style='margin-top:26px'><span class=pill>泡でこすらないシャンプーをするサロン</span></div>",
+   "bg": {
+    "kind": "video",
+    "file": "<材料>/e505cd922f61b6cb656cde0206aef09f.mp4",
+    "start": 0.3,
+    "speed": 0.85
+   },
+   "min": 3.8,
+   "voice": "ケダマや、もつれが、気になる子へ。"
+  },
+  {
+   "type": "end",
+   "bg": {
+    "kind": "video",
+    "file": "<材料>/gaikan_seg.mp4",
+    "start": 0
+   },
+   "min": 4.43,
+   "pad": 0.5,
+   "voice": "もりおか、さいえんの、ぱぱでじじです。",
+   "note": "11/8 v3 の外観の場面（文字入り）をそのまま使う"
+  },
+  {
+   "type": "card",
+   "num": 1,
+   "y": 1360,
+   "lab": "入口",
+   "text": "ビルの1階<br>こちらが入口です",
+   "bg": {
+    "kind": "video",
+    "file": "<材料>/walk.mp4",
+    "start": 18.0
+   },
+   "min": 3.4,
+   "pad": 0.6,
+   "voice": "ビルの1階、こちらが、入口です。",
+   "note": "11/10 藤原さん『外観は外さないで、ビルの中のドアの外や受付などを使いまわして』→ 外観のあとに入口（10/24 お店紹介の動画 18秒〜）。次は受付（10/18 IMG_1799）などと入れかえる"
+  },
+  {
+   "type": "card",
+   "num": 1,
+   "y": 1360,
+   "lab": "ブラッシングの前",
+   "text": "毛がからまって<br>もつれています",
+   "bg": {
+    "kind": "photo",
+    "file": "<材料>/649f88b8d16f891b35cfc929cf4f5fef.jpg",
+    "x": 0.5,
+    "y": 0.5,
+    "zoom": 0.06
+   },
+   "voice": "ブラッシングの前です。けが、からまっています。"
+  },
+  {
+   "type": "card",
+   "num": 1,
+   "y": 1360,
+   "lab": "ほぐす",
+   "text": "からまった毛を<br>少しずつほぐします",
+   "bg": {
+    "kind": "video",
+    "file": "<材料>/a5afdcee227677dbdb35a9452e5a16e4.mp4",
+    "start": 3.0
+   },
+   "voice": "からまった、けを、少しずつ、ほぐしていきます。"
+  },
+  {
+   "type": "card",
+   "num": 1,
+   "y": 1360,
+   "lab": "ブラシ",
+   "text": "ブラシで<br>ていねいにとかします",
+   "bg": {
+    "kind": "photo",
+    "file": "<材料>/149e45c05cb8fa78af26c419eb65768f.jpg",
+    "x": 0.5,
+    "y": 0.3,
+    "zoom": 0.06
+   },
+   "voice": "ブラシで、ていねいに、とかします。"
+  },
+  {
+   "type": "card",
+   "num": 1,
+   "y": 1360,
+   "lab": "ブラッシングのあと",
+   "text": "毛がほどけて<br>さらさらになりました",
+   "bg": {
+    "kind": "video",
+    "file": "<材料>/8d26b524c90a7460d180fdaed2a27aa9.mp4",
+    "start": 3.0
+   },
+   "voice": "ブラッシングのあとです。けがほどけて、さらさらに、なりました。"
+  },
+  {
+   "type": "big",
+   "num": 1,
+   "y": 1380,
+   "html": "<span class=pill>ご相談ください</span><div style='font-size:72px;font-weight:700;margin-top:14px'>毛玉・もつれも</div><div style='font-size:100px;font-weight:700'><span class=hl>お気軽に</span></div>",
+   "bg": {
+    "kind": "video",
+    "file": "<材料>/8d26b524c90a7460d180fdaed2a27aa9.mp4",
+    "start": 9.0
+   },
+   "voice": "ケダマや、もつれが気になる子も、ご相談ください。"
+  },
+  {
+   "type": "end",
+   "bg": {
+    "kind": "photo",
+    "file": "<材料>/end_p1109.png",
+    "x": 0.5,
+    "y": 0.5,
+    "zoom": 0.0001
+   },
+   "pad": 0.6,
+   "voice": "ご予約は、プロフィールのラインから、どうぞ。"
+  }
+ ]
+}
