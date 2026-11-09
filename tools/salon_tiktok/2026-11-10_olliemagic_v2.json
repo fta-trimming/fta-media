@@ -1,0 +1,123 @@
+{
+ "out": "TikTok_OLLIE_1110_v2.mp4",
+ "brand": "Dog salon OLLIE MAGIC",
+ "tag": "泡でこすらないシャンプーをするサロン",
+ "color": {
+  "card": "rgba(122,78,62,.84)",
+  "pill": "rgba(122,78,62,.92)",
+  "lab": "#f1e1d8",
+  "labfg": "#7a4e3e",
+  "hl": "#f1e1d8",
+  "hlfg": "#6b4334"
+ },
+ "scenes": [
+  {
+   "type": "title",
+   "y": 260,
+   "html": "<div style='font-size:100px;font-weight:700'><span class=hl>こすらない</span></div><div style='font-size:104px;font-weight:700;margin-top:14px'>泡シャンプー</div><div style='margin-top:26px'><span class=pill>こすらないシャンプーをするサロン</span></div>",
+   "bg": {
+    "kind": "video",
+    "file": "<材料>/img2935.mp4",
+    "start": 0.5
+   },
+   "min": 3.8,
+   "voice": "泡で、こすらずに洗う、シャンプーです。"
+  },
+  {
+   "type": "title",
+   "y": 330,
+   "html": "<div style='font-size:64px;font-weight:700'><span class=hl>北上市</span>の Dog salon</div><div style='font-size:100px;font-weight:700;margin-top:12px'>OLLIE MAGIC</div>",
+   "bg": {
+    "kind": "photo",
+    "file": "<材料>/gaikan_frame.jpg",
+    "x": 0.5,
+    "y": 0.5,
+    "zoom": 0.0001
+   },
+   "min": 3.6,
+   "voice": "きたかみしの、ドッグサロン、オーリーマジックです。"
+  },
+  {
+   "type": "card",
+   "num": 1,
+   "y": 1300,
+   "lab": "店内",
+   "text": "入口を入ると<br>こんな店内です",
+   "bg": {
+    "kind": "photo",
+    "file": "<材料>/uketsuke3645.jpg",
+    "x": 0.58,
+    "y": 0.5,
+    "zoom": 0.04
+   },
+   "min": 3.0,
+   "pad": 0.5,
+   "voice": "入口を入ると、こんな、店内です。",
+   "note": "11/10 藤原さんの決まり：外観のあとにお店の場面を1つ（OLLIE：入口を入ったところの店内＝10/18 IMG_3645。受付の台ははっきり映っていないので『受付』とは言わない）"
+  },
+  {
+   "type": "card",
+   "num": 1,
+   "y": 300,
+   "lab": "泡で洗う",
+   "text": "たっぷりの泡で<br>体をつつみます",
+   "bg": {
+    "kind": "video",
+    "file": "<材料>/img2935.mp4",
+    "start": 3.0
+   },
+   "voice": "たっぷりの泡で、体を、つつみます。"
+  },
+  {
+   "type": "card",
+   "num": 1,
+   "y": 300,
+   "lab": "こすらない",
+   "text": "手で包むように<br>やさしく洗います",
+   "bg": {
+    "kind": "video",
+    "file": "<材料>/img2935.mp4",
+    "start": 7.5
+   },
+   "voice": "手で、包むように、やさしく洗います。"
+  },
+  {
+   "type": "card",
+   "num": 1,
+   "y": 1300,
+   "lab": "乾かしたあと",
+   "text": "乾かしたあとは<br>ふわふわのお顔に",
+   "bg": {
+    "kind": "video",
+    "file": "<材料>/9a953ea85b46df5848fae84b35c71245.mp4",
+    "start": 0.0
+   },
+   "voice": "乾かしたあとは、ふわふわの、お顔に。"
+  },
+  {
+   "type": "big",
+   "num": 1,
+   "y": 1420,
+   "html": "<span class=pill>仕上がり</span><div style='font-size:96px;font-weight:700;margin-top:14px'>仕上がりは <span class=hl>ふわふわ</span></div>",
+   "bg": {
+    "kind": "video",
+    "file": "<材料>/05f287ddf4de625970f376a445a8b690.mp4",
+    "start": 22.5
+   },
+   "voice": "仕上がりは、ふわふわです。"
+  },
+  {
+   "type": "end",
+   "bg": {
+    "kind": "photo",
+    "file": "<材料>/end_o1110.png",
+    "x": 0.5,
+    "y": 0.5,
+    "zoom": 0.0001
+   },
+   "pad": 0.6,
+   "voice": "ご予約は、プロフィールのラインから、どうぞ。"
+  }
+ ],
+ "note": "11/10 6:47 藤原さん『今日のこすらないシャンプーの動画が前回のと同じなので違う動画に』→ 泡の場面を 10/18 IMG_2935（白い子の体の泡洗い 0〜12秒）に。11/5 の LINE_ALBUM_SNS素材_261105_3 は 10/29 の 814925067（11/7 で使用）と同じ動画だった"
+}
