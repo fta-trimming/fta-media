@@ -1,0 +1,31 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{width:1080px;height:1350px;font-family:'Noto Sans CJK JP';background:#fff;color:#333;position:relative;overflow:hidden}
+.top{position:absolute;top:50px;left:70px;right:70px;display:flex;justify-content:space-between;font-size:24px;letter-spacing:3px;color:#6b6b6b;font-weight:700}
+.top b{color:#3d6b4f}
+.tag{position:absolute;top:120px;left:70px;background:#3d6b4f;color:#fff;font-size:30px;font-weight:700;padding:8px 26px;border-radius:30px}
+h1{position:absolute;top:190px;left:70px;right:70px;font-size:74px;line-height:1.28;font-weight:900;color:#24402f}
+.g{color:#3d6b4f}.y{background:linear-gradient(transparent 62%,#f6d77a 62%)}
+.art{position:absolute;left:70px;right:70px;border-radius:28px;background:#fff;border:3px solid #e8f2ec;display:flex;align-items:center;justify-content:center;overflow:hidden}
+.art img{max-width:100%;max-height:100%;object-fit:contain}
+.note{position:absolute;left:70px;right:70px;bottom:120px;border-left:10px solid #3d6b4f;background:#e8f2ec;padding:26px 30px;font-size:36px;line-height:1.5;font-weight:700;color:#24402f;border-radius:0 18px 18px 0}
+.dots{position:absolute;bottom:50px;left:0;right:0;display:flex;justify-content:center;gap:14px}
+.dots i{width:14px;height:14px;border-radius:50%;background:#d5e3da}.dots i.on{background:#3d6b4f}
+.sw{position:absolute;bottom:42px;right:70px;font-size:24px;color:#6b6b6b;font-weight:700}
+.cmp{position:absolute;left:70px;right:70px;top:930px;display:flex;gap:24px}
+.cmp div{flex:1;border-radius:20px;padding:24px;font-size:36px;font-weight:800;line-height:1.4;text-align:center}
+.x{background:#eee;color:#666}.o{background:#3d6b4f;color:#fff}
+.list{position:absolute;left:70px;right:70px;top:760px;display:flex;flex-direction:column;gap:22px}
+.list div{background:#e8f2ec;border-radius:20px;padding:20px 30px;font-size:40px;font-weight:800;color:#24402f}
+.list b{color:#3d6b4f;margin-right:16px}
+.band{position:absolute;left:70px;right:70px;bottom:150px;background:#f6d77a;border-radius:24px;padding:24px;text-align:center;font-size:40px;font-weight:900;color:#24402f}
+.nxt{position:absolute;left:0;right:0;bottom:100px;text-align:center;font-size:28px;color:#6b6b6b;font-weight:700}
+</style></head><body>
+<div class="top"><span>FUJIWARA TRIMMING ACADEMY</span><b id="pn"></b></div>
+<div id="c"></div><div class="dots" id="dots"></div><div class="sw" id="sw"></div>
+<script>
+const P=__P__;document.getElementById('pn').textContent=P.n+' / 8';
+document.getElementById('dots').innerHTML=[...Array(8)].map((_,i)=>`<i class="${i+1==P.n?'on':''}"></i>`).join('');
+document.getElementById('sw').textContent=P.n==8?'保存して見返してね':'スワイプ →';
+document.getElementById('c').innerHTML=P.html;
+</script></body></html>
