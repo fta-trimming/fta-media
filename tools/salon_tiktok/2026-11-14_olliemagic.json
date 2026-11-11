@@ -1,0 +1,118 @@
+{
+ "out": "TikTok_OLLIE_1114.mp4",
+ "brand": "Dog salon OLLIE MAGIC",
+ "tag": "泡でこすらないシャンプーをするサロン",
+ "color": {
+  "card": "rgba(122,78,62,.84)",
+  "pill": "rgba(122,78,62,.92)",
+  "lab": "#f1e1d8",
+  "labfg": "#7a4e3e",
+  "hl": "#f1e1d8",
+  "hlfg": "#6b4334"
+ },
+ "scenes": [
+  {
+   "type": "title",
+   "y": 1250,
+   "html": "<div style='font-size:84px;font-weight:700'>お店で買える</div><div style='font-size:104px;font-weight:700;margin-top:10px'><span class=hl>ケア用品</span></div><div style='margin-top:26px'><span class=pill>こすらないシャンプーをするサロン</span></div>",
+   "bg": {
+    "kind": "video",
+    "file": "/tmp/claude-0/-home-claude-fta-media/a8d063e8-8b63-556e-9192-543a368f10a9/scratchpad/mat/clip2.mp4",
+    "start": 0.0
+   },
+   "min": 3.8,
+   "voice": "お店で買える、ケア用品を、ご紹介します。"
+  },
+  {
+   "type": "title",
+   "y": 330,
+   "html": "<div style='font-size:64px;font-weight:700'><span class=hl>北上市</span>の Dog salon</div><div style='font-size:100px;font-weight:700;margin-top:12px'>OLLIE MAGIC</div>",
+   "bg": {
+    "kind": "photo",
+    "file": "/tmp/claude-0/-home-claude-fta-media/a8d063e8-8b63-556e-9192-543a368f10a9/scratchpad/mat/gaikan.png",
+    "x": 0.5,
+    "y": 0.5,
+    "zoom": 0.0001
+   },
+   "min": 3.6,
+   "voice": "きたかみしの、ドッグサロン、オーリーマジックです。"
+  },
+  {
+   "type": "card",
+   "num": 1,
+   "y": 1430,
+   "lab": "保湿クリーム",
+   "text": "シアバターの<br>保湿クリーム",
+   "bg": {
+    "kind": "video",
+    "file": "/tmp/claude-0/-home-claude-fta-media/a8d063e8-8b63-556e-9192-543a368f10a9/scratchpad/mat/clip5.mp4",
+    "start": 0.0
+   },
+   "voice": "シアバターの、保湿クリームです。"
+  },
+  {
+   "type": "card",
+   "num": 1,
+   "y": 1430,
+   "lab": "歯ブラシ",
+   "text": "ワンコ用の<br>歯ブラシ",
+   "bg": {
+    "kind": "video",
+    "file": "/tmp/claude-0/-home-claude-fta-media/a8d063e8-8b63-556e-9192-543a368f10a9/scratchpad/mat/clip2.mp4",
+    "start": 1.5
+   },
+   "voice": "ワンコ用の、歯ブラシです。"
+  },
+  {
+   "type": "card",
+   "num": 1,
+   "y": 1430,
+   "lab": "お口のケア",
+   "text": "飲み水に<br>まぜるだけ",
+   "bg": {
+    "kind": "video",
+    "file": "/tmp/claude-0/-home-claude-fta-media/a8d063e8-8b63-556e-9192-543a368f10a9/scratchpad/mat/clip7.mp4",
+    "start": 0.0
+   },
+   "voice": "飲み水に、まぜるだけの、お口のケアです。"
+  },
+  {
+   "type": "card",
+   "num": 1,
+   "y": 1430,
+   "lab": "関節ケア",
+   "text": "歩くことをサポートする<br>サプリメント",
+   "bg": {
+    "kind": "video",
+    "file": "/tmp/claude-0/-home-claude-fta-media/a8d063e8-8b63-556e-9192-543a368f10a9/scratchpad/mat/clip6.mp4",
+    "start": 0.0
+   },
+   "voice": "歩くことを、サポートする、関節ケアの、サプリメントです。"
+  },
+  {
+   "type": "big",
+   "num": 1,
+   "y": 1440,
+   "html": "<span class=pill>ご来店のときに</span><div style='font-size:96px;font-weight:700;margin-top:14px'><span class=hl>お店で買えます</span></div>",
+   "bg": {
+    "kind": "video",
+    "file": "/tmp/claude-0/-home-claude-fta-media/a8d063e8-8b63-556e-9192-543a368f10a9/scratchpad/mat/clip7.mp4",
+    "start": 2.0
+   },
+   "voice": "ご来店のときに、お店で、買えます。"
+  },
+  {
+   "type": "end",
+   "bg": {
+    "kind": "photo",
+    "file": "/tmp/claude-0/-home-claude-fta-media/a8d063e8-8b63-556e-9192-543a368f10a9/scratchpad/mat/end_o1114.png",
+    "x": 0.5,
+    "y": 0.5,
+    "zoom": 0.0001
+   },
+   "pad": 0.6,
+   "voice": "ご予約は、プロフィールのラインから、どうぞ。"
+  }
+ ],
+ "note": "11/11 作成。11/12「足まわり・しっぽ」の元の動画（SNS素材_261105_5.mp4）がGoogleドライブにだけあり大きくて読みこめなかったので、先に 11/14 の商品紹介を作った。材料は tt1114（SNS素材_261105_2・5・6・7.jpg）。写真はぼかした背景の上に幅1080でのせ（引きのばしなし）。外観は 11/10 v2 の 4.30秒の文字の無いコマ"
+}
