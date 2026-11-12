@@ -1,0 +1,109 @@
+{
+ "out": "TikTok_PAPA_1115.mp4",
+ "brand": "dog care salon PAPA de GIGI",
+ "tag": "泡でこすらないシャンプーをするサロン",
+ "color": {
+  "card": "rgba(108,88,138,.84)",
+  "pill": "rgba(108,88,138,.92)",
+  "lab": "#ece4f4",
+  "labfg": "#5f4b80",
+  "hl": "#ece4f4",
+  "hlfg": "#56427a"
+ },
+ "scenes": [
+  {
+   "type": "title",
+   "y": 1240,
+   "html": "<div style='font-size:88px;font-weight:700'>お店で買える</div><div style='font-size:100px;font-weight:700;margin-top:8px'><span class=hl>ケア用品・おやつ</span></div><div style='margin-top:26px'><span class=pill>泡でこすらないシャンプーをするサロン</span></div>",
+   "bg": {
+    "kind": "video",
+    "file": "/tmp/claude-0/-home-claude-fta-media/f79555f8-9b48-5dd1-8e2f-c3a0aae1ef95/scratchpad/mat/p15_1.mp4",
+    "start": 5.0
+   },
+   "min": 3.8,
+   "voice": "お店で買える、ケア用品と、おやつを、ご紹介します。"
+  },
+  {
+   "type": "end",
+   "bg": {
+    "kind": "video",
+    "file": "/tmp/claude-0/-home-claude-fta-media/f79555f8-9b48-5dd1-8e2f-c3a0aae1ef95/scratchpad/mat/gaikan_seg.mp4",
+    "start": 0
+   },
+   "min": 4.4,
+   "pad": 0.5,
+   "voice": "もりおか、さいえんの、ぱぱでじじです。",
+   "note": "11/9 v4 の外観の場面（文字入り・3.9〜8.3秒）をそのまま使う"
+  },
+  {
+   "type": "card",
+   "num": 1,
+   "y": 1360,
+   "lab": "お店の棚",
+   "text": "おやつやケア用品が<br>ならんでいます",
+   "bg": {
+    "kind": "photo",
+    "file": "/tmp/claude-0/-home-claude-fta-media/f79555f8-9b48-5dd1-8e2f-c3a0aae1ef95/scratchpad/mat/pg3_c.png",
+    "x": 0.5,
+    "y": 0.5,
+    "zoom": 0.0001
+   },
+   "voice": "お店の棚に、おやつや、ケア用品が、ならんでいます。"
+  },
+  {
+   "type": "card",
+   "num": 1,
+   "y": 1360,
+   "lab": "おやつ",
+   "text": "小さなワンコ向けの<br>おやつ",
+   "bg": {
+    "kind": "video",
+    "file": "/tmp/claude-0/-home-claude-fta-media/f79555f8-9b48-5dd1-8e2f-c3a0aae1ef95/scratchpad/mat/p15_1.mp4",
+    "start": 0.3
+   },
+   "voice": "小さなワンコ向けの、おやつです。"
+  },
+  {
+   "type": "card",
+   "num": 1,
+   "y": 1480,
+   "lab": "保湿スプレー",
+   "text": "セラミドの<br>保湿スプレー",
+   "bg": {
+    "kind": "photo",
+    "file": "/tmp/claude-0/-home-claude-fta-media/f79555f8-9b48-5dd1-8e2f-c3a0aae1ef95/scratchpad/mat/pg4_c.png",
+    "x": 0.5,
+    "y": 0.5,
+    "zoom": 0.0001
+   },
+   "voice": "セラミドの、保湿スプレーです。"
+  },
+  {
+   "type": "big",
+   "num": 1,
+   "y": 1440,
+   "html": "<span class=pill>ご来店のときに</span><div style='font-size:96px;font-weight:700;margin-top:14px'><span class=hl>お店で買えます</span></div>",
+   "bg": {
+    "kind": "photo",
+    "file": "/tmp/claude-0/-home-claude-fta-media/f79555f8-9b48-5dd1-8e2f-c3a0aae1ef95/scratchpad/mat/pg1_c.png",
+    "x": 0.5,
+    "y": 0.5,
+    "zoom": 0.0001
+   },
+   "voice": "ご来店のときに、お店で、買えます。"
+  },
+  {
+   "type": "end",
+   "bg": {
+    "kind": "photo",
+    "file": "/tmp/claude-0/-home-claude-fta-media/f79555f8-9b48-5dd1-8e2f-c3a0aae1ef95/scratchpad/mat/end_p1115.png",
+    "x": 0.5,
+    "y": 0.5,
+    "zoom": 0.0001
+   },
+   "pad": 0.6,
+   "voice": "ご予約は、プロフィールのラインから、どうぞ。"
+  }
+ ],
+ "note": "11/12 作成。材料は tt1115（【PAPA de GIGI】SNS素材_261105_1.mp4 棚の動画 720×1280・2.1Mbps（LINE経由）と 1〜4.jpg）。11/12「マイクロバブルのシャワー」の動画（261105_6・7.mp4）はGoogleドライブにだけあり大きくて読みこめなかったので、先に 11/15 を作った。写真はぼかした背景の上に幅1080でのせた（引きのばしなし）。最後の画面はワンコが写っていない回なので棚の写真をぼかした背景。"
+}
