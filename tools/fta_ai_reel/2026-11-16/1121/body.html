@@ -1,0 +1,85 @@
+<div class="sc dark" id="s1">
+ <div class="box" style="top:330px">
+  <div class="ln"><span class="tag" style="background:#f6d77a;color:#24402f">新規集客</span></div>
+  <h1 class="ln" style="margin-top:50px">新規が<br>来ないときは</h1>
+  <h1 class="ln" style="margin-top:20px"><span class="g">どこで止まって<br>いるか</span>を見る</h1>
+ </div>
+ <svg class="ln" style="position:absolute;left:190px;top:1130px" width="700" height="612" viewBox="0 80 800 700"><g id="st1"></g></svg>
+</div>
+<div class="sc" id="s2">
+ <div class="box" style="top:300px">
+  <div class="ln"><span class="tag">予約までには</span></div>
+  <h2 class="ln" style="margin-top:44px"><span class="y">4つの段</span>がある</h2>
+ </div>
+ <svg class="ln" style="position:absolute;left:90px;top:820px" width="900" height="800" viewBox="0 0 900 800"><g id="st2"></g></svg>
+</div>
+<div class="sc" id="s3">
+ <div class="box" style="top:300px">
+  <div class="ln"><span class="tag">止まっている段は</span></div>
+  <h2 class="ln" style="margin-top:44px">お店によって<br><span class="y">違う</span></h2>
+  <h3 class="ln" style="margin-top:20px">まず、どの段で<br>止まっているかを見る</h3>
+ </div>
+ <div class="box ln" style="top:1080px;display:flex;justify-content:space-between">
+  <svg width="280" height="300" viewBox="0 0 800 800"><g id="st3a"></g></svg>
+  <svg width="280" height="300" viewBox="0 0 800 800"><g id="st3b"></g></svg>
+  <svg width="280" height="300" viewBox="0 0 800 800"><g id="st3c"></g></svg>
+ </div>
+ <div class="box ln" style="top:1400px;display:flex;justify-content:space-between;font-size:38px;font-weight:700;color:#6b6b6b;text-align:center">
+  <div style="width:280px">Aのお店</div><div style="width:280px">Bのお店</div><div style="width:280px">Cのお店</div></div>
+</div>
+<div class="sc" id="s4">
+ <div class="box" style="top:300px">
+  <div class="ln"><span class="tag">たとえば</span></div>
+  <h2 class="ln" style="margin-top:44px">見られているのに<br>予約が来ない</h2>
+  <h3 class="ln" style="margin-top:20px">→ <span class="o" style="font-weight:900">「確かめる」</span>で<br>止まっているかも</h3>
+ </div>
+ <svg class="ln" style="position:absolute;left:90px;top:1000px" width="900" height="800" viewBox="0 0 900 800"><g id="st4"></g></svg>
+</div>
+<div class="sc" id="s5">
+ <div class="box" style="top:300px">
+  <div class="ln"><span class="tag">直すのは</span></div>
+  <h2 class="ln" style="margin-top:44px">止まっている段を<br><span class="y">1つだけ</span></h2>
+  <h3 class="ln" style="margin-top:20px">全部を一度に変えない</h3>
+ </div>
+ <svg class="ln" style="position:absolute;left:90px;top:1000px" width="900" height="800" viewBox="0 0 900 800"><g id="st5"></g></svg>
+</div>
+<div class="sc" id="s6">
+ <div class="box" style="top:300px">
+  <div class="ln"><span class="tag">まとめ</span></div>
+  <h2 class="ln" style="margin-top:40px;font-size:70px">止まっている段の<br>見つけ方</h2>
+ </div>
+ <div class="box" style="top:780px;display:flex;flex-direction:column;gap:40px">
+  <div class="chk ln"><b>✓</b><span>4つの段を<br>書き出す</span></div>
+  <div class="chk ln"><b>✓</b><span>止まっている段に<br>印をつける</span></div>
+  <div class="chk ln"><b>✓</b><span>1つだけ直して<br>様子を見る</span></div>
+ </div>
+</div>
+<div class="sc dark" id="s7">
+ <div class="box" style="top:340px">
+  <div class="ln"><span class="tag" style="background:#f6d77a;color:#24402f">止まっている段がわかれば</span></div>
+  <h1 class="ln" style="margin-top:50px">やることは<br><span class="g">1つになる</span></h1>
+ </div>
+ <svg class="ln" style="position:absolute;left:240px;top:1020px" width="600" height="400" viewBox="0 0 800 520"><g id="st7"></g></svg>
+ <div class="box ln save" style="top:1500px">💾 保存して見返してね</div>
+ <div class="credit">VOICEVOX:青山龍星</div>
+</div>
+<script>
+const NS='http://www.w3.org/2000/svg';const LB=['知る','気になる','確かめる','予約する'];
+// stairs: 4 steps, each w=180, rise=110 ; labels on top
+function stairs(id,{labels=true,dark=false,big=false}={}){const g=document.getElementById(id);g.innerHTML='';const W=190,H=150;
+ for(let k=0;k<4;k++){const r=document.createElementNS(NS,'rect');r.setAttribute('x',20+k*W);r.setAttribute('y',700-(k+1)*H);r.setAttribute('width',W-10);r.setAttribute('height',(k+1)*H);r.setAttribute('rx',14);r.setAttribute('fill',dark?'#3d6b4f':'#cfe3d6');r.id=id+'_'+k;g.appendChild(r);
+  if(labels){const t=document.createElementNS(NS,'text');t.setAttribute('x',20+k*W+(W-10)/2);t.setAttribute('y',700-(k+1)*H+70);t.setAttribute('text-anchor','middle');t.setAttribute('font-size',k==1||k==3?38:44);t.setAttribute('font-weight','900');t.setAttribute('font-family','Noto Sans CJK JP');t.setAttribute('fill',dark?'#fff':'#24402f');t.textContent=LB[k];t.id=id+'_t'+k;g.appendChild(t)}}
+ const m=document.createElementNS(NS,'g');m.id=id+'_m';m.innerHTML='<circle r="46" fill="none" stroke="#c8700a" stroke-width="12"/><text y="18" text-anchor="middle" font-size="56" font-weight="900" fill="#c8700a">!</text>';m.setAttribute('opacity',0);g.appendChild(m)}
+function mark(id,k,o,col){const m=document.getElementById(id+'_m');const W=190,H=150;m.setAttribute('transform',`translate(${20+k*W+90},${700-(k+1)*H-70})`);m.setAttribute('opacity',o);document.getElementById(id+'_'+k).setAttribute('fill',col||'#fbe7cf')}
+stairs('st1',{labels:false,dark:true});stairs('st2');stairs('st3a',{labels:false});stairs('st3b',{labels:false});stairs('st3c',{labels:false});stairs('st4');stairs('st5');stairs('st7',{labels:false,dark:true});
+
+document.getElementById('st7').setAttribute('transform','translate(0,-200)');
+function anim(i,lt,dur){
+ if(i==0){mark('st1',2,ease((lt-1.6)/0.6)*(0.7+0.3*Math.sin(lt*5)))}
+ if(i==1){for(let k=0;k<4;k++){const p=ease((lt-1.3-k*0.75)/0.4);document.getElementById('st2_'+k).setAttribute('opacity',0.15+0.85*p);document.getElementById('st2_t'+k).setAttribute('opacity',p)}}
+ if(i==2){const p=ease((lt-1.5)/0.5);mark('st3a',0,p);mark('st3b',1,ease((lt-2.1)/0.5));mark('st3c',3,ease((lt-2.7)/0.5))}
+ if(i==3){mark('st4',2,ease((lt-2.6)/0.5)*(0.75+0.25*Math.sin(lt*5)))}
+ if(i==4){const p=ease((lt-3.2)/0.8);mark('st5',2,1-p,p>0.5?'#3d6b4f':'#fbe7cf');if(p>0.5)document.getElementById('st5_t2').setAttribute('fill','#fff')}
+ if(i==6){mark('st7',2,0,'#f6d77a')}
+}
+</script>

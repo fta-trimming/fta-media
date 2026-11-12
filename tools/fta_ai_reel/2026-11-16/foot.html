@@ -1,0 +1,20 @@
+<script>
+const T=__TIMING__;const S=T.scenes;const TOT=S[S.length-1][1];
+const ease=x=>1-Math.pow(1-Math.min(Math.max(x,0),1),3);
+const $=id=>document.getElementById(id);
+function setT(t){
+ $('pb').style.width=(100*Math.min(t,TOT)/TOT)+'%';
+ let cur=0;S.forEach((s,i)=>{if(t>=s[0])cur=i});
+ $('num').textContent='0'+(cur+1)+' / 07';
+ const dk=(cur==0||cur==6);$('num').style.color=dk?'#f6d77a':'#3d6b4f';$('brand').style.color=dk?'#9bb8a6':'#6b6b6b';
+ $('pb').style.background=dk?'#f6d77a':'#3d6b4f';
+ S.forEach((s,i)=>{
+  const el=$('s'+(i+1));const lt=t-s[0],dur=s[1]-s[0];
+  let o=0; if(t>=s[0]&&(t<s[1]||i==6)){o=Math.min(1,lt/0.2); if(i<6&&dur-lt<0.3)o=Math.max(0,(dur-lt)/0.3)}
+  el.style.opacity=o; if(!o)return;
+  el.querySelectorAll('.ln').forEach((l,k)=>{const p=ease((lt-0.15-k*0.32)/0.45);l.style.opacity=p;l.style.transform=`translateY(${30*(1-p)}px)`});
+  if(window.anim)anim(i,lt,dur);
+ });
+}
+window.setT=setT;setT(0);
+</script></body></html>
