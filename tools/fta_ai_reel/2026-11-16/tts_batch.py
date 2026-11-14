@@ -8,7 +8,7 @@ SID=13
 for d in sys.argv[1:]:
   lines=[l.strip() for l in open(d+'/lines.txt') if l.strip()]
   for i,t in enumerate(lines):
-    t=t.replace('毛','け')
+    t=t.replace('毛','け').replace('施術','せじゅつ')  # 11/14 藤原さん：施術を「しじゅつ」と読ませない
     import re; t=re.sub(r'(しい|たい)方(は|へ|に|も)',r'\1かた\2',t)  # 11/14 藤原さん：「ほしい方」を「ほう」と読ませない
     q=syn.create_audio_query(t,SID); q.speed_scale=1.1
     kana=''.join(m.text for ph in q.accent_phrases for m in ph.moras)
