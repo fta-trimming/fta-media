@@ -15,8 +15,8 @@ const AUTO=/DMをお送りしました|DMをご確認ください|DMに送りま
 const skip=s=>/^(返信|「いいね！」\d+件|\d+件すべての返信を見る|返信を非表示|.*前|\d+月\d+日|翻訳を見る|編集済み)$/.test(s);
 const O=[];let kw=0;
 if(B)for(const ch of B.children){const l=(ch.innerText||'').split('\n').map(s=>s.trim()).filter(s=>s);if(l.length<3||own.includes(l[0]))continue;
- const x=l[2];const rest=x.replace(KW,'').replace(/[\s\p{P}\p{S}\p{Emoji_Presentation}‍️]/gu,'');
- let real=false;for(let i=3;i<l.length;i++){if(own.includes(l[i])){for(let j=i+1;j<Math.min(l.length,i+4);j++){if(skip(l[j])||own.includes(l[j]))continue;if(!AUTO.test(l[j]))real=true;break}}}
+ let e=3;while(e<l.length&&!/^(返信|「いいね！」\d+件)$/.test(l[e]))e++;const x=l.slice(2,e).join('\n');const rest=x.replace(KW,'').replace(/[\s\p{P}\p{S}\p{Emoji_Presentation}‍️]/gu,'');
+ let real=false;for(let i=e;i<l.length;i++){if(own.includes(l[i])){for(let j=i+1;j<Math.min(l.length,i+4);j++){if(skip(l[j])||own.includes(l[j]))continue;if(!AUTO.test(l[j]))real=true;break}}}
  if(rest.length<2){kw++;continue}
  O.push({u:l[0],t:l[1],x,r:real})}
 ({url:location.pathname,date:document.querySelector('main time')?.getAttribute('datetime'),n:O.length+kw,kw,other:O})
