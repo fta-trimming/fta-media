@@ -10,7 +10,7 @@ const L=[...document.querySelectorAll('main a[href^="/"]')].filter(a=>a.textCont
 const C=new Set();for(const a of L){let p=a;for(let i=0;i<14&&p;i++){p=p.parentElement;if(p)C.add(p)}}
 let B=null,bs=0;for(const el of C){const k=[...el.children].filter(ch=>ch.querySelector('a[href^="/"]')&&(ch.innerText||'').split('\n').length>=3).length;if(k>bs&&!el.querySelector('h1')){B=el;bs=k}}
 const own=['fujiwara__trimming','naohide_fujiwara'];
-const KW=/やってみる|やってみ|ほしい|欲しい|ください|下さい|お願いします|チェック表|手順まとめ|スタートキット|キット|カレンダー|メモキット/g;
+const KW=/やってみます|やってみる|やってみ|ほしい|欲しい|ください|下さい|お願いします|チェック表|手順まとめ|スタートキット|キット|カレンダー|メモキット/g;
 const AUTO=/DMをお送りしました|DMをご確認ください|DMに送りました/;
 const skip=s=>/^(返信|「いいね！」\d+件|\d+件すべての返信を見る|返信を非表示|.*前|\d+月\d+日|翻訳を見る|編集済み)$/.test(s);
 const O=[];let kw=0;
