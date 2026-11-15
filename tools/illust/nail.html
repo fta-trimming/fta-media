@@ -1,0 +1,107 @@
+<!doctype html><html><head><meta charset=utf8><style>
+*{box-sizing:border-box;margin:0}body{font-family:'Noto Sans CJK JP';color:#333;background:#fff}
+.s{width:1080px;height:1350px;position:relative;overflow:hidden;background:#fff;padding:70px 70px 0}
+.top{display:flex;justify-content:space-between;font-size:24px;color:#6b6b6b;font-weight:700;letter-spacing:.04em}
+.tag{display:inline-block;margin-top:34px;background:#3d6b4f;color:#fff;font-weight:900;font-size:30px;padding:8px 22px;border-radius:12px}
+h1{font-size:68px;font-weight:900;color:#24402f;line-height:1.25;margin-top:20px}h1 em{font-style:normal;color:#3d6b4f}
+.ex{position:absolute;left:70px;right:70px;bottom:60px;border-left:8px solid #3d6b4f;background:#e8f2ec;border-radius:0 16px 16px 0;padding:22px 28px;font-size:30px;line-height:1.6;font-weight:500}
+.ex b{color:#24402f;font-weight:900}
+svg text{font-family:'Noto Sans CJK JP';font-weight:900}
+.warn{color:#c8700a}
+</style></head><body>
+
+<!-- 1: 爪の中 -->
+<div class="s" id="p1"><div class="top"><span>FUJIWARA TRIMMING ACADEMY</span><span>1 / 4</span></div>
+<span class="tag">爪の中を、のぞいてみる</span>
+<h1>爪の中には<br><em>血管と神経</em>が通っている</h1>
+<svg width="940" height="640" viewBox="0 0 940 640" style="margin-top:30px">
+ <!-- 指（皮ふ） -->
+ <path d="M20 170 C120 120 250 120 330 170 L345 330 C250 380 120 380 20 350 Z" fill="#f3e3d3" stroke="#d9bfa6" stroke-width="4"/>
+ <!-- 肉球 -->
+ <ellipse cx="170" cy="390" rx="150" ry="55" fill="#4a3b36"/>
+ <!-- 爪（外側の硬い殻） -->
+ <path d="M300 150 C470 120 640 170 760 300 C830 380 860 470 850 560 C820 470 760 400 690 370 C600 330 470 320 330 330 Z" fill="#f4efe6" stroke="#b8ad9a" stroke-width="5"/>
+ <!-- 骨 -->
+ <path d="M150 215 C240 200 330 205 410 225 C450 238 470 250 470 262 C460 275 420 285 360 290 C280 295 210 292 150 285 Z" fill="#e6e6ea" stroke="#a7a7b0" stroke-width="4"/>
+ <!-- 血管・神経（クイック） -->
+ <path d="M330 200 C450 190 560 215 630 280 C655 305 662 330 648 340 C600 325 520 312 440 305 C390 300 350 298 330 296 Z" fill="#e8737a" stroke="#c94b55" stroke-width="4"/>
+ <path d="M345 230 C450 225 540 245 620 300" stroke="#9c1f2e" stroke-width="5" fill="none" stroke-linecap="round"/>
+ <path d="M345 262 C450 262 540 280 625 318" stroke="#f6d77a" stroke-width="4" fill="none" stroke-dasharray="10 8" stroke-linecap="round"/>
+ <!-- ラベル -->
+ <g font-size="30">
+  <line x1="560" y1="250" x2="640" y2="120" stroke="#c94b55" stroke-width="3"/><circle cx="560" cy="250" r="7" fill="#c94b55"/>
+  <text x="600" y="78" fill="#c94b55">血管・神経</text><text x="600" y="112" fill="#c94b55" font-size="24">（クイック）</text>
+  <line x1="780" y1="370" x2="830" y2="300" stroke="#8a7f6c" stroke-width="3"/><circle cx="780" cy="370" r="7" fill="#8a7f6c"/>
+  <text x="760" y="285" fill="#6b6b6b">硬い殻</text>
+  <line x1="260" y1="245" x2="220" y2="470" stroke="#7d7d88" stroke-width="3"/><circle cx="260" cy="245" r="7" fill="#7d7d88"/>
+  <text x="120" y="505" fill="#6b6b6b">指の骨</text>
+  <text x="40" y="560" fill="#6b6b6b" font-size="24">肉球</text>
+ </g>
+</svg>
+<div class="ex"><b>硬い殻の中に、指の骨から血管と神経がのびています。</b>ここを切ると血が出て痛いので、どこまでのびているかを知ってから切ります。</div>
+</div>
+
+<!-- 2: 白い爪と黒い爪 -->
+<div class="s" id="p2"><div class="top"><span>FUJIWARA TRIMMING ACADEMY</span><span>2 / 4</span></div>
+<span class="tag">白い爪と黒い爪</span>
+<h1>白い爪は<em>透けて見える</em><br>黒い爪は<span class="warn">見えない</span></h1>
+<svg width="940" height="600" viewBox="0 0 940 600" style="margin-top:40px">
+ <defs><g id="claw"><path d="M0 40 C130 20 260 70 350 170 C405 235 425 320 415 390 C390 320 345 270 290 245 C210 210 110 205 0 210 Z"/></g>
+ <g id="quick"><path d="M0 85 C100 80 190 110 245 170 C262 190 265 208 255 214 C205 200 130 192 0 190 Z"/></g></defs>
+ <g transform="translate(20,80)">
+  <use href="#claw" fill="#f6f1ea" stroke="#c7bba5" stroke-width="5"/>
+  <use href="#quick" fill="#ef8f95" opacity=".75"/>
+  <path d="M300 150 L350 300" stroke="#3d6b4f" stroke-width="6" stroke-dasharray="14 10"/>
+  <text x="40" y="330" font-size="34" fill="#24402f">白い爪</text>
+  <text x="40" y="372" font-size="26" fill="#6b6b6b" font-weight="700">ピンクの所が血管・神経</text>
+  <text x="250" y="-20" font-size="26" fill="#3d6b4f">切る線の目安</text>
+ </g>
+ <g transform="translate(500,80)">
+  <use href="#claw" fill="#2e2a29" stroke="#111" stroke-width="5"/>
+  <use href="#quick" fill="none" stroke="#e8737a" stroke-width="5" stroke-dasharray="12 10" opacity=".9"/>
+  <text x="70" y="148" font-size="34" fill="#fff">?</text><text x="20" y="410" font-size="22" fill="#6b6b6b" font-weight="700">点線＝中の血管・神経の位置</text>
+  <text x="20" y="330" font-size="34" fill="#24402f">黒い爪</text>
+  <text x="20" y="372" font-size="26" fill="#6b6b6b" font-weight="700">外からは見えない</text>
+ </g>
+</svg>
+<div class="ex"><b>白い爪</b>は、ピンクの手前で止めればOK。<b>黒い爪</b>は中が見えないので、少しずつ切って<b>切り口</b>で確かめます。</div>
+</div>
+
+<!-- 3: 黒い爪の切り口 -->
+<div class="s" id="p3"><div class="top"><span>FUJIWARA TRIMMING ACADEMY</span><span>3 / 4</span></div>
+<span class="tag">黒い爪は、切り口を見る</span>
+<h1>切り口の<em>真ん中</em>が<br>変わったら止める</h1>
+<svg width="940" height="560" viewBox="0 0 940 560" style="margin-top:40px">
+ <g font-size="30" text-anchor="middle">
+  <g transform="translate(155,200)"><ellipse rx="120" ry="95" fill="#2e2a29"/><ellipse rx="95" ry="72" fill="#e9e4dc"/>
+   <text y="170" fill="#24402f">① 白っぽく</text><text y="210" fill="#24402f">乾いている</text><text y="258" fill="#3d6b4f" font-size="28">まだ切れる</text></g>
+  <g transform="translate(470,200)"><ellipse rx="120" ry="95" fill="#2e2a29"/><ellipse rx="95" ry="72" fill="#d8d2c8"/><ellipse rx="44" ry="34" fill="#a49d93"/>
+   <text y="170" fill="#24402f">② 真ん中が</text><text y="210" fill="#24402f">灰色・しっとり</text><text y="258" fill="#c8700a" font-size="28">そろそろ近い</text></g>
+  <g transform="translate(785,200)"><ellipse rx="120" ry="95" fill="#2e2a29"/><ellipse rx="95" ry="72" fill="#cfc8bd"/><circle r="22" fill="#2a2120"/>
+   <text y="170" fill="#24402f">③ 真ん中に</text><text y="210" fill="#24402f">黒い点</text><text y="258" fill="#c94b55" font-size="28">ここで止める</text></g>
+  <path d="M260 200 L345 200 M335 188 L350 200 L335 212" stroke="#6b6b6b" stroke-width="5" fill="none"/>
+  <path d="M575 200 L660 200 M650 188 L665 200 L650 212" stroke="#6b6b6b" stroke-width="5" fill="none"/>
+ </g>
+</svg>
+<div class="ex">先から<b>少しずつ</b>切って、そのたびに切り口を見ます。真ん中が<b>しっとりしてきたら</b>近いサイン。<b>黒い点</b>が見えたら、そこで止めます。</div>
+</div>
+
+<!-- 4: 伸びすぎた爪 -->
+<div class="s" id="p4"><div class="top"><span>FUJIWARA TRIMMING ACADEMY</span><span>4 / 4</span></div>
+<span class="tag">伸びすぎた爪</span>
+<h1>爪がのびると<br><em>血管ものびる</em></h1>
+<svg width="940" height="580" viewBox="0 0 940 580" style="margin-top:30px">
+ <g transform="translate(10,40) scale(.95)">
+  <path d="M0 40 C130 20 260 70 350 170 C405 235 425 320 415 390 C390 320 345 270 290 245 C210 210 110 205 0 210 Z" fill="#f6f1ea" stroke="#c7bba5" stroke-width="5"/>
+  <path d="M0 85 C100 80 190 110 245 170 C262 190 265 208 255 214 C205 200 130 192 0 190 Z" fill="#ef8f95" opacity=".8"/>
+  <text x="40" y="450" font-size="34" fill="#24402f">ちょうどいい長さ</text>
+ </g>
+ <g transform="translate(470,10)">
+  <path d="M0 40 C150 15 300 70 395 190 C455 265 475 370 460 470 C430 380 380 315 320 285 C230 240 110 230 0 230 Z" fill="#f6f1ea" stroke="#c7bba5" stroke-width="5"/>
+  <path d="M0 85 C120 78 240 120 315 205 C340 232 345 255 333 262 C270 245 150 230 0 222 Z" fill="#ef8f95" opacity=".8"/>
+  <text x="40" y="530" font-size="34" fill="#c8700a">のびすぎ（血管も長い）</text>
+ </g>
+</svg>
+<div class="ex">のびすぎた爪は、<b>一度に短くしない</b>。少しずつ、こまめに切るのが基本です。<br><span style="font-size:24px;color:#6b6b6b">※ 図は分かりやすくした模式図です</span></div>
+</div>
+</body></html>
