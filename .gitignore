@@ -2,3 +2,11 @@
 # サロンTikTokの書き出し（作業用。完成品は各日付のフォルダに置く）
 tools/salon_tiktok/*.mp4
 tools/salon_tiktok/out_*/
+
+# AIリールの書き出し（作業用。完成品は各週のフォルダ biz/ reels/ に置く。残すのは body.html・lines.txt・timing.json）
+tools/fta_ai_reel/*/*/fr/
+tools/fta_ai_reel/*/*/pv_*.jpg
+tools/fta_ai_reel/*/*/*.wav
+tools/fta_ai_reel/*/*/*.mp4
+tools/fta_ai_reel/*/*/cover.*
+tools/fta_ai_reel/*/*/r.html
