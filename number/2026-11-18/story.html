@@ -1,0 +1,46 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{width:1080px;height:1920px;background:#e8f2ec;font-family:'Noto Sans CJK JP';color:#24402f;position:relative;overflow:hidden}
+.brand{position:absolute;left:92px;top:146px;font-size:30px;letter-spacing:7px;font-weight:700;color:#3d6b4f}
+.tag{position:absolute;left:90px;top:260px;background:#3d6b4f;color:#fff;font-size:40px;font-weight:900;padding:14px 32px;border-radius:14px}
+h1{position:absolute;left:90px;top:372px;font-size:84px;font-weight:900;line-height:1.28;letter-spacing:-1px}
+h1 .g{color:#3d6b4f}
+.card{position:absolute;left:90px;top:610px;width:900px;height:690px;background:#fff;border-radius:44px;padding:40px 44px}
+.ct{font-size:36px;font-weight:900;color:#24402f}
+.ct small{font-size:30px;font-weight:700;color:#3d6b4f;margin-left:14px}
+.row{display:flex;align-items:center;margin-top:22px}
+.day{width:70px;font-size:36px;font-weight:900;color:#3d6b4f}
+.cell{width:118px;height:78px;margin-right:22px;border-radius:18px;background:#3d6b4f;position:relative;display:flex;align-items:center;justify-content:center}
+.cell svg{width:46px;height:46px}
+.cell .s{position:absolute;right:-12px;top:-12px;width:42px;height:42px;border-radius:50%;background:#f6d77a;display:flex;align-items:center;justify-content:center;font-size:24px;border:3px solid #fff}
+.leg{margin-top:26px;font-size:30px;font-weight:700;color:#555;display:flex;align-items:center;gap:14px}
+.leg .s{width:40px;height:40px;border-radius:50%;background:#f6d77a;display:inline-flex;align-items:center;justify-content:center;font-size:22px}
+.lead{position:absolute;left:92px;top:1330px;font-size:46px;font-weight:900}
+.ans{position:absolute;left:92px;top:1385px;display:flex;align-items:flex-end;font-weight:900}
+.ans .a1{font-size:84px;margin-bottom:14px}
+.ans .num{font-size:190px;line-height:1;color:#3d6b4f;background:linear-gradient(transparent 52%,#f6d77a 52%);padding:0 10px;margin:0 8px;letter-spacing:-6px}
+.ans .a2{font-size:84px;margin-bottom:14px}
+.ex{position:absolute;left:92px;top:1600px;font-size:30px;color:#666}
+.tip{position:absolute;left:92px;top:1652px;font-size:32px;font-weight:700;color:#3d6b4f;line-height:1.5}
+.save{position:absolute;left:92px;top:1770px;font-size:40px;font-weight:900}
+.note{position:absolute;left:92px;top:1828px;font-size:30px;font-weight:700;color:#7a8a80}
+</style></head><body>
+<div class="brand">FUJIWARA TRIMMING ACADEMY</div>
+<div class="tag">今日の数字</div>
+<h1>1頭1回の手直しも、<br><span class="g">1週間あつめると</span></h1>
+<div class="card">
+<div class="ct">手直しの印<small>（例）1日5頭・週5日</small></div>
+<div id="rows"></div>
+<div class="leg"><span class="s">✂</span>＝仕上げのあとの手直し 1回</div>
+</div>
+<div class="lead">1回ずつでも、</div>
+<div class="ans"><span class="a1">週に</span><span class="num">25</span><span class="a2">回</span></div>
+<div class="ex">（例）1日5頭・週5日、1頭に1回の手直しのとき</div>
+<div class="tip">落ちる「下」を先に見て、コームで引き出すと<br>この ✂ の印が、へっていきます</div>
+<div class="save">保存して見返してね</div>
+<div class="note">集客や育成のことは、noteで書いています</div>
+<script>
+const paw='<svg viewBox="0 0 100 100"><ellipse cx="50" cy="66" rx="24" ry="20" fill="#fff"/><ellipse cx="22" cy="40" rx="10" ry="13" fill="#fff"/><ellipse cx="40" cy="24" rx="10" ry="13" fill="#fff"/><ellipse cx="60" cy="24" rx="10" ry="13" fill="#fff"/><ellipse cx="78" cy="40" rx="10" ry="13" fill="#fff"/></svg>';
+let h='';for(const d of ['月','火','水','木','金']){h+='<div class="row"><div class="day">'+d+'</div>';for(let i=0;i<5;i++)h+='<div class="cell">'+paw+'<span class="s">✂</span></div>';h+='</div>'}
+document.getElementById('rows').innerHTML=h;
+</script></body></html>
