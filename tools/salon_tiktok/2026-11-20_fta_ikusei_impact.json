@@ -1,0 +1,160 @@
+{
+ "out": "FTA_1120_ikusei_impact.mp4",
+ "tts": "/home/claude/fta-media/tools/voicevox/tts_voices.py",
+ "voiceName": "aoyama",
+ "speed": 1.2,
+ "crf": 14,
+ "brand": "FUJIWARA TRIMMING ACADEMY",
+ "tag": "トリミングサロンの生産性",
+ "color": {
+  "card": "rgba(36,64,47,.86)",
+  "pill": "rgba(61,107,79,.95)",
+  "lab": "#f6d77a",
+  "labfg": "#24402f",
+  "hl": "#f6d77a",
+  "hlfg": "#24402f"
+ },
+ "scenes": [
+  {
+   "type": "title",
+   "y": 700,
+   "min": 3.2,
+   "pad": 0.3,
+   "html": "<div style='font-family:Noto Sans CJK JP;font-size:78px;font-weight:900;color:#fff;-webkit-text-stroke:3px #000;paint-order:stroke'>新人とベテランの差は</div><div style='font-family:Noto Sans CJK JP;font-size:116px;font-weight:900;line-height:1.15;margin-top:14px;color:#f6d77a;-webkit-text-stroke:6px #1b2e22;paint-order:stroke'>スキルの「保存」</div><div style='display:inline-block;margin-top:22px;background:#e0412f;color:#fff;font-family:Noto Sans CJK JP;font-weight:900;font-size:54px;padding:8px 30px;border-radius:14px'>ここで差がつきます</div>",
+   "bg": {
+    "kind": "video",
+    "file": "/mnt/user-data/uploads/IMG_3193.mov",
+    "start": 22
+   },
+   "voice": "新人とベテランの差は、スキルを、保存できているかです。",
+   "pop": true,
+   "punch": true
+  },
+  {
+   "type": "card",
+   "num": 1,
+   "y": 1180,
+   "lab": "新人さんは",
+   "text": "目の前の<span class=hl>1か所</span>に<br>集中してしまう",
+   "sm": "「ここをどう切ろう」で手が止まる",
+   "bg": {
+    "kind": "video",
+    "file": "/mnt/user-data/uploads/IMG_3192.mov",
+    "start": 30
+   },
+   "voice": "新人さんは、一つのことに集中しやすい。ここをどう切ろう、と考えます。",
+   "min": 4.0,
+   "pad": 0.5,
+   "pop": true,
+   "punch": true
+  },
+  {
+   "type": "card",
+   "num": 2,
+   "y": 1180,
+   "lab": "ベテランは",
+   "text": "<span class=hl>2つ3つ先</span>まで<br>考えて切っている",
+   "sm": "つながり・左右のバランス・奥行き",
+   "bg": {
+    "kind": "video",
+    "file": "/mnt/user-data/uploads/IMG_3193.mov",
+    "start": 55
+   },
+   "voice": "ベテランは、二つ三つ先まで考えます。つながり、左右のバランス、奥行きまで見ています。",
+   "min": 4.0,
+   "pad": 0.5,
+   "pop": true,
+   "punch": true
+  },
+  {
+   "type": "card",
+   "num": 3,
+   "y": 1180,
+   "lab": "保存されていないと",
+   "text": "その時はできても<br><span style='color:#ff7a66'>時間がたつと切れない</span>",
+   "sm": "練習しても、形が安定しない",
+   "bg": {
+    "kind": "video",
+    "file": "/mnt/user-data/uploads/IMG_3192.mov",
+    "start": 48
+   },
+   "voice": "スキルが入っても、保存されていないと、時間がたつと、うまく切れないことがあります。",
+   "min": 4.0,
+   "pad": 0.5,
+   "pop": true,
+   "punch": true
+  },
+  {
+   "type": "card",
+   "num": 4,
+   "y": 1180,
+   "lab": "アタッチメントで保存",
+   "text": "ミリ数と刈る順番を<br><span class=hl>決めて残す</span>",
+   "sm": "考える所が減って、先まで見る余裕ができる",
+   "bg": {
+    "kind": "video",
+    "file": "/mnt/user-data/uploads/IMG_3192.mov",
+    "start": 8
+   },
+   "voice": "アタッチメントのミリ数と、刈る順番を決めて残せば、考える所が減って、先まで見る余裕ができます。",
+   "min": 4.0,
+   "pad": 0.5,
+   "pop": true,
+   "punch": true
+  },
+  {
+   "type": "card",
+   "num": 5,
+   "y": 1180,
+   "lab": "教え方",
+   "text": "考え方を<br><span class=hl>練習とセット</span>で教える",
+   "sm": "がむしゃらな練習だけにしない",
+   "bg": {
+    "kind": "video",
+    "file": "/mnt/user-data/uploads/IMG_3193.mov",
+    "start": 95
+   },
+   "voice": "見る所を広げて、考え方を、練習とセットで教える。がむしゃらな練習だけにしないことです。",
+   "min": 4.0,
+   "pad": 0.5,
+   "pop": true,
+   "punch": true
+  },
+  {
+   "type": "card",
+   "num": 6,
+   "y": 1180,
+   "lab": "スタッフも楽に",
+   "text": "迷う時間が減って<br><span class=hl>気持ちの負担も軽く</span>",
+   "sm": "教える人の負担も減る",
+   "bg": {
+    "kind": "video",
+    "file": "/mnt/user-data/uploads/IMG_3192.mov",
+    "start": 88
+   },
+   "voice": "迷う時間が減れば、新人さんの気持ちの負担も、教える人の負担も、軽くなります。",
+   "min": 4.0,
+   "pad": 0.5,
+   "pop": true,
+   "punch": true
+  },
+  {
+   "type": "card",
+   "num": 7,
+   "y": 1180,
+   "lab": "💾 保存",
+   "text": "保存して<br>見返してね",
+   "sm": "指導する人の役目です",
+   "bg": {
+    "kind": "video",
+    "file": "/mnt/user-data/uploads/IMG_3193.mov",
+    "start": 110
+   },
+   "voice": "それが、指導する人の役目です。保存して、見返してね。",
+   "min": 3.6,
+   "pad": 0.8,
+   "pop": true,
+   "punch": true
+  }
+ ]
+}
