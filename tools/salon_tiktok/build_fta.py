@@ -80,14 +80,15 @@ for i, s in enumerate(scenes):
     d = s['_d']; bg = s['bg']; seg = f'{OUT}/b{i}.mp4'
     if bg['kind'] == 'video':
         sp = bg.get('speed', 1.0)
-        run(f"ffmpeg -v error -y -ss {bg['start']} -t {d*sp+0.3} -i {bg['file']} -an -vf \"setpts=PTS/{sp},{VF}{PUNCH if s.get('punch') else ''},trim=duration={d}\" -c:v libx264 -qp 0 -preset ultrafast {seg}")
+        run(f"ffmpeg -v error -y -ss {bg['start']} -t {d*sp+0.3} -i {bg['file']} -an -vf \"setpts=PTS/{sp},{VF}{PUNCH if (s.get('punch') and not CFG.get('noAnim')) else ''},trim=duration={d}\" -c:v libx264 -qp 0 -preset ultrafast {seg}")
     else:
         fr = int(round(d * 30))
         z = bg.get('zoom', 0.06); ox = bg.get('x', 0.5); oy = bg.get('y', 0.5)
         run(f"ffmpeg -v error -y -loop 1 -i {bg['file']} -vf \"scale=-2:2400,crop='min(iw,ih*9/16)':'min(ih,iw*16/9)':'(iw-min(iw,ih*9/16))*{ox}':'(ih-min(ih,iw*16/9))*{oy}',scale={VW*3//2}:{VH*3//2}:flags=lanczos,zoompan=z='1+{z}*on/{fr}':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':d={fr}:s={VW}x{VH}:fps=30,format=yuv420p,setsar=1\" -frames:v {fr} -c:v libx264 -qp 0 -preset ultrafast {seg}")
     # overlay text with fade in (0.35s) and fade out at end (0.3s)
-    fin = "fade=in:st=0:d=0.06:alpha=1" if s.get("pop") else "fade=in:st=0.15:d=0.4:alpha=1"
-    run(f"ffmpeg -v error -y -i {seg} -loop 1 -t {d} -i {OUT}/t{i}.png -filter_complex \"[1]scale={VW}:{VH}:flags=lanczos,format=rgba,{fin},fade=out:st={d-0.35}:d=0.3:alpha=1[o];[0][o]overlay=0:0:shortest=1\" -c:v libx264 -qp 0 -preset ultrafast -t {d} {OUT}/V{i}.mp4")
+    fin = "null" if CFG.get("noAnim") else ("fade=in:st=0:d=0.06:alpha=1" if s.get("pop") else "fade=in:st=0.15:d=0.4:alpha=1")
+    fout = "" if CFG.get("noAnim") else f",fade=out:st={d-0.35}:d=0.3:alpha=1"
+    run(f"ffmpeg -v error -y -i {seg} -loop 1 -t {d} -i {OUT}/t{i}.png -filter_complex \"[1]scale={VW}:{VH}:flags=lanczos,format=rgba,{fin}{fout}[o];[0][o]overlay=0:0:shortest=1\" -c:v libx264 -qp 0 -preset ultrafast -t {d} {OUT}/V{i}.mp4")
 # crossfade-free concat with short dip: just concat
 open(f'{OUT}/list.txt', 'w').write(''.join(f"file 'V{i}.mp4'\n" for i in range(len(scenes))))
 run(f"ffmpeg -v error -y -f concat -safe 0 -i {OUT}/list.txt -c copy {OUT}/silent.mp4")
