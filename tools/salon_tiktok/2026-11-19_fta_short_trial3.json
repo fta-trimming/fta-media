@@ -1,0 +1,159 @@
+{
+ "out": "FTA_1119_short_trial3.mp4",
+ "tts": "/home/claude/fta-media/tools/voicevox/tts_voices.py",
+ "voiceName": "aoyama",
+ "speed": 1.2,
+ "crf": 14,
+ "brand": "FUJIWARA TRIMMING ACADEMY",
+ "tag": "トリミングサロンの生産性",
+ "color": {
+  "card": "rgba(36,64,47,.86)",
+  "pill": "rgba(61,107,79,.95)",
+  "lab": "#f6d77a",
+  "labfg": "#24402f",
+  "hl": "#f6d77a",
+  "hlfg": "#24402f"
+ },
+ "scenes": [
+  {
+   "type": "title",
+   "y": 700,
+   "min": 3.2,
+   "pad": 0.3,
+   "html": "<div style='font-family:Noto Sans CJK JP;font-size:78px;font-weight:900;color:#fff;-webkit-text-stroke:3px #000;paint-order:stroke'>毎日1時間の残業で</div><div style='font-family:Noto Sans CJK JP;font-size:150px;font-weight:900;line-height:1.15;margin-top:14px;color:#f6d77a;-webkit-text-stroke:6px #1b2e22;paint-order:stroke'>年49.5万円</div><div style='display:inline-block;margin-top:22px;background:#e0412f;color:#fff;font-family:Noto Sans CJK JP;font-weight:900;font-size:54px;padding:8px 30px;border-radius:14px'>消えています</div><div style='font-family:Noto Sans CJK JP;font-size:30px;margin-top:20px'>（例：時給1,500円・月22日・スタッフ1人）</div>",
+   "bg": {
+    "kind": "video",
+    "file": "/mnt/user-data/uploads/IMG_3193.mov",
+    "start": 7.5
+   },
+   "voice": "毎日1時間の残業で、1年に約49万5千円、消えています。",
+   "pop": true,
+   "punch": true
+  },
+  {
+   "type": "card",
+   "num": 1,
+   "y": 1180,
+   "lab": "なぜ残業になる？",
+   "text": "180分 × 3頭 ＝ <span class=hl>540分</span><br>480分を <span style='color:#ff7a66'>60分オーバー</span>",
+   "bg": {
+    "kind": "video",
+    "file": "/mnt/user-data/uploads/IMG_3192.mov",
+    "start": 18
+   },
+   "voice": "1頭180分で3頭だと、540分。使える480分を、60分こえます。",
+   "min": 4.0,
+   "pad": 0.5,
+   "pop": true,
+   "punch": true,
+   "sm": "（例）施術に使える時間 480分"
+  },
+  {
+   "type": "card",
+   "num": 2,
+   "y": 1180,
+   "lab": "時間がかかる所",
+   "text": "ハサミで形を作ると<br><span style='color:#ff7a66'>時間も形もバラバラ</span>",
+   "bg": {
+    "kind": "video",
+    "file": "/mnt/user-data/uploads/IMG_3192.mov",
+    "start": 63
+   },
+   "voice": "ハサミで形を作ると、人によって、時間も形もバラバラになります。",
+   "min": 4.0,
+   "pad": 0.5,
+   "pop": true,
+   "punch": true,
+   "sm": "人によって、日によって変わる"
+  },
+  {
+   "type": "card",
+   "num": 3,
+   "y": 1180,
+   "lab": "アタッチメントで時短",
+   "text": "アタッチメントで<br><span class=hl>形の90%</span>を作る",
+   "bg": {
+    "kind": "video",
+    "file": "/mnt/user-data/uploads/IMG_3192.mov",
+    "start": 3
+   },
+   "voice": "アタッチメントで形の9割を作って、ハサミは、仕上げだけにします。",
+   "min": 4.0,
+   "pad": 0.5,
+   "pop": true,
+   "punch": true,
+   "sm": "ハサミは、仕上げだけ"
+  },
+  {
+   "type": "card",
+   "num": 4,
+   "y": 1180,
+   "lab": "ミリ数と順番を決める",
+   "text": "誰が刈っても<br><span class=hl>同じ形・同じ時間</span>",
+   "bg": {
+    "kind": "video",
+    "file": "/mnt/user-data/uploads/IMG_3193.mov",
+    "start": 42
+   },
+   "voice": "ミリ数と、刈る順番を決めておけば、誰が刈っても、同じ形、同じ時間で終わります。",
+   "min": 4.0,
+   "pad": 0.5,
+   "pop": true,
+   "punch": true,
+   "sm": "ミリ数と、刈る順番を決めておく"
+  },
+  {
+   "type": "card",
+   "num": 5,
+   "y": 1180,
+   "lab": "解決",
+   "text": "1頭を<span class=hl>20分</span>短く<br>160分 × 3頭 ＝ <span class=hl>480分</span>",
+   "bg": {
+    "kind": "video",
+    "file": "/mnt/user-data/uploads/IMG_3192.mov",
+    "start": 30
+   },
+   "voice": "1頭を20分短くすれば、160分かける3頭で、ちょうど480分。残業なしで終われます。",
+   "min": 4.0,
+   "pad": 0.5,
+   "pop": true,
+   "punch": true,
+   "sm": "（例）残業なしで終われる"
+  },
+  {
+   "type": "card",
+   "num": 6,
+   "y": 1180,
+   "lab": "スタッフも楽に",
+   "text": "残業ゼロで <span class=hl>定時に帰れる</span><br>体も気持ちも 軽くなる",
+   "bg": {
+    "kind": "video",
+    "file": "/mnt/user-data/uploads/IMG_3193.mov",
+    "start": 88
+   },
+   "voice": "残業がなくなれば、スタッフは定時に帰れます。体の負担も、気持ちの負担も、軽くなります。",
+   "min": 4.0,
+   "pad": 0.5,
+   "pop": true,
+   "punch": true
+  },
+  {
+   "type": "card",
+   "num": 7,
+   "y": 1240,
+   "lab": "🎁 プレゼント",
+   "min": 4.0,
+   "pad": 0.8,
+   "text": "残業ゼロの<br>時間チェック表",
+   "sm": "コメントに「やってみる」と書いてね",
+   "bg": {
+    "kind": "video",
+    "file": "/mnt/user-data/uploads/IMG_3192.mov",
+    "start": 95
+   },
+   "voice": "チェック表がほしい方は、コメントで、やってみる、と書いてね。",
+   "pop": true,
+   "punch": true
+  }
+ ]
+}
