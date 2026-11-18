@@ -1,0 +1,121 @@
+{
+ "out": "TikTok_PAPA_1119.mp4",
+ "size": [
+  720,
+  1280
+ ],
+ "crf": 13,
+ "brand": "dog care salon PAPA de GIGI",
+ "tag": "泡でこすらないシャンプーをするサロン",
+ "color": {
+  "card": "rgba(108,88,138,.84)",
+  "pill": "rgba(108,88,138,.92)",
+  "lab": "#ece4f4",
+  "labfg": "#5f4b80",
+  "hl": "#ece4f4",
+  "hlfg": "#56427a"
+ },
+ "scenes": [
+  {
+   "type": "title",
+   "y": 1240,
+   "html": "<div style='font-size:92px;font-weight:700'>ぬれた姿から</div><div style='font-size:100px;font-weight:700;margin-top:8px'><span class=hl>乾かして</span>仕上げます</div><div style='margin-top:26px'><span class=pill>泡でこすらないシャンプーをするサロン</span></div>",
+   "bg": {
+    "kind": "video",
+    "file": "<材料>/17a2303448e039ab897eec4f367a4c95.mp4",
+    "start": 11.0
+   },
+   "min": 3.8,
+   "voice": "ぬれた姿から、乾かして、仕上がるまでを、お見せします。"
+  },
+  {
+   "type": "end",
+   "bg": {
+    "kind": "video",
+    "file": "<材料>/gaikan_seg.mp4",
+    "start": 0
+   },
+   "min": 4.36,
+   "pad": 0.5,
+   "voice": "もりおか、さいえんの、ぱぱでじじです。",
+   "note": "11/15 の動画の外観の場面（文字入り・4.8〜9.17秒）を 720×1280 に縮めて使う"
+  },
+  {
+   "type": "card",
+   "num": 1,
+   "y": 1360,
+   "lab": "シャンプーのあと",
+   "text": "毛がぬれて<br>ほっそり見えます",
+   "bg": {
+    "kind": "video",
+    "file": "<材料>/17a2303448e039ab897eec4f367a4c95.mp4",
+    "start": 1.5
+   },
+   "voice": "シャンプーのあとです。けがぬれて、ほっそり見えます。"
+  },
+  {
+   "type": "card",
+   "num": 1,
+   "y": 1360,
+   "lab": "ぬれた毛",
+   "text": "毛がぺたんと<br>しています",
+   "bg": {
+    "kind": "video",
+    "file": "<材料>/17a2303448e039ab897eec4f367a4c95.mp4",
+    "start": 5.0
+   },
+   "voice": "ぬれた、けは、ぺたんとしています。"
+  },
+  {
+   "type": "card",
+   "num": 1,
+   "y": 1360,
+   "lab": "ドライ",
+   "text": "ドライヤーで乾かして<br>ととのえました",
+   "bg": {
+    "kind": "video",
+    "file": "<材料>/6f6a46f186698c53a2d4ac9d87687ba7.mp4",
+    "start": 0.0
+   },
+   "voice": "ドライヤーで乾かして、ととのえました。"
+  },
+  {
+   "type": "card",
+   "num": 1,
+   "y": 1360,
+   "lab": "お顔まわり",
+   "text": "お顔のまわりも<br>ととのえました",
+   "bg": {
+    "kind": "video",
+    "file": "<材料>/6f6a46f186698c53a2d4ac9d87687ba7.mp4",
+    "start": 3.8
+   },
+   "voice": "お顔のまわりも、ととのえました。"
+  },
+  {
+   "type": "big",
+   "num": 1,
+   "y": 1400,
+   "html": "<span class=pill>仕上がり</span><div style='font-size:70px;font-weight:700;margin-top:14px'>仕上がりは</div><div style='font-size:110px;font-weight:700'><span class=hl>まんまる</span>。</div>",
+   "bg": {
+    "kind": "video",
+    "file": "<材料>/6f6a46f186698c53a2d4ac9d87687ba7.mp4",
+    "start": 7.8
+   },
+   "voice": "仕上がりです。お顔も、まんまるになりました。"
+  },
+  {
+   "type": "end",
+   "bg": {
+    "kind": "photo",
+    "file": "<材料>/end_p1119.png",
+    "x": 0.5,
+    "y": 0.5,
+    "zoom": 0.0001
+   },
+   "pad": 0.6,
+   "voice": "ご予約は、プロフィールのラインから、どうぞ。"
+  }
+ ],
+ "note": "11/18 作成。材料は uploads/2026-11-18_papa_pool（LINE経由 720×1280・約2Mbps）の LINE_ALBUM_SNS素材_261118_1.mp4（ぬれた顔）と _2.mp4（乾かした後の顔）。同じ子（緑の首輪）だけを使った。720×1280 のまま作った（size・crf 13）。最後の画面はこの子の _2.mp4 の9秒のコマをぼかして、end_papa と同じ形で作った。外観は 11/15 の動画の外観の場面。plan は シニア→かわいくなる に変更（シニアの子の素材が無いため）。"
+}

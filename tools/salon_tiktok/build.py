@@ -68,7 +68,10 @@ for i, s in enumerate(scenes):
 T = round(t0, 2)
 print('scene durations', [s['_d'] for s in scenes], 'total', T)
 
-VF = f"scale={W}:{H}:force_original_aspect_ratio=increase,crop={W}:{H},fps=30,format=yuv420p,setsar=1"
+# 11/18 藤原さん：LINE経由の 720×1280 の素材は 720×1280 のまま作る（引きのばさない）→ 設定に "size": [720, 1280]。
+# 文字の画像は 1080 で作って lanczos で縮めて重ねる（スキル fta-video-quality 1-2）。size が無いときは今までどおり 1080×1920。
+VW, VH = CFG.get('size', [W, H])
+VF = f"scale={VW}:{VH}:force_original_aspect_ratio=increase:flags=lanczos,crop={VW}:{VH},fps=30,format=yuv420p,setsar=1"
 for i, s in enumerate(scenes):
     d = s['_d']; bg = s['bg']; seg = f'{OUT}/b{i}.mp4'
     if bg['kind'] == 'video':
@@ -77,9 +80,9 @@ for i, s in enumerate(scenes):
     else:
         fr = int(round(d * 30))
         z = bg.get('zoom', 0.06); ox = bg.get('x', 0.5); oy = bg.get('y', 0.5)
-        run(f"ffmpeg -v error -y -loop 1 -i {bg['file']} -vf \"scale=-2:2400,crop='min(iw,ih*9/16)':'min(ih,iw*16/9)':'(iw-min(iw,ih*9/16))*{ox}':'(ih-min(ih,iw*16/9))*{oy}',scale=1620:2880,zoompan=z='1+{z}*on/{fr}':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':d={fr}:s={W}x{H}:fps=30,format=yuv420p,setsar=1\" -frames:v {fr} -c:v libx264 -qp 0 -preset ultrafast {seg}")
+        run(f"ffmpeg -v error -y -loop 1 -i {bg['file']} -vf \"scale=-2:2400,crop='min(iw,ih*9/16)':'min(ih,iw*16/9)':'(iw-min(iw,ih*9/16))*{ox}':'(ih-min(ih,iw*16/9))*{oy}',scale={VW*3//2}:{VH*3//2}:flags=lanczos,zoompan=z='1+{z}*on/{fr}':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':d={fr}:s={VW}x{VH}:fps=30,format=yuv420p,setsar=1\" -frames:v {fr} -c:v libx264 -qp 0 -preset ultrafast {seg}")
     # overlay text with fade in (0.35s) and fade out at end (0.3s)
-    run(f"ffmpeg -v error -y -i {seg} -loop 1 -t {d} -i {OUT}/t{i}.png -filter_complex \"[1]format=rgba,fade=in:st=0.15:d=0.4:alpha=1,fade=out:st={d-0.35}:d=0.3:alpha=1[o];[0][o]overlay=0:0:shortest=1\" -c:v libx264 -qp 0 -preset ultrafast -t {d} {OUT}/V{i}.mp4")
+    run(f"ffmpeg -v error -y -i {seg} -loop 1 -t {d} -i {OUT}/t{i}.png -filter_complex \"[1]scale={VW}:{VH}:flags=lanczos,format=rgba,fade=in:st=0.15:d=0.4:alpha=1,fade=out:st={d-0.35}:d=0.3:alpha=1[o];[0][o]overlay=0:0:shortest=1\" -c:v libx264 -qp 0 -preset ultrafast -t {d} {OUT}/V{i}.mp4")
 # crossfade-free concat with short dip: just concat
 open(f'{OUT}/list.txt', 'w').write(''.join(f"file 'V{i}.mp4'\n" for i in range(len(scenes))))
 run(f"ffmpeg -v error -y -f concat -safe 0 -i {OUT}/list.txt -c copy {OUT}/silent.mp4")
@@ -91,7 +94,7 @@ run(f"ffmpeg -v error -y{ins} -filter_complex \"{fl};{mix}amix=inputs={len(scene
 # 途中の場面は劣化なし（qp 0）、最後に1回だけ crf 16 で書き出す。容量に合わせて本番の画質を下げない。
 # 司令室（20MBまで）に入らないときは、見る用の軽い版 <out>_view.mp4 を別に作る（本番は GitHub に置く）。
 MAXB = 19 * 1024 * 1024
-run(f"ffmpeg -v error -y -i {OUT}/silent.mp4 -i {OUT}/voice.wav -map 0:v -map 1:a -t {T} -c:v libx264 -crf 16 -preset slow -tune film -profile:v high -pix_fmt yuv420p -c:a aac -b:a 192k -movflags +faststart {CFG['out']}")
+run(f"ffmpeg -v error -y -i {OUT}/silent.mp4 -i {OUT}/voice.wav -map 0:v -map 1:a -t {T} -c:v libx264 -crf {CFG.get('crf', 16)} -preset slow -tune film -profile:v high -pix_fmt yuv420p -c:a aac -b:a 192k -movflags +faststart {CFG['out']}")
 VIEW = CFG['out'][:-4] + '_view.mp4'
 if os.path.getsize(CFG['out']) > MAXB:
     vb = int((MAXB * 8 / T - 210000) * 0.97)
