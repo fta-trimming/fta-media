@@ -1,0 +1,146 @@
+{
+ "out": "TikTok_PAPA_1119_v3.mp4",
+ "size": [
+  720,
+  1280
+ ],
+ "crf": 13,
+ "brand": "dog care salon PAPA de GIGI",
+ "tag": "泡でこすらないシャンプーをするサロン",
+ "color": {
+  "card": "rgba(108,88,138,.84)",
+  "pill": "rgba(108,88,138,.92)",
+  "lab": "#ece4f4",
+  "labfg": "#5f4b80",
+  "hl": "#ece4f4",
+  "hlfg": "#56427a"
+ },
+ "scenes": [
+  {
+   "type": "title",
+   "y": 1240,
+   "html": "<div style='font-size:92px;font-weight:700'>泡のシャンプーから</div><div style='font-size:100px;font-weight:700;margin-top:8px'><span class=hl>仕上がり</span>まで</div><div style='margin-top:26px'><span class=pill>泡でこすらないシャンプーをするサロン</span></div>",
+   "bg": {
+    "kind": "video",
+    "file": "/tmp/claude-0/-home-claude/ce93028b-f2d3-5a2d-b5c7-9abb29c3fbe8/scratchpad/papa1119/m/dry.mp4",
+    "start": 0.3
+   },
+   "min": 3.8,
+   "voice": "泡のシャンプーから、仕上がりまでを、お見せします。"
+  },
+  {
+   "type": "end",
+   "bg": {
+    "kind": "video",
+    "file": "/tmp/claude-0/-home-claude/ce93028b-f2d3-5a2d-b5c7-9abb29c3fbe8/scratchpad/papa1119/m/gaikan_seg.mp4",
+    "start": 0
+   },
+   "min": 4.2,
+   "pad": 0.4,
+   "voice": "もりおか、さいえんの、ぱぱでじじです。"
+  },
+  {
+   "type": "card",
+   "num": 1,
+   "y": 1360,
+   "lab": "シャンプー前",
+   "text": "これから<br>シャンプーします",
+   "bg": {
+    "kind": "video",
+    "file": "/tmp/claude-0/-home-claude/ce93028b-f2d3-5a2d-b5c7-9abb29c3fbe8/scratchpad/papa1119/m/dry.mp4",
+    "start": 6.0
+   },
+   "voice": "これから、シャンプーをします。"
+  },
+  {
+   "type": "card",
+   "num": 1,
+   "y": 1360,
+   "lab": "泡シャンプー",
+   "text": "たっぷりの泡で<br>こすらずに洗います",
+   "bg": {
+    "kind": "video",
+    "file": "/tmp/claude-0/-home-claude/ce93028b-f2d3-5a2d-b5c7-9abb29c3fbe8/scratchpad/papa1119/m/awa.mp4",
+    "start": 1.5
+   },
+   "voice": "たっぷりの泡で、こすらずに、やさしく洗います。"
+  },
+  {
+   "type": "card",
+   "num": 1,
+   "y": 1360,
+   "lab": "泡シャンプー",
+   "text": "体のすみずみまで<br>泡で包みます",
+   "bg": {
+    "kind": "video",
+    "file": "/tmp/claude-0/-home-claude/ce93028b-f2d3-5a2d-b5c7-9abb29c3fbe8/scratchpad/papa1119/m/awa.mp4",
+    "start": 14.0
+   },
+   "voice": "体のすみずみまで、泡で包みます。"
+  },
+  {
+   "type": "card",
+   "num": 1,
+   "y": 1360,
+   "lab": "洗いあがり",
+   "text": "すっきり<br>洗いあがりました",
+   "bg": {
+    "kind": "video",
+    "file": "/tmp/claude-0/-home-claude/ce93028b-f2d3-5a2d-b5c7-9abb29c3fbe8/scratchpad/papa1119/m/wet.mp4",
+    "start": 10.5
+   },
+   "voice": "洗いあがりです。ここから、乾かしていきます。"
+  },
+  {
+   "type": "card",
+   "num": 1,
+   "y": 1360,
+   "lab": "ドライ",
+   "text": "ドライヤーで<br>ていねいに乾かしました",
+   "bg": {
+    "kind": "video",
+    "file": "/tmp/claude-0/-home-claude/ce93028b-f2d3-5a2d-b5c7-9abb29c3fbe8/scratchpad/papa1119/m/fin2.mp4",
+    "start": 1.0
+   },
+   "voice": "ドライヤーで、ていねいに、乾かしました。"
+  },
+  {
+   "type": "big",
+   "num": 1,
+   "y": 1400,
+   "html": "<span class=pill>仕上がり</span><div style='font-size:70px;font-weight:700;margin-top:14px'>仕上がりは</div><div style='font-size:110px;font-weight:700'><span class=hl>まんまる</span>。</div>",
+   "bg": {
+    "kind": "video",
+    "file": "/tmp/claude-0/-home-claude/ce93028b-f2d3-5a2d-b5c7-9abb29c3fbe8/scratchpad/papa1119/m/fin1.mp4",
+    "start": 0.3
+   },
+   "voice": "仕上がりです。お顔も、まんまるになりました。"
+  },
+  {
+   "type": "card",
+   "num": 1,
+   "y": 1360,
+   "lab": "今日も",
+   "text": "よくがんばりました",
+   "bg": {
+    "kind": "video",
+    "file": "/tmp/claude-0/-home-claude/ce93028b-f2d3-5a2d-b5c7-9abb29c3fbe8/scratchpad/papa1119/m/fin1.mp4",
+    "start": 5.4
+   },
+   "voice": "今日も、よくがんばりました。"
+  },
+  {
+   "type": "end",
+   "bg": {
+    "kind": "photo",
+    "file": "/tmp/claude-0/-home-claude/ce93028b-f2d3-5a2d-b5c7-9abb29c3fbe8/scratchpad/papa1119/m/end_p1119.png",
+    "x": 0.5,
+    "y": 0.5,
+    "zoom": 0.0001
+   },
+   "pad": 0.6,
+   "voice": "ご予約は、プロフィールのラインから、どうぞ。"
+  }
+ ],
+ "note": "11/18 16:39 藤原さん「泡の前に①の動画でこれからシャンプーします的な」「乾かしたときは④の動画を」「よく頑張りましたと仕上がりの動画は同じ➄に」。①＝シャンプー前（送られた1本目）、②＝泡、③＝洗いあがり、④＝ドライ、⑤＝仕上がり・よくがんばりました。"
+}
