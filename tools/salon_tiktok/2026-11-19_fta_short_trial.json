@@ -1,0 +1,28 @@
+{
+ "out": "FTA_1119_short_trial.mp4",
+ "tts": "/home/claude/fta-media/tools/voicevox/tts_voices.py",
+ "voiceName": "aoyama",
+ "speed": 1.2,
+ "crf": 14,
+ "brand": "FUJIWARA TRIMMING ACADEMY",
+ "tag": "トリミングサロンの生産性",
+ "color": {"card":"rgba(36,64,47,.86)","pill":"rgba(61,107,79,.95)","lab":"#f6d77a","labfg":"#24402f","hl":"#f6d77a","hlfg":"#24402f"},
+ "scenes": [
+  {"type":"title","y":1180,"min":3.6,"pad":0.5,
+   "html":"<div style='font-size:96px;font-weight:700'>毎日1時間の残業</div><div style='font-size:96px;font-weight:700;margin-top:10px'>1年で<span class=hl>約49万5千円</span></div><div style='font-family:Noto Sans CJK JP;font-size:32px;margin-top:22px'>（例：時給1,500円・月22日・スタッフ1人）</div>",
+   "bg":{"kind":"video","file":"/mnt/user-data/uploads/IMG_3193.mov","start":7.5},
+   "voice":"毎日1時間の残業。1年で、約49万5千円です。"},
+  {"type":"card","num":1,"y":1240,"lab":"なぜ残業になる？","min":3.6,"pad":0.5,
+   "text":"180分 × 3頭 ＝ 540分<br><span class=hl>480分を60分オーバー</span>",
+   "bg":{"kind":"video","file":"/mnt/user-data/uploads/IMG_3192.mov","start":18},
+   "voice":"1頭180分で3頭だと、540分。使える480分を、60分こえます。"},
+  {"type":"card","num":2,"y":1240,"lab":"解決","min":3.6,"pad":0.5,
+   "text":"1頭を20分短く<br>160分 × 3頭 ＝ <span class=hl>480分</span>",
+   "bg":{"kind":"video","file":"/mnt/user-data/uploads/IMG_3193.mov","start":40},
+   "voice":"1頭を20分短くすれば、160分かける3頭で、ちょうど480分。残業なしで終われます。"},
+  {"type":"card","num":3,"y":1240,"lab":"🎁 プレゼント","min":4.0,"pad":0.8,
+   "text":"残業ゼロの<br>時間チェック表","sm":"コメントに「やってみる」と書いてね",
+   "bg":{"kind":"video","file":"/mnt/user-data/uploads/IMG_3192.mov","start":60},
+   "voice":"チェック表がほしい方は、コメントで、やってみる、と書いてね。"}
+ ]
+}
