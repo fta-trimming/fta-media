@@ -21,6 +21,7 @@ CSS = f"""*{{margin:0;padding:0;box-sizing:border-box}}body{{width:{W}px;height:
 .hdr .row{{display:flex;justify-content:space-between;font-family:{SANS};font-size:26px;font-weight:700;letter-spacing:.04em;text-shadow:0 2px 6px rgba(0,0,0,.45)}}
 .hdr .ln{{height:2px;background:rgba(255,255,255,.75);margin:10px 0 14px}}
 .pill{{display:inline-block;font-family:{SANS};font-weight:700;border-radius:999px;padding:6px 20px;font-size:28px;background:{C['pill']};color:#fff}}
+.ill{{position:absolute;left:80px;right:80px;border-radius:30px;background:rgba(255,253,248,.95);padding:26px 24px;box-shadow:0 12px 34px rgba(0,0,0,.28);display:flex;justify-content:center;align-items:center}}
 .card{{position:absolute;left:60px;right:120px;border-radius:26px;background:{C['card']};padding:30px 36px 34px;box-shadow:0 10px 30px rgba(0,0,0,.25)}}
 .card .lab{{display:inline-block;font-family:{SANS};font-weight:700;font-size:26px;border-radius:999px;padding:4px 16px;background:{C['lab']};color:{C['labfg']};margin-bottom:14px}}
 .card .tx{{font-size:64px;font-weight:700;line-height:1.38;letter-spacing:.02em}}
@@ -45,6 +46,8 @@ with sync_playwright() as p:
             k += 1
             html += f"<div class='hdr'><div class='row'><span>{CFG['brand']}</span><span>{k:02d} / {N:02d}</span></div><div class='ln'></div><span class='pill'>{CFG['tag']}</span></div>"
         t = s['type']
+        if s.get('illus'):
+            html += f"<div class='ill' style='top:{s.get('iy',330)}px;height:{s.get('ih',760)}px'>{s['illus']}</div>"
         if t == 'end':
             html += ''
         elif t == 'title':
