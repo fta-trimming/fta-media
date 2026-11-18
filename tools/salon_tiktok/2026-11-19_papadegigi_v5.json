@@ -105,16 +105,17 @@
    "voice": "ドライヤーで、ていねいに、乾かしました。"
   },
   {
-   "type": "big",
+   "type": "card",
    "num": 1,
-   "y": 1300,
-   "html": "<span class=pill>仕上がり</span><div style='font-size:64px;font-weight:700;margin-top:14px'>よくがんばって</div><div style='font-size:100px;font-weight:700'><span class=hl>まんまる</span>に</div><div style='font-size:64px;font-weight:700'>仕上がりました</div>",
+   "y": 1320,
    "bg": {
     "kind": "video",
     "file": "/tmp/claude-0/-home-claude/ce93028b-f2d3-5a2d-b5c7-9abb29c3fbe8/scratchpad/papa1119/m/fin1.mp4",
     "start": 0.3
    },
-   "voice": "よくがんばって、まんまるのお顔に、仕上がりました。"
+   "voice": "よくがんばって、まんまるのお顔に、仕上がりました。",
+   "lab": "仕上がり",
+   "text": "よくがんばって<br>まんまるに仕上がりました"
   },
   {
    "type": "end",
