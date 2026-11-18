@@ -23,7 +23,7 @@ CSS = f"""*{{margin:0;padding:0;box-sizing:border-box}}body{{width:{W}px;height:
 .pill{{display:inline-block;font-family:{SANS};font-weight:700;border-radius:999px;padding:6px 20px;font-size:28px;background:{C['pill']};color:#fff}}
 .card{{position:absolute;left:60px;right:120px;border-radius:26px;background:{C['card']};padding:30px 36px 34px;box-shadow:0 10px 30px rgba(0,0,0,.25)}}
 .card .lab{{display:inline-block;font-family:{SANS};font-weight:700;font-size:26px;border-radius:999px;padding:4px 16px;background:{C['lab']};color:{C['labfg']};margin-bottom:14px}}
-.card .tx{{font-size:56px;font-weight:700;line-height:1.38;letter-spacing:.02em}}
+.card .tx{{font-size:64px;font-weight:700;line-height:1.38;letter-spacing:.02em}}
 .card .sm{{font-family:{SANS};font-size:36px;font-weight:700;line-height:1.5;margin-top:14px;opacity:.95}}
 .shade{{position:absolute;left:0;right:0;top:0;height:820px;background:linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,0))}}
 .ttl{{position:absolute;left:0;right:0;text-align:center;text-shadow:0 3px 12px rgba(0,0,0,.55)}}
@@ -72,17 +72,19 @@ print('scene durations', [s['_d'] for s in scenes], 'total', T)
 # 文字の画像は 1080 で作って lanczos で縮めて重ねる（スキル fta-video-quality 1-2）。size が無いときは今までどおり 1080×1920。
 VW, VH = CFG.get('size', [W, H])
 VF = f"scale={VW}:{VH}:force_original_aspect_ratio=increase:flags=lanczos,crop={VW}:{VH},fps=30,format=yuv420p,setsar=1"
+PUNCH = f",scale=w='trunc({VW}*(1+0.18*max(0\\,1-t/0.35))/2)*2':h='trunc({VH}*(1+0.18*max(0\\,1-t/0.35))/2)*2':eval=frame:flags=lanczos,crop={VW}:{VH}"
 for i, s in enumerate(scenes):
     d = s['_d']; bg = s['bg']; seg = f'{OUT}/b{i}.mp4'
     if bg['kind'] == 'video':
         sp = bg.get('speed', 1.0)
-        run(f"ffmpeg -v error -y -ss {bg['start']} -t {d*sp+0.3} -i {bg['file']} -an -vf \"setpts=PTS/{sp},{VF},trim=duration={d}\" -c:v libx264 -qp 0 -preset ultrafast {seg}")
+        run(f"ffmpeg -v error -y -ss {bg['start']} -t {d*sp+0.3} -i {bg['file']} -an -vf \"setpts=PTS/{sp},{VF}{PUNCH if s.get('punch') else ''},trim=duration={d}\" -c:v libx264 -qp 0 -preset ultrafast {seg}")
     else:
         fr = int(round(d * 30))
         z = bg.get('zoom', 0.06); ox = bg.get('x', 0.5); oy = bg.get('y', 0.5)
         run(f"ffmpeg -v error -y -loop 1 -i {bg['file']} -vf \"scale=-2:2400,crop='min(iw,ih*9/16)':'min(ih,iw*16/9)':'(iw-min(iw,ih*9/16))*{ox}':'(ih-min(ih,iw*16/9))*{oy}',scale={VW*3//2}:{VH*3//2}:flags=lanczos,zoompan=z='1+{z}*on/{fr}':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':d={fr}:s={VW}x{VH}:fps=30,format=yuv420p,setsar=1\" -frames:v {fr} -c:v libx264 -qp 0 -preset ultrafast {seg}")
     # overlay text with fade in (0.35s) and fade out at end (0.3s)
-    run(f"ffmpeg -v error -y -i {seg} -loop 1 -t {d} -i {OUT}/t{i}.png -filter_complex \"[1]scale={VW}:{VH}:flags=lanczos,format=rgba,fade=in:st=0.15:d=0.4:alpha=1,fade=out:st={d-0.35}:d=0.3:alpha=1[o];[0][o]overlay=0:0:shortest=1\" -c:v libx264 -qp 0 -preset ultrafast -t {d} {OUT}/V{i}.mp4")
+    fin = "fade=in:st=0:d=0.06:alpha=1" if s.get("pop") else "fade=in:st=0.15:d=0.4:alpha=1"
+    run(f"ffmpeg -v error -y -i {seg} -loop 1 -t {d} -i {OUT}/t{i}.png -filter_complex \"[1]scale={VW}:{VH}:flags=lanczos,format=rgba,{fin},fade=out:st={d-0.35}:d=0.3:alpha=1[o];[0][o]overlay=0:0:shortest=1\" -c:v libx264 -qp 0 -preset ultrafast -t {d} {OUT}/V{i}.mp4")
 # crossfade-free concat with short dip: just concat
 open(f'{OUT}/list.txt', 'w').write(''.join(f"file 'V{i}.mp4'\n" for i in range(len(scenes))))
 run(f"ffmpeg -v error -y -f concat -safe 0 -i {OUT}/list.txt -c copy {OUT}/silent.mp4")
