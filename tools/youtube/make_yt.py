@@ -2,7 +2,7 @@
 # 使い方: python3 make_yt.py <元の動画> <account: cut|fta> <出力> [gift:0|1]
 import sys, subprocess, json, os, tempfile
 src, acc, out = sys.argv[1], sys.argv[2], sys.argv[3]
-gift = (sys.argv[4] == '1') if len(sys.argv) > 4 else True
+gift = (sys.argv[4] == '1') if len(sys.argv) > 4 else False  # 11/20 藤原さん：YouTube にはプレゼントの話を入れない
 tmp = tempfile.mkdtemp()
 def run(c): subprocess.run(c, shell=True, check=True)
 info = json.loads(subprocess.check_output(['ffprobe','-v','error','-select_streams','v:0','-show_entries','stream=width,height,r_frame_rate','-of','json',src]))['streams'][0]
