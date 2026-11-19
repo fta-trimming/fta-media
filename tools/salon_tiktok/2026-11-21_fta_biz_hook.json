@@ -1,0 +1,165 @@
+{
+ "out": "FTA_1121_biz_hook.mp4",
+ "tts": "/home/claude/fta-media/tools/voicevox/tts_voices.py",
+ "voiceName": "aoyama",
+ "speed": 1.2,
+ "crf": 14,
+ "brand": "FUJIWARA TRIMMING ACADEMY",
+ "tag": "トリミングサロンの生産性",
+ "color": {
+  "card": "rgba(36,64,47,.86)",
+  "pill": "rgba(61,107,79,.95)",
+  "lab": "#f6d77a",
+  "labfg": "#24402f",
+  "hl": "#f6d77a",
+  "hlfg": "#24402f"
+ },
+ "scenes": [
+  {
+   "type": "title",
+   "y": 640,
+   "min": 3.2,
+   "pad": 0.3,
+   "html": "<div style='font-family:Noto Sans CJK JP;font-size:76px;font-weight:900;color:#fff;-webkit-text-stroke:3px #000;paint-order:stroke'>インスタは見られてるのに</div><div style='font-family:Noto Sans CJK JP;font-size:140px;font-weight:900;line-height:1.15;margin-top:18px;color:#f6d77a;-webkit-text-stroke:6px #1b2e22;paint-order:stroke'>予約が来ない</div><div style='display:inline-block;margin-top:24px;background:#e0412f;color:#fff;font-family:Noto Sans CJK JP;font-weight:900;font-size:56px;padding:8px 30px;border-radius:14px'>止まっている所は1つ</div>",
+   "bg": {
+    "kind": "image",
+    "file": "/home/claude/fta-media/tools/salon_tiktok/bg_theme/search.png",
+    "zoom": 0
+   },
+   "voice": "インスタは見られているのに、予約が来ない。止まっている所は、1つです。",
+   "pop": true,
+   "punch": true
+  },
+  {
+   "type": "card",
+   "num": 1,
+   "y": 1070,
+   "lab": "予約までの4つの段",
+   "text": "知る → 気になる<br>→ 確かめる → <span class=hl>予約</span>",
+   "sm": "この順番で、お客さんは進みます",
+   "illus": "<svg width='860' height='654' viewBox='0 0 920 700' xmlns='http://www.w3.org/2000/svg'><rect x='70' y='520' width='190' height='180' rx='14' fill='#eef5f0' stroke='#3d7a55' stroke-width='5'/><text x='165' y='580' font-family='Noto Sans CJK JP' font-weight='700' font-size='36' fill='#24402f' text-anchor='middle'>知る</text><text x='165' y='630' font-family='Noto Sans CJK JP' font-weight='700' font-size='40' fill='#3d7a55' text-anchor='middle'>1</text><rect x='270' y='410' width='190' height='290' rx='14' fill='#eef5f0' stroke='#3d7a55' stroke-width='5'/><text x='365' y='470' font-family='Noto Sans CJK JP' font-weight='700' font-size='36' fill='#24402f' text-anchor='middle'>気になる</text><text x='365' y='520' font-family='Noto Sans CJK JP' font-weight='700' font-size='40' fill='#3d7a55' text-anchor='middle'>2</text><rect x='470' y='300' width='190' height='400' rx='14' fill='#eef5f0' stroke='#3d7a55' stroke-width='5'/><text x='565' y='360' font-family='Noto Sans CJK JP' font-weight='700' font-size='36' fill='#24402f' text-anchor='middle'>確かめる</text><text x='565' y='410' font-family='Noto Sans CJK JP' font-weight='700' font-size='40' fill='#3d7a55' text-anchor='middle'>3</text><rect x='670' y='190' width='190' height='510' rx='14' fill='#eef5f0' stroke='#3d7a55' stroke-width='5'/><text x='765' y='250' font-family='Noto Sans CJK JP' font-weight='700' font-size='36' fill='#24402f' text-anchor='middle'>予約する</text><text x='765' y='300' font-family='Noto Sans CJK JP' font-weight='700' font-size='40' fill='#3d7a55' text-anchor='middle'>4</text><text x='460' y='80' font-family='Noto Sans CJK JP' font-weight='700' font-size='44' fill='#24402f' text-anchor='middle'>予約までの4つの段</text><path d='M120 470 Q 460 120 800 140' fill='none' stroke='#3d7a55' stroke-width='6' stroke-dasharray='16 12'/></svg>",
+   "iy": 290,
+   "ih": 720,
+   "bg": {
+    "kind": "image",
+    "file": "/home/claude/fta-media/tools/salon_tiktok/bg_theme/search.png",
+    "zoom": 0
+   },
+   "voice": "予約までには、4つの段があります。知る、気になる、確かめる、予約する。",
+   "min": 4.0,
+   "pad": 0.5
+  },
+  {
+   "type": "card",
+   "num": 2,
+   "y": 1070,
+   "lab": "まず見ること",
+   "text": "<span class=hl>どこで止まっているか</span><br>を見る",
+   "sm": "止まる段は、お店によって違う",
+   "illus": "<svg width='860' height='654' viewBox='0 0 920 700' xmlns='http://www.w3.org/2000/svg'><text x='460' y='80' font-family='Noto Sans CJK JP' font-weight='700' font-size='44' fill='#24402f' text-anchor='middle'>どこで止まっている？</text><rect x='80.0' y='120' width='760' height='105' rx='18' fill='#eef5f0' stroke='#3d7a55' stroke-width='5'/><text x='460' y='188' font-family='Noto Sans CJK JP' font-weight='700' font-size='40' fill='#24402f' text-anchor='middle'>知る</text><rect x='155.0' y='250' width='610' height='105' rx='18' fill='#eef5f0' stroke='#3d7a55' stroke-width='5'/><text x='460' y='318' font-family='Noto Sans CJK JP' font-weight='700' font-size='40' fill='#24402f' text-anchor='middle'>気になる</text><rect x='230.0' y='380' width='460' height='105' rx='18' fill='#eef5f0' stroke='#3d7a55' stroke-width='5'/><text x='460' y='448' font-family='Noto Sans CJK JP' font-weight='700' font-size='40' fill='#24402f' text-anchor='middle'>確かめる</text><rect x='305.0' y='510' width='310' height='105' rx='18' fill='#eef5f0' stroke='#3d7a55' stroke-width='5'/><text x='460' y='578' font-family='Noto Sans CJK JP' font-weight='700' font-size='40' fill='#24402f' text-anchor='middle'>予約する</text><circle cx='820' cy='432' r='46' fill='none' stroke='#e0412f' stroke-width='8'/><text x='820' y='448' font-family='Noto Sans CJK JP' font-weight='700' font-size='48' fill='#e0412f' text-anchor='middle'>？</text></svg>",
+   "iy": 290,
+   "ih": 720,
+   "bg": {
+    "kind": "image",
+    "file": "/home/claude/fta-media/tools/salon_tiktok/bg_theme/booking.png",
+    "zoom": 0
+   },
+   "voice": "止まっている段は、お店によって違います。まず、どの段で止まっているかを見ます。",
+   "min": 4.0,
+   "pad": 0.5
+  },
+  {
+   "type": "card",
+   "num": 3,
+   "y": 1070,
+   "lab": "たとえば",
+   "text": "見られているのに<br><span style='color:#ff7a66'>予約が来ない</span>",
+   "sm": "→「確かめる」で止まっているかも",
+   "illus": "<svg width='860' height='654' viewBox='0 0 920 700' xmlns='http://www.w3.org/2000/svg'><rect x='70' y='520' width='190' height='180' rx='14' fill='#eef5f0' stroke='#3d7a55' stroke-width='5'/><text x='165' y='580' font-family='Noto Sans CJK JP' font-weight='700' font-size='36' fill='#24402f' text-anchor='middle'>知る</text><text x='165' y='630' font-family='Noto Sans CJK JP' font-weight='700' font-size='40' fill='#3d7a55' text-anchor='middle'>1</text><rect x='270' y='410' width='190' height='290' rx='14' fill='#eef5f0' stroke='#3d7a55' stroke-width='5'/><text x='365' y='470' font-family='Noto Sans CJK JP' font-weight='700' font-size='36' fill='#24402f' text-anchor='middle'>気になる</text><text x='365' y='520' font-family='Noto Sans CJK JP' font-weight='700' font-size='40' fill='#3d7a55' text-anchor='middle'>2</text><rect x='470' y='300' width='190' height='400' rx='14' fill='#fde3df' stroke='#e0412f' stroke-width='5'/><text x='565' y='360' font-family='Noto Sans CJK JP' font-weight='700' font-size='36' fill='#24402f' text-anchor='middle'>確かめる</text><text x='565' y='410' font-family='Noto Sans CJK JP' font-weight='700' font-size='40' fill='#3d7a55' text-anchor='middle'>3</text><rect x='670' y='190' width='190' height='510' rx='14' fill='#eef5f0' stroke='#3d7a55' stroke-width='5'/><text x='765' y='250' font-family='Noto Sans CJK JP' font-weight='700' font-size='36' fill='#24402f' text-anchor='middle'>予約する</text><text x='765' y='300' font-family='Noto Sans CJK JP' font-weight='700' font-size='40' fill='#3d7a55' text-anchor='middle'>4</text><g transform='translate(150,120)'><ellipse cx='60' cy='40' rx='70' ry='40' fill='#fff' stroke='#24402f' stroke-width='6'/><circle cx='60' cy='40' r='20' fill='#24402f'/></g><text x='210' y='230' font-family='Noto Sans CJK JP' font-weight='700' font-size='34' fill='#24402f' text-anchor='middle'>見られている</text><g transform='translate(470,170)'><polygon points='40,0 80,0 110,30 110,70 80,100 40,100 10,70 10,30' fill='#e0412f'/><text x='60' y='64' font-family='Noto Sans CJK JP' font-weight='700' font-size='44' fill='#fff' text-anchor='middle'>止</text></g></svg>",
+   "iy": 290,
+   "ih": 720,
+   "bg": {
+    "kind": "image",
+    "file": "/home/claude/fta-media/tools/salon_tiktok/bg_theme/search.png",
+    "zoom": 0
+   },
+   "voice": "たとえば、見られているのに予約が来ないなら、確かめる段で、止まっているのかもしれません。",
+   "min": 4.0,
+   "pad": 0.5
+  },
+  {
+   "type": "card",
+   "num": 4,
+   "y": 1070,
+   "lab": "直し方",
+   "text": "止まっている段を<br><span class=hl>1つだけ</span>直す",
+   "sm": "全部を一度に変えない",
+   "illus": "<svg width='860' height='654' viewBox='0 0 920 700' xmlns='http://www.w3.org/2000/svg'><text x='460' y='120' font-family='Noto Sans CJK JP' font-weight='700' font-size='46' fill='#24402f' text-anchor='middle'>直すのは1つだけ</text><rect x='40' y='260' width='195' height='160' rx='20' fill='#eef5f0' stroke='#3d7a55' stroke-width='4'/><text x='137' y='355' font-family='Noto Sans CJK JP' font-weight='700' font-size='34' fill='#24402f' text-anchor='middle'>知る</text><rect x='255' y='260' width='195' height='160' rx='20' fill='#eef5f0' stroke='#3d7a55' stroke-width='4'/><text x='352' y='355' font-family='Noto Sans CJK JP' font-weight='700' font-size='34' fill='#24402f' text-anchor='middle'>気になる</text><rect x='470' y='260' width='195' height='160' rx='20' fill='#f6d77a' stroke='#24402f' stroke-width='8'/><text x='567' y='355' font-family='Noto Sans CJK JP' font-weight='700' font-size='34' fill='#24402f' text-anchor='middle'>確かめる</text><rect x='685' y='260' width='195' height='160' rx='20' fill='#eef5f0' stroke='#3d7a55' stroke-width='4'/><text x='782' y='355' font-family='Noto Sans CJK JP' font-weight='700' font-size='34' fill='#24402f' text-anchor='middle'>予約する</text><text x='567' y='520' font-family='Noto Sans CJK JP' font-weight='700' font-size='40' fill='#e0412f' text-anchor='middle'>🔧 ここだけ直す</text><path d='M567 470 L567 430' stroke='#e0412f' stroke-width='6'/></svg>",
+   "iy": 290,
+   "ih": 720,
+   "bg": {
+    "kind": "image",
+    "file": "/home/claude/fta-media/tools/salon_tiktok/bg_theme/booking.png",
+    "zoom": 0
+   },
+   "voice": "直すのは、止まっている段を、1つだけ。全部を一度に変えません。",
+   "min": 4.0,
+   "pad": 0.5
+  },
+  {
+   "type": "card",
+   "num": 5,
+   "y": 1070,
+   "lab": "やること",
+   "text": "書き出す → 印 →<br><span class=hl>1つ直して様子を見る</span>",
+   "sm": "",
+   "illus": "<svg width='860' height='654' viewBox='0 0 920 700' xmlns='http://www.w3.org/2000/svg'><text x='460' y='95' font-family='Noto Sans CJK JP' font-weight='700' font-size='46' fill='#24402f' text-anchor='middle'>やること</text><rect x='90' y='150' width='740' height='130' rx='22' fill='#eef5f0'/><rect x='120' y='180' width='70' height='70' rx='12' fill='#fff' stroke='#3d7a55' stroke-width='5'/><text x='155' y='232' font-family='Noto Sans CJK JP' font-weight='700' font-size='54' fill='#3d7a55' text-anchor='middle'>✓</text><text x='230' y='230' font-family='Noto Sans CJK JP' font-weight='700' font-size='40' fill='#24402f' text-anchor='start'>4つの段を書き出す</text><rect x='90' y='310' width='740' height='130' rx='22' fill='#eef5f0'/><rect x='120' y='340' width='70' height='70' rx='12' fill='#fff' stroke='#3d7a55' stroke-width='5'/><text x='155' y='392' font-family='Noto Sans CJK JP' font-weight='700' font-size='54' fill='#3d7a55' text-anchor='middle'>✓</text><text x='230' y='390' font-family='Noto Sans CJK JP' font-weight='700' font-size='40' fill='#24402f' text-anchor='start'>止まっている段に印</text><rect x='90' y='470' width='740' height='130' rx='22' fill='#eef5f0'/><rect x='120' y='500' width='70' height='70' rx='12' fill='#fff' stroke='#3d7a55' stroke-width='5'/><text x='155' y='552' font-family='Noto Sans CJK JP' font-weight='700' font-size='54' fill='#3d7a55' text-anchor='middle'>✓</text><text x='230' y='550' font-family='Noto Sans CJK JP' font-weight='700' font-size='40' fill='#24402f' text-anchor='start'>1つだけ直して様子を見る</text></svg>",
+   "iy": 290,
+   "ih": 720,
+   "bg": {
+    "kind": "image",
+    "file": "/home/claude/fta-media/tools/salon_tiktok/bg_theme/clock.png",
+    "zoom": 0
+   },
+   "voice": "4つの段を書き出す。止まっている段に印をつける。1つだけ直して、様子を見る。",
+   "min": 4.0,
+   "pad": 0.5
+  },
+  {
+   "type": "card",
+   "num": 6,
+   "y": 1070,
+   "lab": "わかれば",
+   "text": "やることは<br><span class=hl>1つ</span>になる",
+   "sm": "迷わず動ける",
+   "illus": "<svg width='860' height='654' viewBox='0 0 920 700' xmlns='http://www.w3.org/2000/svg'><text x='460' y='95' font-family='Noto Sans CJK JP' font-weight='700' font-size='42' fill='#24402f' text-anchor='middle'>止まっている段がわかれば</text><path d='M140 560 C 300 560, 360 300, 520 300 S 760 200, 800 170' fill='none' stroke='#3d7a55' stroke-width='16' stroke-linecap='round'/><circle cx='140' cy='560' r='28' fill='#f6d77a' stroke='#24402f' stroke-width='6'/><polygon points='780,140 840,160 790,205' fill='#3d7a55'/><rect x='300' y='420' width='420' height='110' rx='55' fill='#24402f'/><text x='510' y='492' font-family='Noto Sans CJK JP' font-weight='700' font-size='46' fill='#f6d77a' text-anchor='middle'>やることは1つ</text></svg>",
+   "iy": 290,
+   "ih": 720,
+   "bg": {
+    "kind": "image",
+    "file": "/home/claude/fta-media/tools/salon_tiktok/bg_theme/booking.png",
+    "zoom": 0
+   },
+   "voice": "止まっている段がわかれば、やることは、1つになります。",
+   "min": 4.0,
+   "pad": 0.5
+  },
+  {
+   "type": "card",
+   "num": 7,
+   "y": 1070,
+   "lab": "💾 保存",
+   "text": "保存して<br>見返してね",
+   "sm": "",
+   "bg": {
+    "kind": "image",
+    "file": "/home/claude/fta-media/tools/salon_tiktok/bg_theme/search.png",
+    "zoom": 0
+   },
+   "voice": "保存して、見返してね。",
+   "min": 3.2,
+   "pad": 0.8
+  }
+ ],
+ "noAnim": true
+}
