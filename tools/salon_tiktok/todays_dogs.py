@@ -90,6 +90,29 @@ v1, v2 = f'{OUT}/v_title.wav', f'{OUT}/v_end.wav'
 run(f'python3 {TTS} "{CFG.get("voiceTitle","今日、オーリーマジックに来てくれた、ワンコたちです。")}" {v1} >/dev/null 2>&1')
 run(f'python3 {TTS} "{CFG.get("voiceThanks","今日も来てくれて、ありがとう。")}" {OUT}/v_thanks.wav >/dev/null 2>&1')
 run(f'python3 {TTS} "{CFG.get("voiceEnd","ご予約は、プロフィールのラインから、どうぞ。")}" {v2} >/dev/null 2>&1')
+# 11/20 10:53 藤原さん「犬の紹介中を話し続けることは出来ます？お店の特長でもお店に関してであればなんでも、その都度変わってもいい」
+# → ワンコの紹介のあいだ、お店のことを話し続ける（talk の文。毎回ちがう話にする）。長ければ1頭の秒数をのばす。
+talk = CFG.get('talk', [])
+vt = f'{OUT}/v_talk.wav'; tL = 0.0
+if talk:
+    seg = []
+    for j, line in enumerate(talk):
+        w = f'{OUT}/v_talk_{j}.wav'
+        run(f'python3 {TTS} "{line}" {w} >/dev/null 2>&1'); seg.append(w)
+    run(f"ffmpeg -v error -y -f lavfi -t 0.35 -i anullsrc=r=24000:cl=mono {OUT}/gap.wav")
+    lst = open(f'{OUT}/talk.txt', 'w')
+    for j, w in enumerate(seg):
+        lst.write(f"file '{w}'\n")
+        if j < len(seg) - 1: lst.write(f"file '{OUT}/gap.wav'\n")
+    lst.close()
+    run(f"ffmpeg -v error -y -f concat -safe 0 -i {OUT}/talk.txt -ar 24000 -ac 1 {vt}")
+    tL = dur(vt)
+    need = (tL + 0.9) / N + XF
+    if need > SEC:
+        SEC = min(3.4, round(need, 2))
+    print('talk', round(tL, 2), 'sec per dog', SEC)
+else:
+    run(f"ffmpeg -v error -y -f lavfi -t 0.1 -i anullsrc=r=24000:cl=mono {vt}")
 dT = max(3.2, 0.3 + dur(v1) + 0.6); dK = max(2.8, 0.3 + dur(f'{OUT}/v_thanks.wav') + 0.6); dE = max(4.0, 0.3 + dur(v2) + 0.7)
 
 parts = []
@@ -173,8 +196,8 @@ for k in range(1, len(parts)):
     fc += f"{prev}[{k}:v]xfade=transition=fade:duration={XF}:offset={off:.3f}[x{k}];"; prev = f'[x{k}]'
 total = sum(d for _, d in parts) - XF * (len(parts) - 1)
 # 声の位置
-tEnd = total - dE + 0.3; tThanks = total - dE - dK + XF + 0.3
-fc += f"{prev}format=yuv420p[v];[{len(parts)}:a]adelay=300|300[a1];[{len(parts)+1}:a]adelay={int(tThanks*1000)}|{int(tThanks*1000)}[a2];[{len(parts)+2}:a]adelay={int(tEnd*1000)}|{int(tEnd*1000)}[a3];[a1][a2][a3]amix=inputs=3:normalize=0,apad[a]"
-run(f"ffmpeg -v error -y {inp} -i {v1} -i {OUT}/v_thanks.wav -i {v2} -filter_complex \"{fc}\" -map [v] -map [a] -t {total:.3f} "
+tEnd = total - dE + 0.3; tThanks = total - dE - dK + XF + 0.3; tTalk = dT - XF + 0.45
+fc += f"{prev}format=yuv420p[v];[{len(parts)}:a]adelay=300|300[a1];[{len(parts)+1}:a]adelay={int(tThanks*1000)}|{int(tThanks*1000)}[a2];[{len(parts)+2}:a]adelay={int(tEnd*1000)}|{int(tEnd*1000)}[a3];[{len(parts)+3}:a]adelay={int(tTalk*1000)}|{int(tTalk*1000)}[a4];[a1][a2][a3][a4]amix=inputs=4:normalize=0,apad[a]"
+run(f"ffmpeg -v error -y {inp} -i {v1} -i {OUT}/v_thanks.wav -i {v2} -i {vt} -filter_complex \"{fc}\" -map [v] -map [a] -t {total:.3f} "
     f"-c:v libx264 -crf 16 -preset slow -profile:v high -pix_fmt yuv420p -r {FPS} -c:a aac -b:a 192k -movflags +faststart {CFG['out']}")
 print('done', CFG['out'], round(total, 2), os.path.getsize(CFG['out']))
