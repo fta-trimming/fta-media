@@ -5,7 +5,7 @@
 # 使い方: python3 make_tt_fta.py <元の動画> <出力> [最後から切り落とす秒数（ytPub なら 2.5、YouTube 前の版なら 0）]
 import sys, subprocess, json, os, tempfile
 src, out = sys.argv[1], sys.argv[2]
-cut = float(sys.argv[3]) if len(sys.argv) > 3 else 2.5
+cut = float(sys.argv[3]) if len(sys.argv) > 3 else 2.6  # 11/20 21:40 YouTube の終わりの画面は約2.53秒。2.5だと1コマ残ったので2.6
 tmp = tempfile.mkdtemp()
 def run(c): subprocess.run(c, shell=True, check=True)
 info = json.loads(subprocess.check_output(['ffprobe','-v','error','-select_streams','v:0','-show_entries','stream=width,height,r_frame_rate','-of','json',src]))['streams'][0]
