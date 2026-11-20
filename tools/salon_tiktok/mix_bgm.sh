@@ -12,6 +12,8 @@ if [ -f "$ST" ]; then
   # 曲の頭から動画の長さだけ使い、最後2秒でフェードアウト。音量は自作の曲と同じくらいにそろえる。
   ffmpeg -v error -y -stream_loop -1 -i "$ST" -t "$D" -af "loudnorm=I=-16:TP=-2,afade=t=out:st=$(python3 -c "print(max(0,$D-2))"):d=2" -ar 48000 -ac 2 "$TMP/bgm.wav"
 else
+  # 11/20 15:04 藤原さん「オプションの音楽を変えて作り替えてください」→ 美容オプション（spa）は3拍子のワルツ（spa2）にする
+  [ "$ST" = "spa" ] && ST=spa2
   python3 "$HERE/bgm.py" "$ST" "$D" "$TMP/bgm.wav" "$SEED"
 fi
 ffmpeg -v error -y -i "$IN" -i "$TMP/bgm.wav" -filter_complex \
