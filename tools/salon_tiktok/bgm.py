@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """OLLIE MAGIC 用のオリジナルBGM（自作・著作権なし・アコースティック）。
 11/20 13:47 藤原さん「両方アコースティックで少しニュアンス変えて」「音が少し大きくて音声と被るのが気になる」
-python3 bgm.py <style: dogs|spa|spa2|heal> <秒> <out.wav> [seed]
+python3 bgm.py <style: dogs|spa|spa2|heal|orgel> <秒> <out.wav> [seed]
 dogs = 明るいアコギのストローク＋口笛風メロディ（100BPM・C）
 spa  = ゆったりしたナイロンギターの指弾き（76BPM・F）
 seed で毎日少しずつ変わる（メロディの並び・コードの順・テンポ±3）。"""
@@ -11,7 +11,7 @@ SR = 48000
 style, L, out = sys.argv[1], float(sys.argv[2]), sys.argv[3]
 seed = int(sys.argv[4]) if len(sys.argv) > 4 else 1
 rng = np.random.default_rng(seed)
-BPM = (100 if style == 'dogs' else 132 if style == 'spa2' else 58 if style == 'heal' else 76) + int(rng.integers(-3, 4))
+BPM = (100 if style == 'dogs' else 132 if style == 'spa2' else 58 if style == 'heal' else 66 if style == 'orgel' else 76) + int(rng.integers(-3, 4))
 beat = 60 / BPM
 N = int(SR * (L + 3))
 mix = np.zeros((N, 2))
@@ -35,6 +35,12 @@ def guitar(m, d=1.5, bright=0.5, decay=0.996):
     y = lfilter([0.6, 0.3], [1], y)  # 胴の響きの代わりの軽いこもり
     return y * np.minimum(1, np.arange(n) / 30)
 
+def orgel(m, d=2.6):  # オルゴール（金属の櫛。倍音が早く消え、基音がやさしく長く残る）
+    t = np.arange(int(SR * d)) / SR; f = hz(m)
+    s = (np.sin(2*np.pi*f*t) * np.exp(-t*1.6) + 0.28*np.sin(2*np.pi*f*2.0*t)*np.exp(-t*4) + 0.12*np.sin(2*np.pi*f*3.0*t)*np.exp(-t*8)
+         + 0.05*np.sin(2*np.pi*f*5.4*t)*np.exp(-t*20))
+    return s * np.minimum(1, t / 0.003)
+
 def whistle(m, d):  # 口笛風（やわらかい正弦波＋ゆれ）
     t = np.arange(int(SR * d)) / SR; f = hz(m)
     vib = 1 + 0.004 * np.sin(2 * np.pi * 5.2 * t) * np.minimum(1, t / 0.3)
@@ -45,7 +51,7 @@ if style == 'dogs':
     root = 60
     progs = [[(0, 'M'), (9, 'm'), (5, 'M'), (7, 'M')], [(0, 'M'), (7, 'M'), (9, 'm'), (5, 'M')], [(5, 'M'), (7, 'M'), (0, 'M'), (9, 'm')]]
 else:
-    root = 62 if style == 'spa2' else 64 if style == 'heal' else 65
+    root = 62 if style == 'spa2' else 64 if style == 'heal' else 67 if style == 'orgel' else 65
     progs = [[(0, 'M7'), (-3, 'm7'), (-7, 'M7'), (-5, '7')], [(0, 'M7'), (-7, 'M7'), (-3, 'm7'), (-5, 'sus')], [(-7, 'M7'), (-5, '7'), (0, 'M7'), (-3, 'm7')]]
 prog = progs[seed % 3]
 SH = {'M': [0, 4, 7, 12, 16], 'm': [0, 3, 7, 12, 15], 'M7': [0, 7, 11, 16, 19], 'm7': [0, 7, 10, 15, 19], '7': [0, 7, 10, 16, 19], 'sus': [0, 7, 12, 17, 19]}
@@ -77,6 +83,15 @@ for b in range(nb):
         add(guitar(root - 24 + r + 7, 1.2, 0.4, 0.995), t0 + 2 * beat, 0, 0.16)
         if b >= 1:
             for (bt, m, ln) in mel[b % 8]: add(whistle(m, ln * beat * 0.92), t0 + bt * beat, 0.35, 0.085)
+    elif style == 'orgel':
+        # 11/20 15:47 藤原さん「この音楽は使わないでオルゴール系など」→ ゆっくりのオルゴール（櫛の音）＋とても薄い和音
+        t = np.arange(int(SR * (bar + 2.5))) / SR; padsig = 0
+        for m in [root - 12 + r + i for i in SH[q][1:4]]:
+            f = hz(m); padsig = padsig + np.sin(2*np.pi*f*t) + 0.4*np.sin(2*np.pi*f*1.003*t)
+        add(padsig * np.minimum(1, t / 1.8) * np.clip((bar + 2.5 - t) / 2.2, 0, 1) / 3, t0, 0, 0.035)
+        for k, s in enumerate([0, 2, 3, 4, 2, 3]):
+            add(orgel(ch[s] + 12, 2.6), t0 + k * beat * 2 / 3 + rng.uniform(0, .015), -0.35 + 0.12 * k, 0.11)
+        for (bt, m, ln) in mel[b % 8][:3]: add(orgel(m + 12, 3.0), t0 + bt * beat, 0.15, 0.24)
     elif style == 'heal':
         # 11/20 15:09 藤原さん「もっと癒し系の音楽で」→ とてもゆっくり・音数少なめのナイロンギター＋やわらかい空気のような和音＋ときどき小さな鈴
         t = np.arange(int(SR * (bar + 2.5))) / SR; padsig = 0
