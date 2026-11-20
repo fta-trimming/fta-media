@@ -13,7 +13,7 @@ if [ -f "$ST" ]; then
   ffmpeg -v error -y -stream_loop -1 -i "$ST" -t "$D" -af "loudnorm=I=-16:TP=-2,afade=t=out:st=$(python3 -c "print(max(0,$D-2))"):d=2" -ar 48000 -ac 2 "$TMP/bgm.wav"
 else
   # 11/20 15:04 藤原さん「オプションの音楽を変えて作り替えてください」→ 美容オプション（spa）は3拍子のワルツ（spa2）にする
-  [ "$ST" = "spa" ] && ST=spa2
+  [ "$ST" = "spa" ] && ST=heal  # 15:09「もっと癒し系の音楽で」→ heal
   python3 "$HERE/bgm.py" "$ST" "$D" "$TMP/bgm.wav" "$SEED"
 fi
 ffmpeg -v error -y -i "$IN" -i "$TMP/bgm.wav" -filter_complex \

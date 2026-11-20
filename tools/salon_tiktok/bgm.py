@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """OLLIE MAGIC 用のオリジナルBGM（自作・著作権なし・アコースティック）。
 11/20 13:47 藤原さん「両方アコースティックで少しニュアンス変えて」「音が少し大きくて音声と被るのが気になる」
-python3 bgm.py <style: dogs|spa|spa2> <秒> <out.wav> [seed]
+python3 bgm.py <style: dogs|spa|spa2|heal> <秒> <out.wav> [seed]
 dogs = 明るいアコギのストローク＋口笛風メロディ（100BPM・C）
 spa  = ゆったりしたナイロンギターの指弾き（76BPM・F）
 seed で毎日少しずつ変わる（メロディの並び・コードの順・テンポ±3）。"""
@@ -11,7 +11,7 @@ SR = 48000
 style, L, out = sys.argv[1], float(sys.argv[2]), sys.argv[3]
 seed = int(sys.argv[4]) if len(sys.argv) > 4 else 1
 rng = np.random.default_rng(seed)
-BPM = (100 if style == 'dogs' else 132 if style == 'spa2' else 76) + int(rng.integers(-3, 4))
+BPM = (100 if style == 'dogs' else 132 if style == 'spa2' else 58 if style == 'heal' else 76) + int(rng.integers(-3, 4))
 beat = 60 / BPM
 N = int(SR * (L + 3))
 mix = np.zeros((N, 2))
@@ -45,7 +45,7 @@ if style == 'dogs':
     root = 60
     progs = [[(0, 'M'), (9, 'm'), (5, 'M'), (7, 'M')], [(0, 'M'), (7, 'M'), (9, 'm'), (5, 'M')], [(5, 'M'), (7, 'M'), (0, 'M'), (9, 'm')]]
 else:
-    root = 62 if style == 'spa2' else 65
+    root = 62 if style == 'spa2' else 64 if style == 'heal' else 65
     progs = [[(0, 'M7'), (-3, 'm7'), (-7, 'M7'), (-5, '7')], [(0, 'M7'), (-7, 'M7'), (-3, 'm7'), (-5, 'sus')], [(-7, 'M7'), (-5, '7'), (0, 'M7'), (-3, 'm7')]]
 prog = progs[seed % 3]
 SH = {'M': [0, 4, 7, 12, 16], 'm': [0, 3, 7, 12, 15], 'M7': [0, 7, 11, 16, 19], 'm7': [0, 7, 10, 15, 19], '7': [0, 7, 10, 16, 19], 'sus': [0, 7, 12, 17, 19]}
@@ -77,6 +77,21 @@ for b in range(nb):
         add(guitar(root - 24 + r + 7, 1.2, 0.4, 0.995), t0 + 2 * beat, 0, 0.16)
         if b >= 1:
             for (bt, m, ln) in mel[b % 8]: add(whistle(m, ln * beat * 0.92), t0 + bt * beat, 0.35, 0.085)
+    elif style == 'heal':
+        # 11/20 15:09 藤原さん「もっと癒し系の音楽で」→ とてもゆっくり・音数少なめのナイロンギター＋やわらかい空気のような和音＋ときどき小さな鈴
+        t = np.arange(int(SR * (bar + 2.5))) / SR; padsig = 0
+        for m in [root - 12 + r + i for i in SH[q][1:4]]:
+            f = hz(m); padsig = padsig + np.sin(2*np.pi*f*t) + 0.5*np.sin(2*np.pi*f*1.004*t) + 0.25*np.sin(2*np.pi*f*2*t)
+        env = np.minimum(1, t / 1.6) * np.clip((bar + 2.5 - t) / 2.0, 0, 1)
+        add(padsig * env / 3, t0, 0, 0.05)
+        add(guitar(root - 24 + r, 3.5, 0.22, 0.9985), t0, 0, 0.22)
+        for k, s in enumerate([2, 3, 4, 3]):
+            add(guitar(ch[s], 3.0, bright=0.2, decay=0.9985), t0 + (k + 1) * beat * 0.98 + rng.uniform(0, .02), -0.3 + 0.15 * k, 0.12)
+        if b % 2 == 1:
+            for (bt, m, ln) in mel[b % 8][:2]: add(guitar(m + 12, 3.0, bright=0.25, decay=0.999), t0 + bt * beat, 0.35, 0.13)
+        if b % 4 == 3:
+            tt = np.arange(int(SR * 2.5)) / SR; f = hz(root + 36 + SH[q][2])
+            add(np.sin(2*np.pi*f*tt) * np.exp(-tt * 1.8) * np.minimum(1, tt / 0.01), t0 + 2.5 * beat, 0.5, 0.035)
     elif style == 'spa2':
         # 11/20 15:04「オプションの音楽を変えて」→ 3拍子のやさしいワルツ（低音＋2拍目3拍目に和音、上へ流れるアルペジオ）
         add(guitar(root - 24 + r, 2.4, 0.3, 0.997), t0, 0, 0.26)
