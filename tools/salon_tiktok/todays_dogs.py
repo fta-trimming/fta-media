@@ -19,18 +19,31 @@ def run(c): subprocess.run(c, shell=True, check=True)
 def dur(f): return float(subprocess.check_output(['ffprobe','-v','error','-show_entries','format=duration','-of','csv=p=0',f]).decode())
 
 # 季節の飾り（右上・左下に葉っぱ／雪など。顔にかからない端だけ）
+# 11/20 13:06 藤原さん「その日の美容オプションご利用のバージョンも、雰囲気変えて」→ style "spa"
+STYLE = CFG.get('style', 'dogs')
 SEASON = {
   'autumn': {'items': ['#c8642a', '#d98a3a', '#a8461f', '#e0b04a'], 'word': '秋のおめかし', 'shape': 'leaf'},
   'winter': {'items': ['#ffffff', '#e8f0f8', '#ffffff', '#dfe9f3'], 'word': '冬のおめかし', 'shape': 'snow'},
   'spring': {'items': ['#f6c1cf', '#f9d6de', '#f3a9bd', '#ffe3ea'], 'word': '春のおめかし', 'shape': 'petal'},
   'summer': {'items': ['#7cc6e8', '#a8dcf0', '#5bb3dd', '#ffe08a'], 'word': '夏のおめかし', 'shape': 'petal'},
-}[CFG.get('season', 'autumn')]
+}[CFG.get('season', 'autumn')] if STYLE != 'spa' else {'items': ['rgba(255,255,255,.85)', 'rgba(230,246,244,.85)', 'rgba(255,255,255,.7)', 'rgba(214,240,236,.8)'], 'word': '泡のスパタイム', 'shape': 'bubble'}
+PAL = {'card': 'rgba(122,78,62,.86)', 'chip': 'rgba(122,78,62,.92)', 'k': '#f1e1d8', 'kfg': '#6b4334', 'bg': (251, 244, 238), 'shade': 'rgba(60,35,25,.55)'}
+if STYLE == 'spa':
+    PAL = {'card': 'rgba(78,128,126,.86)', 'chip': 'rgba(78,128,126,.92)', 'k': '#e3f3f0', 'kfg': '#2f5f5c', 'bg': (238, 247, 246), 'shade': 'rgba(30,70,70,.45)'}
+TXT = {'title': CFG.get('titleText', '今日の<br>ワンコたち' if STYLE != 'spa' else '今日の<br>美容オプション'),
+       'chip': CFG.get('chipLabel', '今日のワンコ' if STYLE != 'spa' else '泡のスパタイム'),
+       'thanks': CFG.get('thanksText', '今日も来てくれて<br>ありがとう' if STYLE != 'spa' else 'みんな<br>おつかれさま'),
+       'sub': CFG.get('thanksSub', 'また、きれいにしにきてね' if STYLE != 'spa' else '泡でやさしく、うるおいケア')}
 
 def leaf(x, y, s, r, c):
     if SEASON['shape'] == 'leaf':
         return (f"<svg style='position:absolute;left:{x}px;top:{y}px;transform:rotate({r}deg)' width='{s}' height='{s}' viewBox='0 0 100 100'>"
                 f"<path d='M50 4 L58 30 L84 18 L72 44 L96 52 L70 60 L80 86 L54 72 L50 98 L46 72 L20 86 L30 60 L4 52 L28 44 L16 18 L42 30 Z' fill='{c}' opacity='.92'/>"
                 f"<path d='M50 30 L50 98' stroke='rgba(90,40,10,.45)' stroke-width='3'/></svg>")
+    if SEASON['shape'] == 'bubble':
+        return (f"<svg style='position:absolute;left:{x}px;top:{y}px' width='{s}' height='{s}' viewBox='0 0 100 100'>"
+                f"<circle cx='50' cy='50' r='44' fill='{c}' stroke='rgba(255,255,255,.95)' stroke-width='3'/>"
+                f"<ellipse cx='36' cy='33' rx='12' ry='7' fill='rgba(255,255,255,.95)' transform='rotate(-35 36 33)'/></svg>")
     if SEASON['shape'] == 'snow':
         return (f"<svg style='position:absolute;left:{x}px;top:{y}px;transform:rotate({r}deg)' width='{s}' height='{s}' viewBox='0 0 100 100'>"
                 f"<g stroke='{c}' stroke-width='7' stroke-linecap='round'><path d='M50 8V92M14 29L86 71M14 71L86 29'/></g></svg>")
@@ -51,18 +64,19 @@ def deco(corner_only=True):
 CSS = """
 *{margin:0;padding:0;box-sizing:border-box}
 body{width:1080px;height:1920px;background:transparent;font-family:'Noto Serif CJK JP',serif;color:#fff;position:relative;overflow:hidden}
-.top{position:absolute;left:0;right:0;top:0;height:330px;background:linear-gradient(rgba(60,35,25,.55),rgba(60,35,25,0))}
+.top{position:absolute;left:0;right:0;top:0;height:330px;background:linear-gradient(PALSHADE,rgba(0,0,0,0))}
 .hdr{position:absolute;left:60px;top:130px;display:flex;align-items:center;gap:18px;font-family:'Noto Sans CJK JP',sans-serif}
-.chip{background:rgba(122,78,62,.92);color:#fff;border-radius:999px;padding:10px 26px;font-size:34px;font-weight:700}
+.chip{background:PALCHIP;color:#fff;border-radius:999px;padding:10px 26px;font-size:34px;font-weight:700}
 .cnt{font-size:34px;font-weight:700;text-shadow:0 2px 8px rgba(0,0,0,.5)}
-.ttlcard{position:absolute;left:70px;right:70px;top:1120px;background:rgba(122,78,62,.86);border-radius:36px;padding:46px 40px 50px;text-align:center}
-.ttlcard .k{display:inline-block;background:#f1e1d8;color:#6b4334;font-family:'Noto Sans CJK JP',sans-serif;font-weight:700;font-size:36px;border-radius:999px;padding:8px 28px}
+.ttlcard{position:absolute;left:70px;right:70px;top:1120px;background:PALCARD;border-radius:36px;padding:46px 40px 50px;text-align:center}
+.ttlcard .k{display:inline-block;background:PALK;color:PALKFG;font-family:'Noto Sans CJK JP',sans-serif;font-weight:700;font-size:36px;border-radius:999px;padding:8px 28px}
 .ttlcard .t{font-size:104px;font-weight:700;margin-top:18px;line-height:1.2}
 .ttlcard .s{font-size:40px;margin-top:16px;font-family:'Noto Sans CJK JP',sans-serif}
-.thanks{position:absolute;left:70px;right:70px;top:1200px;background:rgba(122,78,62,.86);border-radius:36px;padding:44px 40px;text-align:center}
+.thanks{position:absolute;left:70px;right:70px;top:1200px;background:PALCARD;border-radius:36px;padding:44px 40px;text-align:center}
 .thanks .t{font-size:70px;font-weight:700;line-height:1.35}
 .thanks .s{font-size:38px;margin-top:18px;font-family:'Noto Sans CJK JP',sans-serif;line-height:1.5}
 """
+CSS = CSS.replace("PALCHIP", PAL["chip"]).replace("PALCARD", PAL["card"]).replace("PALKFG", PAL["kfg"]).replace("PALK", PAL["k"]).replace("PALSHADE", PAL["shade"])
 
 photos = CFG['photos']; N = len(photos)
 with sync_playwright() as p:
@@ -72,11 +86,11 @@ with sync_playwright() as p:
         pg.screenshot(path=path, omit_background=True)
     anniv = f"<div class='s'>{CFG['anniv']}</div>" if CFG.get('anniv') else ''
     shot(f"<div class='top'></div>{deco()}<div class='hdr'><span class='chip'>{CFG['date']}</span></div>"
-         f"<div class='ttlcard'><span class='k'>{SEASON['word']}</span><div class='t'>今日の<br>ワンコたち</div><div class='s'>Dog salon OLLIE MAGIC</div>{anniv}</div>", f'{OUT}/o_title.png')
+         f"<div class='ttlcard'><span class='k'>{SEASON['word']}</span><div class='t'>{TXT['title']}</div><div class='s'>Dog salon OLLIE MAGIC</div>{anniv}</div>", f'{OUT}/o_title.png')
     for i in range(N):
-        shot(f"<div class='top'></div>{deco()}<div class='hdr'><span class='chip'>今日のワンコ</span><span class='cnt'>{i+1} / {N}</span></div>", f'{OUT}/o_{i}.png')
+        shot(f"<div class='top'></div>{deco()}<div class='hdr'><span class='chip'>{TXT['chip']}</span><span class='cnt'>{i+1} / {N}</span></div>", f'{OUT}/o_{i}.png')
     shot(f"<div class='top'></div>{deco()}<div class='hdr'><span class='chip'>{CFG['date']}</span></div>"
-         f"<div class='thanks'><div class='t'>今日も来てくれて<br>ありがとう</div><div class='s'>{CFG.get('thanksSub','また、きれいにしにきてね')}</div></div>", f'{OUT}/o_thanks.png')
+         f"<div class='thanks'><div class='t'>{TXT['thanks']}</div><div class='s'>{TXT['sub']}</div></div>", f'{OUT}/o_thanks.png')
     b.close()
 
 def clip(src, ov, d, out, z0=1.0, z1=1.07):
@@ -120,7 +134,7 @@ parts = []
 from PIL import Image, ImageOps
 cols = 3; rows = (N + cols - 1) // cols
 cw, ch = 2160 // cols, 3840 // rows
-col = Image.new('RGB', (2160, 3840), (251, 244, 238))
+col = Image.new('RGB', (2160, 3840), PAL['bg'])
 for i, f in enumerate(photos):
     im = ImageOps.fit(Image.open(f).convert('RGB'), (cw - 12, ch - 12), Image.LANCZOS, centering=(0.5, 0.4))
     r, c = divmod(i, cols)
@@ -133,7 +147,7 @@ if N % cols:
 col.save(f'{OUT}/collage.jpg', quality=97, subsampling=0)
 clip(f'{OUT}/collage.jpg', f'{OUT}/o_title.png', dT, f'{OUT}/c_title.mp4', 1.0, 1.04); parts.append((f'{OUT}/c_title.mp4', dT))
 for i, ph in enumerate(photos):
-    clip(ph, f'{OUT}/o_{i}.png', SEC, f'{OUT}/c_{i}.mp4'); parts.append((f'{OUT}/c_{i}.mp4', SEC))
+    clip(ph, f'{OUT}/o_{i}.png', SEC, f'{OUT}/c_{i}.mp4', *((1.08, 1.0) if STYLE == 'spa' else (1.0, 1.07))); parts.append((f'{OUT}/c_{i}.mp4', SEC))
 # 11/20 10:42 藤原さん「最後特定の一匹を出すと、何でうちの子出さないんだとなりそう。みんなが映るように、ちょっと演出を加えて」
 # → ありがとうの場面は、その日の子が1頭ずつ「ぽん」と並んでいく（全員が同じ大きさ）。最後の画面も全員の並び。
 from PIL import ImageDraw
@@ -165,7 +179,7 @@ nF = int(round(dK * FPS))
 pr = subprocess.Popen(f"ffmpeg -v error -y -f rawvideo -pix_fmt rgb24 -s {W}x{H} -r {FPS} -i - -c:v libx264 -qp 0 -preset ultrafast -pix_fmt yuv444p {OUT}/c_thanks.mp4", shell=True, stdin=subprocess.PIPE)
 for fi in range(nF):
     t = fi / FPS
-    fr = Image.new('RGBA', (W, H), (251, 244, 238, 255))
+    fr = Image.new('RGBA', (W, H), PAL['bg'] + (255,))
     for i, ((x, y, tw, th), tl) in enumerate(zip(lay, tiles)):
         k = (t - 0.2 - i * STEP) / POP
         if k <= 0: continue
@@ -196,7 +210,7 @@ inp = ' '.join(f'-i {p}' for p, _ in parts)
 fc = ''; prev = '[0:v]'; off = 0.0
 for k in range(1, len(parts)):
     off += parts[k-1][1] - XF
-    fc += f"{prev}[{k}:v]xfade=transition=fade:duration={XF}:offset={off:.3f}[x{k}];"; prev = f'[x{k}]'
+    fc += f"{prev}[{k}:v]xfade=transition={'fadewhite' if STYLE == 'spa' else 'fade'}:duration={XF}:offset={off:.3f}[x{k}];"; prev = f'[x{k}]'
 total = sum(d for _, d in parts) - XF * (len(parts) - 1)
 # 声の位置
 tEnd = total - dE + 0.3; tThanks = total - dE - dK + XF + 0.3; tTalk = dT - XF + 0.45
