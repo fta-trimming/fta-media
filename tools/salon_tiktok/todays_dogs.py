@@ -123,7 +123,10 @@ cw, ch = 2160 // cols, 3840 // rows
 col = Image.new('RGB', (2160, 3840), (251, 244, 238))
 for i, f in enumerate(photos):
     im = ImageOps.fit(Image.open(f).convert('RGB'), (cw - 12, ch - 12), Image.LANCZOS, centering=(0.5, 0.4))
-    col.paste(im, ((i % cols) * cw + 6, (i // cols) * ch + 6))
+    r, c = divmod(i, cols)
+    cnt = cols if r < rows - 1 else N - cols * (rows - 1)          # 11/20 11:58 藤原さん：下の列が足りないときは真ん中によせる
+    xo = (cols - cnt) * cw // 2
+    col.paste(im, (xo + c * cw + 6, r * ch + 6))
 if N % cols:
     # あまった枠はロゴの色の地に店名
     pass
