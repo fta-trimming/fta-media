@@ -2,7 +2,7 @@
 # 11/20 藤原さん「毎日来たその日のワンコを動画にして切り替えながら紹介したい」
 #   「飼い主さんが喜ぶ感じにして、季節的なものも取り入れて」「集客導線も成約につながる様に」
 # 使い方: python3 todays_dogs.py <設定.json>
-#   設定: {"out":..., "date":"11/20（金）", "season":"autumn", "photos":[...], "endPhoto": 0, "anniv": "18th"}
+#   設定: {"out":..., "date":"11/20（金）", "season":"autumn", "photos":[...], "anniv": "18th Anniversary"}
 import json, os, sys, subprocess, shutil
 from playwright.sync_api import sync_playwright
 
@@ -108,16 +108,59 @@ col.save(f'{OUT}/collage.jpg', quality=97, subsampling=0)
 clip(f'{OUT}/collage.jpg', f'{OUT}/o_title.png', dT, f'{OUT}/c_title.mp4', 1.0, 1.04); parts.append((f'{OUT}/c_title.mp4', dT))
 for i, ph in enumerate(photos):
     clip(ph, f'{OUT}/o_{i}.png', SEC, f'{OUT}/c_{i}.mp4'); parts.append((f'{OUT}/c_{i}.mp4', SEC))
-clip(photos[CFG.get('thanksPhoto', -1)], f'{OUT}/o_thanks.png', dK, f'{OUT}/c_thanks.mp4', 1.05, 1.0); parts.append((f'{OUT}/c_thanks.mp4', dK))
+# 11/20 10:42 藤原さん「最後特定の一匹を出すと、何でうちの子出さないんだとなりそう。みんなが映るように、ちょっと演出を加えて」
+# → ありがとうの場面は、その日の子が1頭ずつ「ぽん」と並んでいく（全員が同じ大きさ）。最後の画面も全員の並び。
+from PIL import ImageDraw
+def tiles_layout(n, x0, y0, w, h, gap):
+    cols = 3 if n <= 9 else 4
+    rows = (n + cols - 1) // cols
+    tw = (w - gap * (cols - 1)) / cols; th = (h - gap * (rows - 1)) / rows
+    out = []
+    for i in range(n):
+        r, c = divmod(i, cols)
+        cnt = cols if r < rows - 1 else n - cols * (rows - 1)      # 最後の段は真ん中によせる
+        xs = x0 + (w - (cnt * tw + (cnt - 1) * gap)) / 2
+        out.append((xs + c * (tw + gap), y0 + r * (th + gap), tw, th))
+    return out
+def tile_img(f, tw, th, rad, border=8):
+    im = ImageOps.fit(Image.open(f).convert('RGB'), (int(tw) - 2 * border, int(th) - 2 * border), Image.LANCZOS, centering=(0.5, 0.38))
+    t = Image.new('RGBA', (int(tw), int(th)), (255, 255, 255, 0))
+    m = Image.new('L', t.size, 0); ImageDraw.Draw(m).rounded_rectangle([0, 0, t.size[0] - 1, t.size[1] - 1], rad, fill=255)
+    bg = Image.new('RGBA', t.size, (255, 255, 255, 255)); t.paste(bg, (0, 0), m)
+    m2 = Image.new('L', im.size, 0); ImageDraw.Draw(m2).rounded_rectangle([0, 0, im.size[0] - 1, im.size[1] - 1], max(4, rad - border), fill=255)
+    t.paste(im, (border, border), m2)
+    return t
+lay = tiles_layout(N, 40, 300, 1000, 860, 16)
+tiles = [tile_img(f, tw, th, 26) for f, (x, y, tw, th) in zip(photos, lay)]
+STEP, POP = 0.12, 0.32
+dK = max(dK, 0.2 + STEP * N + POP + 1.3)
+ovl = Image.open(f'{OUT}/o_thanks.png').convert('RGBA')
+nF = int(round(dK * FPS))
+pr = subprocess.Popen(f"ffmpeg -v error -y -f rawvideo -pix_fmt rgb24 -s {W}x{H} -r {FPS} -i - -c:v libx264 -qp 0 -preset ultrafast -pix_fmt yuv444p {OUT}/c_thanks.mp4", shell=True, stdin=subprocess.PIPE)
+for fi in range(nF):
+    t = fi / FPS
+    fr = Image.new('RGBA', (W, H), (251, 244, 238, 255))
+    for i, ((x, y, tw, th), tl) in enumerate(zip(lay, tiles)):
+        k = (t - 0.2 - i * STEP) / POP
+        if k <= 0: continue
+        k = min(1.0, k); e = 1 - (1 - k) ** 3                       # やわらかく止まる
+        sc = 0.55 + 0.45 * e + 0.06 * __import__('math').sin(__import__('math').pi * min(1, k * 1.0)) * (1 - e)  # ほんの少し弾む
+        w2, h2 = max(2, int(tw * sc)), max(2, int(th * sc))
+        im = tl.resize((w2, h2), Image.BILINEAR)
+        if e < 1:
+            a = im.split()[3].point(lambda v: int(v * e)); im.putalpha(a)
+        fr.alpha_composite(im, (int(x + (tw - w2) / 2), int(y + (th - h2) / 2)))
+    fr.alpha_composite(ovl)
+    pr.stdin.write(fr.convert('RGB').tobytes())
+pr.stdin.close(); pr.wait()
+parts.append((f'{OUT}/c_thanks.mp4', dK))
 
-# 最後の画面：end_ollie.jpg の枠に、今日の子の写真（顔のアップ・正方形）
-from PIL import Image
-end = Image.open(os.path.join(HERE, 'end_ollie.jpg')).convert('RGB')
-ph = Image.open(photos[CFG.get('endPhoto', 0)]).convert('RGB')
-fx, fy, fs = CFG.get('endCrop', [0.5, 0.42, 0.62])  # 顔の中心（割合）と切り取る幅（写真の幅に対する割合）
-s = int(ph.width * fs); cx, cy = int(ph.width * fx), int(ph.height * fy)
-box = (max(0, cx - s // 2), max(0, cy - s // 2)); box = (box[0], box[1], box[0] + s, box[1] + s)
-end.paste(ph.crop(box).resize((597, 597), Image.LANCZOS), (242, 511))
+# 最後の画面：end_ollie.jpg の枠（597×597）に、その日の子みんなを並べる（1頭だけにしない）
+end = Image.open(os.path.join(HERE, 'end_ollie.jpg')).convert('RGBA')
+box = Image.new('RGBA', (597, 597), (255, 255, 255, 255))
+for f, (x, y, tw, th) in zip(photos, tiles_layout(N, 6, 6, 585, 585, 6)):
+    box.alpha_composite(tile_img(f, tw, th, 12, border=3), (int(x), int(y)))
+end.alpha_composite(box, (242, 511)); end = end.convert('RGB')
 end.save(f'{OUT}/end.png')
 run(f"ffmpeg -v error -y -loop 1 -i {OUT}/end.png -vf format=yuv444p -t {dE} -r {FPS} -c:v libx264 -qp 0 -preset ultrafast {OUT}/c_end.mp4")
 parts.append((f'{OUT}/c_end.mp4', dE))
