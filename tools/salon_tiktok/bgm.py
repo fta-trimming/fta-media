@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """OLLIE MAGIC 用のオリジナルBGM（自作・著作権なし・アコースティック）。
 11/20 13:47 藤原さん「両方アコースティックで少しニュアンス変えて」「音が少し大きくて音声と被るのが気になる」
-python3 bgm.py <style: dogs|spa> <秒> <out.wav> [seed]
+python3 bgm.py <style: dogs|spa|spa2> <秒> <out.wav> [seed]
 dogs = 明るいアコギのストローク＋口笛風メロディ（100BPM・C）
 spa  = ゆったりしたナイロンギターの指弾き（76BPM・F）
 seed で毎日少しずつ変わる（メロディの並び・コードの順・テンポ±3）。"""
@@ -11,7 +11,7 @@ SR = 48000
 style, L, out = sys.argv[1], float(sys.argv[2]), sys.argv[3]
 seed = int(sys.argv[4]) if len(sys.argv) > 4 else 1
 rng = np.random.default_rng(seed)
-BPM = (100 if style == 'dogs' else 76) + int(rng.integers(-3, 4))
+BPM = (100 if style == 'dogs' else 132 if style == 'spa2' else 76) + int(rng.integers(-3, 4))
 beat = 60 / BPM
 N = int(SR * (L + 3))
 mix = np.zeros((N, 2))
@@ -45,7 +45,7 @@ if style == 'dogs':
     root = 60
     progs = [[(0, 'M'), (9, 'm'), (5, 'M'), (7, 'M')], [(0, 'M'), (7, 'M'), (9, 'm'), (5, 'M')], [(5, 'M'), (7, 'M'), (0, 'M'), (9, 'm')]]
 else:
-    root = 65
+    root = 62 if style == 'spa2' else 65
     progs = [[(0, 'M7'), (-3, 'm7'), (-7, 'M7'), (-5, '7')], [(0, 'M7'), (-7, 'M7'), (-3, 'm7'), (-5, 'sus')], [(-7, 'M7'), (-5, '7'), (0, 'M7'), (-3, 'm7')]]
 prog = progs[seed % 3]
 SH = {'M': [0, 4, 7, 12, 16], 'm': [0, 3, 7, 12, 15], 'M7': [0, 7, 11, 16, 19], 'm7': [0, 7, 10, 15, 19], '7': [0, 7, 10, 16, 19], 'sus': [0, 7, 12, 17, 19]}
@@ -63,7 +63,7 @@ def melody_bar(r, q):
         notes.append((bt, m, (nxt - bt)))
     return notes
 
-bar = 4 * beat; nb = int(L / bar) + 2
+bar = (3 if style == 'spa2' else 4) * beat; nb = int(L / bar) + 2
 mel = [melody_bar(*prog[b % 4]) for b in range(8)]
 for b in range(nb):
     t0 = b * bar; r, q = prog[b % 4]; ch = [root - 12 + r + i for i in SH[q]]
@@ -77,6 +77,16 @@ for b in range(nb):
         add(guitar(root - 24 + r + 7, 1.2, 0.4, 0.995), t0 + 2 * beat, 0, 0.16)
         if b >= 1:
             for (bt, m, ln) in mel[b % 8]: add(whistle(m, ln * beat * 0.92), t0 + bt * beat, 0.35, 0.085)
+    elif style == 'spa2':
+        # 11/20 15:04「オプションの音楽を変えて」→ 3拍子のやさしいワルツ（低音＋2拍目3拍目に和音、上へ流れるアルペジオ）
+        add(guitar(root - 24 + r, 2.4, 0.3, 0.997), t0, 0, 0.26)
+        for k, bt in enumerate([1, 2]):
+            for q2, m in enumerate(ch[2:5]): add(guitar(m, 1.4, 0.28, 0.996), t0 + bt * beat + q2 * 0.018, -0.3, 0.09)
+        for k, s in enumerate([1, 2, 3, 4, 3, 2]):
+            add(guitar(ch[s] + 12, 1.6, 0.25, 0.997), t0 + k * beat / 2 + 0.02, 0.35, 0.07)
+        if b >= 2:
+            for (bt, m, ln) in mel[b % 8][:3]:
+                if bt < 3: add(guitar(m + 12, 2.2, 0.32, 0.998), t0 + bt * beat, 0.1, 0.17)
     else:
         # ナイロンギターの指弾き（低音→上の弦へ、8分音符のアルペジオ）
         pat = [0, 2, 3, 4, 1, 3, 2, 4]
