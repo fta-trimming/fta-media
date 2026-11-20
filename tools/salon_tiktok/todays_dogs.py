@@ -30,9 +30,10 @@ SEASON = {
 PAL = {'card': 'rgba(122,78,62,.86)', 'chip': 'rgba(122,78,62,.92)', 'k': '#f1e1d8', 'kfg': '#6b4334', 'bg': (251, 244, 238), 'shade': 'rgba(60,35,25,.55)'}
 if STYLE == 'spa':
     PAL = {'card': 'rgba(78,128,126,.86)', 'chip': 'rgba(78,128,126,.92)', 'k': '#e3f3f0', 'kfg': '#2f5f5c', 'bg': (238, 247, 246), 'shade': 'rgba(30,70,70,.45)'}
-TXT = {'title': CFG.get('titleText', '今日の<br>ワンコたち' if STYLE != 'spa' else '今日の<br>美容オプション'),
-       'chip': CFG.get('chipLabel', '今日のワンコ' if STYLE != 'spa' else '泡のスパタイム'),
-       'thanks': CFG.get('thanksText', '今日も来てくれて<br>ありがとう' if STYLE != 'spa' else 'みんな<br>おつかれさま'),
+# 11/20 17:55 藤原さん「次から今日ではなくこの日に変えた方が、その日に出なくても時系列的にいい」→「この日の」
+TXT = {'title': CFG.get('titleText', 'この日の<br>ワンコたち' if STYLE != 'spa' else 'この日の<br>美容オプション'),
+       'chip': CFG.get('chipLabel', 'この日のワンコ' if STYLE != 'spa' else '泡のスパタイム'),
+       'thanks': CFG.get('thanksText', '来てくれて<br>ありがとう' if STYLE != 'spa' else 'みんな<br>おつかれさま'),
        'sub': CFG.get('thanksSub', 'また、きれいにしにきてね' if STYLE != 'spa' else '泡でやさしく、うるおいケア')}
 
 def leaf(x, y, s, r, c):
@@ -101,8 +102,8 @@ def clip(src, ov, d, out, z0=1.0, z1=1.07):
 
 # 声（最初と最後だけ。途中は写真をゆっくり見てもらう）
 v1, v2 = f'{OUT}/v_title.wav', f'{OUT}/v_end.wav'
-run(f'python3 {TTS} "{CFG.get("voiceTitle","今日、オーリーマジックに来てくれた、ワンコたちです。")}" {v1} >/dev/null 2>&1')
-run(f'python3 {TTS} "{CFG.get("voiceThanks","今日も来てくれて、ありがとう。")}" {OUT}/v_thanks.wav >/dev/null 2>&1')
+run(f'python3 {TTS} "{CFG.get("voiceTitle","この日、オーリーマジックに来てくれた、ワンコたちです。" if STYLE != "spa" else "この日、美容オプションを、してくれた、ワンコたちです。")}" {v1} >/dev/null 2>&1')
+run(f'python3 {TTS} "{CFG.get("voiceThanks","来てくれて、ありがとう。" if STYLE != "spa" else "みんな、おつかれさま。")}" {OUT}/v_thanks.wav >/dev/null 2>&1')
 run(f'python3 {TTS} "{CFG.get("voiceEnd","ご予約は、プロフィールのラインから、どうぞ。")}" {v2} >/dev/null 2>&1')
 # 11/20 10:53 藤原さん「犬の紹介中を話し続けることは出来ます？お店の特長でもお店に関してであればなんでも、その都度変わってもいい」
 # → ワンコの紹介のあいだ、お店のことを話し続ける（talk の文。毎回ちがう話にする）。長ければ1頭の秒数をのばす。
