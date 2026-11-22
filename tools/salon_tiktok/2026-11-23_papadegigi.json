@@ -1,0 +1,97 @@
+{
+ "out": "/tmp/claude-0/-home-claude-fta-media/8a8d1de2-742a-5a7a-b975-0dccd94fdc83/scratchpad/papa/TikTok_PAPA_1123.mp4",
+ "size": [
+  720,
+  1280
+ ],
+ "crf": 13,
+ "brand": "dog care salon PAPA de GIGI",
+ "tag": "泡でこすらないシャンプーをするサロン",
+ "color": {
+  "card": "rgba(108,88,138,.84)",
+  "pill": "rgba(108,88,138,.92)",
+  "lab": "#ece4f4",
+  "labfg": "#5f4b80",
+  "hl": "#ece4f4",
+  "hlfg": "#56427a"
+ },
+ "scenes": [
+  {
+   "type": "title",
+   "y": 1240,
+   "html": "<div style='font-size:96px;font-weight:700'><span style='background:rgba(108,88,138,.84);padding:4px 26px;border-radius:18px'>足まわりで変わる</span></div><div style='font-size:104px;font-weight:700;margin-top:14px'><span class=hl>シルエット</span></div><div style='margin-top:26px'><span class=pill>泡でこすらないシャンプーをするサロン</span></div>",
+   "bg": {
+    "kind": "video",
+    "file": "/tmp/claude-0/-home-claude-fta-media/8a8d1de2-742a-5a7a-b975-0dccd94fdc83/scratchpad/papa/src/p25.mp4",
+    "start": 1.5
+   },
+   "min": 3.8,
+   "voice": "足まわりで変わる、シルエットをお見せします。"
+  },
+  {
+   "type": "end",
+   "bg": {
+    "kind": "video",
+    "file": "/tmp/claude-0/-home-claude-fta-media/8a8d1de2-742a-5a7a-b975-0dccd94fdc83/scratchpad/papa/m/gaikan_seg.mp4",
+    "start": 0,
+    "speed": 0.97
+   },
+   "min": 4.0,
+   "pad": 0.4,
+   "voice": "もりおか、さいえんの、ぱぱでじじです。"
+  },
+  {
+   "type": "card",
+   "num": 1,
+   "y": 1360,
+   "lab": "来た時",
+   "text": "足先まで<br>毛の量が多めでした",
+   "bg": {
+    "kind": "video",
+    "file": "/tmp/claude-0/-home-claude-fta-media/8a8d1de2-742a-5a7a-b975-0dccd94fdc83/scratchpad/papa/src/p22.mp4",
+    "start": 3.0
+   },
+   "voice": "来た時は、足先まで、けの量が多めでした。"
+  },
+  {
+   "type": "card",
+   "num": 1,
+   "y": 1360,
+   "lab": "横から",
+   "text": "足まわりを整えて<br>横から見たところ",
+   "bg": {
+    "kind": "video",
+    "file": "/tmp/claude-0/-home-claude-fta-media/8a8d1de2-742a-5a7a-b975-0dccd94fdc83/scratchpad/papa/src/p26.mp4",
+    "start": 0.0,
+    "speed": 0.8
+   },
+   "voice": "足まわりを整えて、横から見たところです。"
+  },
+  {
+   "type": "card",
+   "num": 1,
+   "y": 1360,
+   "lab": "仕上がり",
+   "text": "今日もよくがんばって<br><span class=hl>ふんわり</span>仕上がりました",
+   "bg": {
+    "kind": "video",
+    "file": "/tmp/claude-0/-home-claude-fta-media/8a8d1de2-742a-5a7a-b975-0dccd94fdc83/scratchpad/papa/src/p25.mp4",
+    "start": 5.5
+   },
+   "voice": "今日もよくがんばって、ふんわりかわいく仕上がりました。"
+  },
+  {
+   "type": "end",
+   "bg": {
+    "kind": "photo",
+    "file": "/tmp/claude-0/-home-claude-fta-media/8a8d1de2-742a-5a7a-b975-0dccd94fdc83/scratchpad/papa/m/end_p1123.png",
+    "x": 0.5,
+    "y": 0.5,
+    "zoom": 0.0001
+   },
+   "pad": 0.6,
+   "voice": "ご予約は、プロフィールのラインから、どうぞ。"
+  }
+ ],
+ "note": "11/23 PAPA カットスタイル「足まわりで変わるシルエット」。素材 2026-11-18_papa_pool の _22（来た時）・_26（仕上がり横）・_25（仕上がりの顔）＝ピンクのリードの同じ子。外観は 11/19 v6 の外観の場面（5.02〜8.98秒）。最後の画面は _25 の8秒のコマ。"
+}
