@@ -1,0 +1,165 @@
+{
+ "out": "FTA_2026-11-23_w1123_yt.mp4",
+ "tts": "/home/claude/fta-media/tools/voicevox/tts_voices.py",
+ "voiceName": "aoyama",
+ "speed": 1.2,
+ "crf": 14,
+ "brand": "FUJIWARA TRIMMING ACADEMY",
+ "tag": "トリミングサロンの生産性",
+ "color": {
+  "card": "rgba(36,64,47,.86)",
+  "pill": "rgba(61,107,79,.95)",
+  "lab": "#f6d77a",
+  "labfg": "#24402f",
+  "hl": "#f6d77a",
+  "hlfg": "#24402f"
+ },
+ "scenes": [
+  {
+   "type": "title",
+   "y": 640,
+   "min": 3.2,
+   "pad": 0.3,
+   "html": "<div style='font-family:Noto Sans CJK JP;font-size:72px;font-weight:900;color:#fff;-webkit-text-stroke:3px #000;paint-order:stroke'>「乾かすのに時間がかかる…」</div><div style='font-family:Noto Sans CJK JP;font-size:124px;font-weight:900;line-height:1.15;margin-top:18px;color:#f6d77a;-webkit-text-stroke:6px #1b2e22;paint-order:stroke'>見るのは「根元」</div><div style='display:inline-block;margin-top:24px;background:#e0412f;color:#fff;font-family:Noto Sans CJK JP;font-weight:900;font-size:56px;padding:8px 30px;border-radius:14px'>先はあとから伸びる</div>",
+   "bg": {
+    "kind": "image",
+    "file": "/home/claude/fta-media/tools/salon_tiktok/bg_theme/table.png",
+    "zoom": 0
+   },
+   "voice": "乾かすのに時間がかかる。見るのは根元。先は、あとから伸びます。",
+   "pop": true,
+   "punch": true
+  },
+  {
+   "type": "card",
+   "num": 1,
+   "y": 1070,
+   "lab": "差が出るのは",
+   "text": "<span class=hl>ブラシ</span>の<br>力加減と距離",
+   "sm": "新人さんとベテランで、ここが違う",
+   "bg": {
+    "kind": "image",
+    "file": "/home/claude/fta-media/tools/salon_tiktok/bg_theme/table.png",
+    "zoom": 0
+   },
+   "voice": "新人さんと差が出るのは、スリッカーブラシの、力加減と距離です。",
+   "min": 4.4,
+   "pad": 0.75,
+   "pop": true,
+   "punch": true,
+   "illus": "<svg width='860' height='654' viewBox='0 0 920 700' xmlns='http://www.w3.org/2000/svg'><g transform='translate(120,260) scale(1.4)'><rect x='0' y='0' width='170' height='120' rx='20' fill='#e9e3d6' stroke='#b9ae96' stroke-width='5'/><line x1='18' y1='120' x2='18' y2='150' stroke='#999' stroke-width='5'/><line x1='38' y1='120' x2='38' y2='150' stroke='#999' stroke-width='5'/><line x1='58' y1='120' x2='58' y2='150' stroke='#999' stroke-width='5'/><line x1='78' y1='120' x2='78' y2='150' stroke='#999' stroke-width='5'/><line x1='98' y1='120' x2='98' y2='150' stroke='#999' stroke-width='5'/><line x1='118' y1='120' x2='118' y2='150' stroke='#999' stroke-width='5'/><line x1='138' y1='120' x2='138' y2='150' stroke='#999' stroke-width='5'/><line x1='158' y1='120' x2='158' y2='150' stroke='#999' stroke-width='5'/><rect x='60' y='-160' width='50' height='170' rx='20' fill='#c25b3c'/></g><text x='560' y='120' font-family='Noto Sans CJK JP' font-weight='700' font-size='50' fill='#24402f' text-anchor='middle'>力加減</text><text x='560' y='190' font-family='Noto Sans CJK JP' font-weight='700' font-size='34' fill='#666' text-anchor='middle'>強すぎず・弱すぎず</text><text x='560' y='330' font-family='Noto Sans CJK JP' font-weight='700' font-size='50' fill='#24402f' text-anchor='middle'>当てる距離</text><text x='560' y='400' font-family='Noto Sans CJK JP' font-weight='700' font-size='34' fill='#666' text-anchor='middle'>根元まで届く深さ</text><g transform='translate(430,400) scale(0.55)'>\n<ellipse cx=\"300\" cy=\"545\" rx=\"230\" ry=\"22\" fill=\"#000\" opacity=\".18\"/>\n<g fill=\"#f6ead8\" stroke=\"#d9c3a3\" stroke-width=\"4\">\n<rect x=\"205\" y=\"400\" width=\"44\" height=\"130\" rx=\"20\"/><rect x=\"255\" y=\"410\" width=\"44\" height=\"125\" rx=\"20\"/>\n<rect x=\"355\" y=\"410\" width=\"44\" height=\"125\" rx=\"20\"/><rect x=\"405\" y=\"400\" width=\"44\" height=\"130\" rx=\"20\"/>\n<circle cx=\"227\" cy=\"525\" r=\"30\"/><circle cx=\"277\" cy=\"530\" r=\"30\"/><circle cx=\"377\" cy=\"530\" r=\"30\"/><circle cx=\"427\" cy=\"525\" r=\"30\"/>\n<path d=\"M470 330 q60 -40 70 -110\" fill=\"none\" stroke-width=\"10\"/><circle cx=\"540\" cy=\"205\" r=\"40\"/>\n<ellipse cx=\"330\" cy=\"370\" rx=\"160\" ry=\"95\"/>\n<circle cx=\"215\" cy=\"340\" r=\"70\"/>\n<ellipse cx=\"130\" cy=\"250\" rx=\"42\" ry=\"80\"/><ellipse cx=\"290\" cy=\"250\" rx=\"42\" ry=\"80\"/>\n<circle cx=\"210\" cy=\"215\" r=\"88\"/><circle cx=\"205\" cy=\"130\" r=\"58\"/>\n<ellipse cx=\"210\" cy=\"262\" rx=\"52\" ry=\"38\" fill=\"#fbf4ea\"/></g>\n<circle cx=\"180\" cy=\"210\" r=\"11\" fill=\"#2b2b2b\"/><circle cx=\"240\" cy=\"210\" r=\"11\" fill=\"#2b2b2b\"/>\n<circle cx=\"184\" cy=\"206\" r=\"3.5\" fill=\"#fff\"/><circle cx=\"244\" cy=\"206\" r=\"3.5\" fill=\"#fff\"/>\n<ellipse cx=\"210\" cy=\"248\" rx=\"15\" ry=\"11\" fill=\"#2b2b2b\"/><path d=\"M196 272 q14 12 28 0\" fill=\"none\" stroke=\"#2b2b2b\" stroke-width=\"4\" stroke-linecap=\"round\"/>\n<circle cx=\"160\" cy=\"245\" r=\"12\" fill=\"#f3b8a8\" opacity=\".6\"/><circle cx=\"260\" cy=\"245\" r=\"12\" fill=\"#f3b8a8\" opacity=\".6\"/>\n</g></svg>",
+   "iy": 290,
+   "ih": 720
+  },
+  {
+   "type": "card",
+   "num": 2,
+   "y": 1070,
+   "lab": "時間がかかる原因",
+   "text": "根元まで<br><span style='color:#ff7a66'>届いていない</span>",
+   "sm": "毛玉が残る・根元が伸びない",
+   "bg": {
+    "kind": "image",
+    "file": "/home/claude/fta-media/tools/salon_tiktok/bg_theme/table.png",
+    "zoom": 0
+   },
+   "voice": "力が弱いと、けだまが残る。距離が浅いと、根元まで届きません。",
+   "min": 4.4,
+   "pad": 0.75,
+   "pop": true,
+   "punch": true,
+   "illus": "<svg width='860' height='654' viewBox='0 0 920 700' xmlns='http://www.w3.org/2000/svg'><text x='230' y='70' font-family='Noto Sans CJK JP' font-weight='700' font-size='46' fill='#e0412f' text-anchor='middle'>浅い</text><text x='690' y='70' font-family='Noto Sans CJK JP' font-weight='700' font-size='46' fill='#3d7a55' text-anchor='middle'>根元まで</text><g transform='translate(230,280)'><rect x='-130' y='170' width='260' height='30' fill='#e7d9c4'/><path d='M-90 170 q 18 -20 0 -40 q -18 -20 0 -40 q 18 -20 0 -40' fill='none' stroke='#e0412f' stroke-width='9' stroke-linecap='round'/><path d='M-45 170 q 18 -20 0 -40 q -18 -20 0 -40 q 18 -20 0 -40' fill='none' stroke='#e0412f' stroke-width='9' stroke-linecap='round'/><path d='M0 170 q 18 -20 0 -40 q -18 -20 0 -40 q 18 -20 0 -40' fill='none' stroke='#e0412f' stroke-width='9' stroke-linecap='round'/><path d='M45 170 q 18 -20 0 -40 q -18 -20 0 -40 q 18 -20 0 -40' fill='none' stroke='#e0412f' stroke-width='9' stroke-linecap='round'/><path d='M90 170 q 18 -20 0 -40 q -18 -20 0 -40 q 18 -20 0 -40' fill='none' stroke='#e0412f' stroke-width='9' stroke-linecap='round'/></g><g transform='translate(690,280)'><rect x='-130' y='170' width='260' height='30' fill='#e7d9c4'/><line x1='-90' y1='170' x2='-90' y2='0' stroke='#3d7a55' stroke-width='9' stroke-linecap='round'/><line x1='-45' y1='170' x2='-45' y2='0' stroke='#3d7a55' stroke-width='9' stroke-linecap='round'/><line x1='0' y1='170' x2='0' y2='0' stroke='#3d7a55' stroke-width='9' stroke-linecap='round'/><line x1='45' y1='170' x2='45' y2='0' stroke='#3d7a55' stroke-width='9' stroke-linecap='round'/><line x1='90' y1='170' x2='90' y2='0' stroke='#3d7a55' stroke-width='9' stroke-linecap='round'/></g><text x='230' y='560' font-family='Noto Sans CJK JP' font-weight='700' font-size='34' fill='#e0412f' text-anchor='middle'>根元が伸び切らない</text><text x='690' y='560' font-family='Noto Sans CJK JP' font-weight='700' font-size='34' fill='#3d7a55' text-anchor='middle'>根元から伸びる</text><line x1='460' y1='100' x2='460' y2='600' stroke='#ddd' stroke-width='4'/></svg>",
+   "iy": 290,
+   "ih": 720
+  },
+  {
+   "type": "card",
+   "num": 3,
+   "y": 1070,
+   "lab": "乾かす前に",
+   "text": "タオルとブロワーで<br><span class=hl>水分を先に飛ばす</span>",
+   "sm": "タオルドライをしっかりすると、時短に",
+   "bg": {
+    "kind": "image",
+    "file": "/home/claude/fta-media/tools/salon_tiktok/bg_theme/clock.png",
+    "zoom": 0
+   },
+   "voice": "先にタオルとブロワーで、水分を飛ばす。これで時短になります。",
+   "min": 4.4,
+   "pad": 0.75,
+   "pop": true,
+   "punch": true,
+   "illus": "<svg width='860' height='654' viewBox='0 0 920 700' xmlns='http://www.w3.org/2000/svg'><rect x='60' y='150' width='300' height='300' rx='24' fill='#eef5f0' stroke='none' stroke-width='0'/><text x='210' y='280' font-family='Noto Sans CJK JP' font-weight='700' font-size='90' fill='#24402f' text-anchor='middle'>🧺</text><text x='210' y='400' font-family='Noto Sans CJK JP' font-weight='700' font-size='40' fill='#24402f' text-anchor='middle'>タオルドライ</text><defs><marker id='m390300' markerWidth='5' markerHeight='5' refX='2.5' refY='2.5' orient='auto'><path d='M0 0 L5 2.5 L0 5z' fill='#24402f'/></marker></defs><line x1='390' y1='300' x2='470' y2='300' stroke='#24402f' stroke-width='10' marker-end='url(#m390300)'/><g transform='translate(500,120) scale(1.0)'><rect x='0' y='0' width='220' height='110' rx='50' fill='#4b6b8a'/><rect x='200' y='25' width='90' height='60' rx='14' fill='#3a556e'/><rect x='40' y='100' width='60' height='170' rx='22' fill='#4b6b8a'/><path d='M300 40 q 40 -12 80 0 t 80 0' fill='none' stroke='#9cc3e6' stroke-width='8' stroke-linecap='round'/><path d='M300 58 q 40 -12 80 0 t 80 0' fill='none' stroke='#9cc3e6' stroke-width='8' stroke-linecap='round'/><path d='M300 76 q 40 -12 80 0 t 80 0' fill='none' stroke='#9cc3e6' stroke-width='8' stroke-linecap='round'/></g><text x='690' y='480' font-family='Noto Sans CJK JP' font-weight='700' font-size='36' fill='#24402f' text-anchor='middle'>ブロワーで水分を飛ばす</text><rect x='220' y='560' width='480' height='90' rx='45' fill='#24402f' stroke='none' stroke-width='0'/><text x='460' y='620' font-family='Noto Sans CJK JP' font-weight='700' font-size='40' fill='#f6d77a' text-anchor='middle'>乾かす時間が短くなる</text></svg>",
+   "iy": 290,
+   "ih": 720
+  },
+  {
+   "type": "card",
+   "num": 4,
+   "y": 1070,
+   "lab": "ムラが出やすい所から",
+   "text": "<span class=hl>短い所・内側</span>を<br>先に乾かす",
+   "sm": "ひじ・股・耳の裏・毛量が多い子の根元",
+   "bg": {
+    "kind": "image",
+    "file": "/home/claude/fta-media/tools/salon_tiktok/bg_theme/table.png",
+    "zoom": 0
+   },
+   "voice": "短い所は縮れるので先に。ひじ、股、耳の裏も、先に乾かします。",
+   "min": 4.4,
+   "pad": 0.75,
+   "pop": true,
+   "punch": true,
+   "illus": "<svg width='860' height='654' viewBox='0 0 920 700' xmlns='http://www.w3.org/2000/svg'><g transform='translate(150,60) scale(1.05)'>\n<ellipse cx=\"300\" cy=\"545\" rx=\"230\" ry=\"22\" fill=\"#000\" opacity=\".18\"/>\n<g fill=\"#f6ead8\" stroke=\"#d9c3a3\" stroke-width=\"4\">\n<rect x=\"205\" y=\"400\" width=\"44\" height=\"130\" rx=\"20\"/><rect x=\"255\" y=\"410\" width=\"44\" height=\"125\" rx=\"20\"/>\n<rect x=\"355\" y=\"410\" width=\"44\" height=\"125\" rx=\"20\"/><rect x=\"405\" y=\"400\" width=\"44\" height=\"130\" rx=\"20\"/>\n<circle cx=\"227\" cy=\"525\" r=\"30\"/><circle cx=\"277\" cy=\"530\" r=\"30\"/><circle cx=\"377\" cy=\"530\" r=\"30\"/><circle cx=\"427\" cy=\"525\" r=\"30\"/>\n<path d=\"M470 330 q60 -40 70 -110\" fill=\"none\" stroke-width=\"10\"/><circle cx=\"540\" cy=\"205\" r=\"40\"/>\n<ellipse cx=\"330\" cy=\"370\" rx=\"160\" ry=\"95\"/>\n<circle cx=\"215\" cy=\"340\" r=\"70\"/>\n<ellipse cx=\"130\" cy=\"250\" rx=\"42\" ry=\"80\"/><ellipse cx=\"290\" cy=\"250\" rx=\"42\" ry=\"80\"/>\n<circle cx=\"210\" cy=\"215\" r=\"88\"/><circle cx=\"205\" cy=\"130\" r=\"58\"/>\n<ellipse cx=\"210\" cy=\"262\" rx=\"52\" ry=\"38\" fill=\"#fbf4ea\"/></g>\n<circle cx=\"180\" cy=\"210\" r=\"11\" fill=\"#2b2b2b\"/><circle cx=\"240\" cy=\"210\" r=\"11\" fill=\"#2b2b2b\"/>\n<circle cx=\"184\" cy=\"206\" r=\"3.5\" fill=\"#fff\"/><circle cx=\"244\" cy=\"206\" r=\"3.5\" fill=\"#fff\"/>\n<ellipse cx=\"210\" cy=\"248\" rx=\"15\" ry=\"11\" fill=\"#2b2b2b\"/><path d=\"M196 272 q14 12 28 0\" fill=\"none\" stroke=\"#2b2b2b\" stroke-width=\"4\" stroke-linecap=\"round\"/>\n<circle cx=\"160\" cy=\"245\" r=\"12\" fill=\"#f3b8a8\" opacity=\".6\"/><circle cx=\"260\" cy=\"245\" r=\"12\" fill=\"#f3b8a8\" opacity=\".6\"/>\n</g><circle cx='300' cy='300' r='44' fill='none' stroke='#e0412f' stroke-width='8'/><circle cx='420' cy='520' r='44' fill='none' stroke='#e0412f' stroke-width='8'/><circle cx='560' cy='480' r='44' fill='none' stroke='#e0412f' stroke-width='8'/><rect x='640' y='120' width='260' height='300' rx='24' fill='#fff7dc' stroke='#d9b440' stroke-width='5'/><text x='770' y='190' font-family='Noto Sans CJK JP' font-weight='700' font-size='36' fill='#e0412f' text-anchor='middle'>先に乾かす</text><text x='770' y='260' font-family='Noto Sans CJK JP' font-weight='700' font-size='36' fill='#24402f' text-anchor='middle'>① 短い所</text><text x='770' y='320' font-family='Noto Sans CJK JP' font-weight='700' font-size='36' fill='#24402f' text-anchor='middle'>② ひじ・股</text><text x='770' y='380' font-family='Noto Sans CJK JP' font-weight='700' font-size='36' fill='#24402f' text-anchor='middle'>③ 耳の裏</text></svg>",
+   "iy": 290,
+   "ih": 720
+  },
+  {
+   "type": "card",
+   "num": 5,
+   "y": 1070,
+   "lab": "教えるときは、ひと言",
+   "text": "「とにかく<span class=hl>根元</span>」",
+   "sm": "新人さんは迷わず、教える人も楽に",
+   "bg": {
+    "kind": "image",
+    "file": "/home/claude/fta-media/tools/salon_tiktok/bg_theme/note.png",
+    "zoom": 0
+   },
+   "voice": "新人さんに教えるときは、とにかく根元、のひと言。教える人も楽になります。",
+   "min": 4.4,
+   "pad": 0.75,
+   "pop": true,
+   "punch": true,
+   "illus": "<svg width='860' height='654' viewBox='0 0 920 700' xmlns='http://www.w3.org/2000/svg'><rect x='160' y='80' width='600' height='150' rx='30' fill='#fff' stroke='#3d7a55' stroke-width='5'/><polygon points='220,230 260,230 210,270' fill='#fff' stroke='#3d7a55' stroke-width='5'/><rect x='215' y='224' width='50' height='10' fill='#fff'/><text x='460.0' y='176.6' font-family='Noto Sans CJK JP' font-weight='700' font-size='60' fill='#24402f' text-anchor='middle'>とにかく根元！</text><rect x='90' y='400' width='350' height='190' rx='24' fill='#eef5f0' stroke='none' stroke-width='0'/><text x='265' y='475' font-family='Noto Sans CJK JP' font-weight='700' font-size='40' fill='#24402f' text-anchor='middle'>新人さん</text><text x='265' y='545' font-family='Noto Sans CJK JP' font-weight='700' font-size='40' fill='#3d7a55' text-anchor='middle'>迷わない</text><rect x='480' y='400' width='350' height='190' rx='24' fill='#eef5f0' stroke='none' stroke-width='0'/><text x='655' y='475' font-family='Noto Sans CJK JP' font-weight='700' font-size='40' fill='#24402f' text-anchor='middle'>教える人</text><text x='655' y='545' font-family='Noto Sans CJK JP' font-weight='700' font-size='40' fill='#3d7a55' text-anchor='middle'>言うことが1つ</text></svg>",
+   "iy": 290,
+   "ih": 720
+  },
+  {
+   "type": "card",
+   "num": 6,
+   "y": 1070,
+   "lab": "💾 保存",
+   "text": "保存して<br>見返してね",
+   "sm": "根元が乾けば、先はあとから伸びる",
+   "bg": {
+    "kind": "image",
+    "file": "/home/claude/fta-media/tools/salon_tiktok/bg_theme/note.png",
+    "zoom": 0
+   },
+   "voice": "根元が乾けば、先はあとから伸びます。保存して、見返してね。",
+   "min": 3.6,
+   "pad": 0.8
+  }
+ ],
+ "noAnim": true,
+ "meta": {
+  "kind": "reel",
+  "cat": "tech",
+  "head": "乾かすのに時間がかかるなら、根元から。",
+  "gift": [
+   "dry_kit",
+   "根元から乾かす ドライのチェック表"
+  ]
+ }
+}
