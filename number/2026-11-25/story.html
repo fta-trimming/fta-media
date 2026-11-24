@@ -1,0 +1,53 @@
+<!doctype html><html><head><meta charset="utf-8"><style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{width:1080px;height:1920px;background:#e8f2ec;font-family:'Noto Sans CJK JP';color:#24402f;position:relative;overflow:hidden}
+.brand{position:absolute;left:92px;top:146px;font-size:30px;letter-spacing:7px;font-weight:700;color:#3d6b4f}
+.tag{position:absolute;left:90px;top:260px;background:#3d6b4f;color:#fff;font-size:40px;font-weight:900;padding:14px 32px;border-radius:14px}
+h1{position:absolute;left:90px;top:372px;font-size:84px;font-weight:900;line-height:1.28;letter-spacing:-1px}
+h1 .g{color:#3d6b4f}
+.card{position:absolute;left:90px;top:610px;width:900px;height:690px;background:#fff;border-radius:44px;padding:40px 40px}
+.ct{font-size:36px;font-weight:900;color:#24402f}
+.ct small{font-size:30px;font-weight:700;color:#3d6b4f;margin-left:14px}
+.row{display:flex;align-items:center;margin-top:44px}
+.wk{width:110px;font-size:30px;font-weight:900;color:#3d6b4f}
+.paws{display:flex;flex-wrap:nowrap;gap:4px}
+.p{width:44px;height:44px}
+.flagrow{margin-top:48px;display:flex;justify-content:flex-end;align-items:center;gap:14px}
+.flag{background:#f6d77a;color:#24402f;font-size:34px;font-weight:900;padding:12px 26px;border-radius:40px}
+.arrow{font-size:40px;font-weight:900;color:#3d6b4f}
+.leg{margin-top:40px;font-size:28px;font-weight:700;color:#555;display:flex;align-items:center;gap:12px}
+.leg svg{width:36px;height:36px}
+.lead{position:absolute;left:92px;top:1330px;font-size:46px;font-weight:900}
+.ans{position:absolute;left:92px;top:1385px;display:flex;align-items:flex-end;font-weight:900}
+.ans .a1{font-size:84px;margin-bottom:14px}
+.ans .num{font-size:190px;line-height:1;color:#3d6b4f;background:linear-gradient(transparent 52%,#f6d77a 52%);padding:0 10px;margin:0 8px;letter-spacing:-6px}
+.ans .a2{font-size:84px;margin-bottom:14px}
+.ex{position:absolute;left:92px;top:1600px;font-size:30px;color:#666}
+.tip{position:absolute;left:92px;top:1652px;font-size:32px;font-weight:700;color:#3d6b4f;line-height:1.5}
+.save{position:absolute;left:92px;top:1770px;font-size:40px;font-weight:900}
+.note{position:absolute;left:92px;top:1828px;font-size:30px;font-weight:700;color:#7a8a80}
+</style></head><body>
+<div class="brand">FUJIWARA TRIMMING ACADEMY</div>
+<div class="tag">今日の数字</div>
+<h1>一度、伝えずに<br><span class="g">自由に数をやると</span></h1>
+<div class="card">
+<div class="ct">担当したワンコ<small>（例）1日3頭・月20日</small></div>
+<div id="rows"></div>
+<div class="flagrow"><span class="arrow">→</span><span class="flag">ここで、もう一度伝える</span></div>
+<div class="leg" id="leg"></div>
+</div>
+<div class="lead">1日3頭でも、</div>
+<div class="ans"><span class="a1">ひと月で</span><span class="num">60</span><span class="a2">頭分</span></div>
+<div class="ex">（例）新人さんが1日3頭・月20日、担当したとき</div>
+<div class="tip">言い続けるより、手が覚える数。<br>経験が上がったら、もう一度伝えます</div>
+<div class="save">保存して見返してね</div>
+<div class="note">集客や育成のことは、noteで書いています</div>
+<script>
+const paw=c=>'<svg class="p" viewBox="0 0 100 100"><ellipse cx="50" cy="66" rx="24" ry="20" fill="'+c+'"/><ellipse cx="22" cy="40" rx="10" ry="13" fill="'+c+'"/><ellipse cx="40" cy="24" rx="10" ry="13" fill="'+c+'"/><ellipse cx="60" cy="24" rx="10" ry="13" fill="'+c+'"/><ellipse cx="78" cy="40" rx="10" ry="13" fill="'+c+'"/></svg>';
+const cols=['#a9cdb6','#7fae90','#55886a','#2f5a40'];
+let h='',n=0;
+['1週目','2週目','3週目','4週目'].forEach((w,r)=>{h+='<div class="row"><div class="wk">'+w+'</div><div class="paws">';for(let i=0;i<15;i++){h+=paw(cols[r]);n++}h+='</div></div>'});
+document.getElementById('rows').innerHTML=h;
+document.getElementById('leg').innerHTML=paw('#55886a').replace('class="p"','')+'＝担当したワンコ 1頭（色がこいほど、経験が上がる）';
+document.title=n;
+</script></body></html>
