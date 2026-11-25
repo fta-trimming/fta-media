@@ -1,0 +1,165 @@
+{
+ "out": "FTA_2026-11-25_w1123_yt.mp4",
+ "tts": "/home/claude/fta-media/tools/voicevox/tts_voices.py",
+ "voiceName": "aoyama",
+ "speed": 1.2,
+ "crf": 14,
+ "brand": "FUJIWARA TRIMMING ACADEMY",
+ "tag": "トリミングサロンの生産性",
+ "color": {
+  "card": "rgba(36,64,47,.86)",
+  "pill": "rgba(61,107,79,.95)",
+  "lab": "#f6d77a",
+  "labfg": "#24402f",
+  "hl": "#f6d77a",
+  "hlfg": "#24402f"
+ },
+ "scenes": [
+  {
+   "type": "title",
+   "y": 640,
+   "min": 3.2,
+   "pad": 0.3,
+   "html": "<div style='font-family:Noto Sans CJK JP;font-size:72px;font-weight:900;color:#fff;-webkit-text-stroke:3px #000;paint-order:stroke'>「何度言っても、できない…」</div><div style='font-family:Noto Sans CJK JP;font-size:132px;font-weight:900;line-height:1.15;margin-top:18px;color:#f6d77a;-webkit-text-stroke:6px #1b2e22;paint-order:stroke'>一度、伝えない</div><div style='display:inline-block;margin-top:24px;background:#e0412f;color:#fff;font-family:Noto Sans CJK JP;font-weight:900;font-size:56px;padding:8px 30px;border-radius:14px'>得意から増やす</div>",
+   "bg": {
+    "kind": "image",
+    "file": "/home/claude/fta-media/tools/salon_tiktok/bg_theme/note.png",
+    "zoom": 0
+   },
+   "voice": "何度言っても、できない。そんなときは、一度、伝えない。得意から増やします。",
+   "pop": true,
+   "punch": true
+  },
+  {
+   "type": "card",
+   "num": 1,
+   "y": 1070,
+   "lab": "何度も言う所は",
+   "text": "その人の<br><span class=hl>不得意な所</span>",
+   "sm": "そこから直そうとすると、時間がかかる",
+   "bg": {
+    "kind": "image",
+    "file": "/home/claude/fta-media/tools/salon_tiktok/bg_theme/note.png",
+    "zoom": 0
+   },
+   "voice": "何度も言う所は、その人の不得意な所。そこから直すと、時間がかかります。",
+   "min": 4.4,
+   "pad": 0.75,
+   "pop": true,
+   "punch": true,
+   "illus": "<svg width='860' height='654' viewBox='0 0 920 700' xmlns='http://www.w3.org/2000/svg'><rect x='80' y='60' width='400' height='120' rx='30' fill='#fff' stroke='#e0412f' stroke-width='5'/><polygon points='140,180 180,180 130,220' fill='#fff' stroke='#e0412f' stroke-width='5'/><rect x='135' y='174' width='50' height='10' fill='#fff'/><text x='280.0' y='136.56' font-family='Noto Sans CJK JP' font-weight='700' font-size='46' fill='#e0412f' text-anchor='middle'>また同じ所…</text><rect x='80' y='300' width='360' height='300' rx='24' fill='#eef5f0' stroke='none' stroke-width='0'/><text x='260' y='400' font-family='Noto Sans CJK JP' font-weight='700' font-size='56' fill='#e0412f' text-anchor='middle'>不得意</text><text x='260' y='480' font-family='Noto Sans CJK JP' font-weight='700' font-size='36' fill='#666' text-anchor='middle'>何度も言う所</text><rect x='480' y='300' width='360' height='300' rx='24' fill='#eef5f0' stroke='none' stroke-width='0'/><text x='660' y='400' font-family='Noto Sans CJK JP' font-weight='700' font-size='56' fill='#3d7a55' text-anchor='middle'>得意</text><text x='660' y='480' font-family='Noto Sans CJK JP' font-weight='700' font-size='36' fill='#666' text-anchor='middle'>できる所</text></svg>",
+   "iy": 290,
+   "ih": 720
+  },
+  {
+   "type": "card",
+   "num": 2,
+   "y": 1070,
+   "lab": "伝わらない理由",
+   "text": "教える人と<br><span class=hl>感覚がちがう</span>",
+   "sm": "自分の感覚で教えても、すぐにはつかめない",
+   "bg": {
+    "kind": "image",
+    "file": "/home/claude/fta-media/tools/salon_tiktok/bg_theme/note.png",
+    "zoom": 0
+   },
+   "voice": "伝わらないのは、感覚がちがうから。自分の感覚で教えても、つかめません。",
+   "min": 4.4,
+   "pad": 0.75,
+   "pop": true,
+   "punch": true,
+   "illus": "<svg width='860' height='654' viewBox='0 0 920 700' xmlns='http://www.w3.org/2000/svg'><circle cx='280' cy='330' r='190' fill='#3d7a55' opacity='.25'/><circle cx='640' cy='330' r='190' fill='#f6d77a' opacity='.5'/><text x='230' y='340' font-family='Noto Sans CJK JP' font-weight='700' font-size='44' fill='#24402f' text-anchor='middle'>教える人</text><text x='700' y='340' font-family='Noto Sans CJK JP' font-weight='700' font-size='44' fill='#24402f' text-anchor='middle'>新人さん</text><text x='280' y='380' font-family='Noto Sans CJK JP' font-weight='700' font-size='34' fill='#666' text-anchor='middle'>の感覚</text><text x='660' y='380' font-family='Noto Sans CJK JP' font-weight='700' font-size='34' fill='#666' text-anchor='middle'>の感覚</text><text x='460' y='640' font-family='Noto Sans CJK JP' font-weight='700' font-size='40' fill='#24402f' text-anchor='middle'>感覚は、人によってちがう</text></svg>",
+   "iy": 290,
+   "ih": 720
+  },
+  {
+   "type": "card",
+   "num": 3,
+   "y": 1070,
+   "lab": "変えたこと",
+   "text": "<span class=hl>できる所</span>から<br>得意を増やす",
+   "sm": "不得意は、慣れてきてから直す",
+   "bg": {
+    "kind": "image",
+    "file": "/home/claude/fta-media/tools/salon_tiktok/bg_theme/table.png",
+    "zoom": 0
+   },
+   "voice": "だから、できる所から得意を増やす。不得意は、慣れてから直します。",
+   "min": 4.4,
+   "pad": 0.75,
+   "pop": true,
+   "punch": true,
+   "illus": "<svg width='860' height='654' viewBox='0 0 920 700' xmlns='http://www.w3.org/2000/svg'><rect x='100' y='450' width='170' height='110' rx='16' fill='#3d7a55' stroke='none' stroke-width='0'/><rect x='290' y='340' width='170' height='220' rx='16' fill='#3d7a55' stroke='none' stroke-width='0'/><rect x='480' y='230' width='170' height='330' rx='16' fill='#3d7a55' stroke='none' stroke-width='0'/><rect x='670' y='120' width='170' height='440' rx='16' fill='#cfe0d4' stroke='none' stroke-width='0'/><text x='185' y='600' font-family='Noto Sans CJK JP' font-weight='700' font-size='30' fill='#666' text-anchor='middle'>できる所</text><text x='755' y='600' font-family='Noto Sans CJK JP' font-weight='700' font-size='30' fill='#666' text-anchor='middle'>不得意</text><defs><marker id='m140120' markerWidth='5' markerHeight='5' refX='2.5' refY='2.5' orient='auto'><path d='M0 0 L5 2.5 L0 5z' fill='#e0412f'/></marker></defs><line x1='140' y1='120' x2='700' y2='120' stroke='#e0412f' stroke-width='10' marker-end='url(#m140120)'/><text x='420' y='90' font-family='Noto Sans CJK JP' font-weight='700' font-size='40' fill='#e0412f' text-anchor='middle'>得意を先に増やす</text></svg>",
+   "iy": 290,
+   "ih": 720
+  },
+  {
+   "type": "card",
+   "num": 4,
+   "y": 1070,
+   "lab": "やり方",
+   "text": "マニュアルは最低限<br><span class=hl>あとは数をやる</span>",
+   "sm": "自由にやって、自分で見つけてもらう",
+   "bg": {
+    "kind": "image",
+    "file": "/home/claude/fta-media/tools/salon_tiktok/bg_theme/table.png",
+    "zoom": 0
+   },
+   "voice": "マニュアルは最低限。あとは自由に数をやって、自分で見つけてもらいます。",
+   "min": 4.4,
+   "pad": 0.75,
+   "pop": true,
+   "punch": true,
+   "illus": "<svg width='860' height='654' viewBox='0 0 920 700' xmlns='http://www.w3.org/2000/svg'><rect x='70' y='120' width='260' height='340' rx='24' fill='#fff' stroke='#cfe0d4' stroke-width='5'/><rect x='110' y='190' width='180' height='18' rx='9' fill='#dfe7e1'/><rect x='110' y='250' width='180' height='18' rx='9' fill='#dfe7e1'/><rect x='110' y='310' width='180' height='18' rx='9' fill='#dfe7e1'/><rect x='110' y='370' width='180' height='18' rx='9' fill='#dfe7e1'/><text x='200' y='520' font-family='Noto Sans CJK JP' font-weight='700' font-size='38' fill='#24402f' text-anchor='middle'>マニュアル</text><text x='200' y='570' font-family='Noto Sans CJK JP' font-weight='700' font-size='34' fill='#666' text-anchor='middle'>最低限</text><text x='470' y='300' font-family='Noto Sans CJK JP' font-weight='700' font-size='90' fill='#24402f' text-anchor='middle'>＋</text><text x='700' y='230' font-family='Noto Sans CJK JP' font-weight='700' font-size='90' fill='#3d7a55' text-anchor='middle'>正正正</text><text x='700' y='340' font-family='Noto Sans CJK JP' font-weight='700' font-size='46' fill='#24402f' text-anchor='middle'>数をやる</text><text x='700' y='410' font-family='Noto Sans CJK JP' font-weight='700' font-size='34' fill='#666' text-anchor='middle'>自分で見つける</text></svg>",
+   "iy": 290,
+   "ih": 720
+  },
+  {
+   "type": "card",
+   "num": 5,
+   "y": 1070,
+   "lab": "伝えるのは",
+   "text": "経験が上がったら<br><span class=hl>もう一度伝える</span>",
+   "sm": "教える人も、言い続けなくていい",
+   "bg": {
+    "kind": "image",
+    "file": "/home/claude/fta-media/tools/salon_tiktok/bg_theme/clock.png",
+    "zoom": 0
+   },
+   "voice": "経験が上がったら、もう一度伝える。教える人も、言い続けなくてすみます。",
+   "min": 4.4,
+   "pad": 0.75,
+   "pop": true,
+   "punch": true,
+   "illus": "<svg width='860' height='654' viewBox='0 0 920 700' xmlns='http://www.w3.org/2000/svg'><polyline points='100,560 300,470 500,360 700,220' fill='none' stroke='#3d7a55' stroke-width='12'/><circle cx='100' cy='560' r='16' fill='#3d7a55'/><circle cx='300' cy='470' r='16' fill='#3d7a55'/><circle cx='500' cy='360' r='16' fill='#3d7a55'/><circle cx='700' cy='220' r='26' fill='#f6d77a' stroke='#24402f' stroke-width='6'/><rect x='560' y='40' width='320' height='110' rx='30' fill='#fff' stroke='#3d7a55' stroke-width='5'/><polygon points='620,150 660,150 610,190' fill='#fff' stroke='#3d7a55' stroke-width='5'/><rect x='615' y='144' width='50' height='10' fill='#fff'/><text x='720.0' y='109.4' font-family='Noto Sans CJK JP' font-weight='700' font-size='40' fill='#24402f' text-anchor='middle'>ここで伝える</text><text x='400' y='640' font-family='Noto Sans CJK JP' font-weight='700' font-size='40' fill='#666' text-anchor='middle'>経験 →</text></svg>",
+   "iy": 290,
+   "ih": 720
+  },
+  {
+   "type": "card",
+   "num": 6,
+   "y": 1070,
+   "lab": "💾 保存",
+   "text": "保存して<br>見返してね",
+   "sm": "伝わらないときは、得意から",
+   "bg": {
+    "kind": "image",
+    "file": "/home/claude/fta-media/tools/salon_tiktok/bg_theme/clock.png",
+    "zoom": 0
+   },
+   "voice": "伝わらないときは、得意から増やします。保存して、見返してね。",
+   "min": 3.6,
+   "pad": 0.8
+  }
+ ],
+ "noAnim": true,
+ "meta": {
+  "kind": "reel",
+  "cat": "staff",
+  "head": "何度言っても伝わらないときは、一度、伝えない。",
+  "gift": [
+   "tokui_kit",
+   "得意から増やす 育成メモ"
+  ]
+ }
+}
