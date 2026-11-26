@@ -1,0 +1,7 @@
+*{margin:0;padding:0;box-sizing:border-box}
+body{width:1080px;height:1920px;background:#f4efe3;font-family:'Noto Sans CJK JP',sans-serif;color:#24412f;position:relative;overflow:hidden}
+.tag{position:absolute;left:48px;top:262px;background:#f6d77a;font-weight:900;font-size:30px;padding:10px 22px;border-radius:14px}
+.y{color:#c8901a}
+.card{position:absolute;left:40px;right:40px;background:#fff;border-radius:24px}
+.day{display:inline-block;background:#24412f;color:#fff;font-weight:700;font-size:26px;padding:4px 14px;border-radius:9px}
+.foot{position:absolute;left:0;right:0;text-align:center;font-weight:900;font-size:34px}
