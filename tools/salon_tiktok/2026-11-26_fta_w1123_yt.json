@@ -1,0 +1,165 @@
+{
+ "out": "FTA_2026-11-26_w1123_yt.mp4",
+ "tts": "/home/claude/fta-media/tools/voicevox/tts_voices.py",
+ "voiceName": "aoyama",
+ "speed": 1.2,
+ "crf": 14,
+ "brand": "FUJIWARA TRIMMING ACADEMY",
+ "tag": "トリミングサロンの生産性",
+ "color": {
+  "card": "rgba(36,64,47,.86)",
+  "pill": "rgba(61,107,79,.95)",
+  "lab": "#f6d77a",
+  "labfg": "#24402f",
+  "hl": "#f6d77a",
+  "hlfg": "#24402f"
+ },
+ "scenes": [
+  {
+   "type": "title",
+   "y": 640,
+   "min": 3.2,
+   "pad": 0.3,
+   "html": "<div style='font-family:Noto Sans CJK JP;font-size:72px;font-weight:900;color:#fff;-webkit-text-stroke:3px #000;paint-order:stroke'>「初めての方に、なんて言う？」</div><div style='font-family:Noto Sans CJK JP;font-size:120px;font-weight:900;line-height:1.15;margin-top:18px;color:#f6d77a;-webkit-text-stroke:6px #1b2e22;paint-order:stroke'>帰ったあとの様子</div><div style='display:inline-block;margin-top:24px;background:#e0412f;color:#fff;font-family:Noto Sans CJK JP;font-weight:900;font-size:56px;padding:8px 30px;border-radius:14px'>を聞いて次に生かす</div>",
+   "bg": {
+    "kind": "image",
+    "file": "/home/claude/fta-media/tools/salon_tiktok/bg_theme/booking.png",
+    "zoom": 0
+   },
+   "voice": "初めてのかたに、なんて言う。帰ったあとの様子を聞いて、次に生かします。",
+   "pop": true,
+   "punch": true
+  },
+  {
+   "type": "card",
+   "num": 1,
+   "y": 1070,
+   "lab": "初めてのサロンは",
+   "text": "ワンコにとって<br><span class=hl>はじめての場所</span>",
+   "sm": "帰ってからの体調が、気になる",
+   "bg": {
+    "kind": "image",
+    "file": "/home/claude/fta-media/tools/salon_tiktok/bg_theme/booking.png",
+    "zoom": 0
+   },
+   "voice": "初めてのサロンは、ワンコにとって、はじめての場所。帰ってからの体調が気になります。",
+   "min": 4.4,
+   "pad": 0.75,
+   "pop": true,
+   "punch": true,
+   "illus": "<svg width='860' height='654' viewBox='0 0 920 700' xmlns='http://www.w3.org/2000/svg'><g transform='translate(140,70) scale(1.0)'>\n<ellipse cx=\"300\" cy=\"545\" rx=\"230\" ry=\"22\" fill=\"#000\" opacity=\".18\"/>\n<g fill=\"#f6ead8\" stroke=\"#d9c3a3\" stroke-width=\"4\">\n<rect x=\"205\" y=\"400\" width=\"44\" height=\"130\" rx=\"20\"/><rect x=\"255\" y=\"410\" width=\"44\" height=\"125\" rx=\"20\"/>\n<rect x=\"355\" y=\"410\" width=\"44\" height=\"125\" rx=\"20\"/><rect x=\"405\" y=\"400\" width=\"44\" height=\"130\" rx=\"20\"/>\n<circle cx=\"227\" cy=\"525\" r=\"30\"/><circle cx=\"277\" cy=\"530\" r=\"30\"/><circle cx=\"377\" cy=\"530\" r=\"30\"/><circle cx=\"427\" cy=\"525\" r=\"30\"/>\n<path d=\"M470 330 q60 -40 70 -110\" fill=\"none\" stroke-width=\"10\"/><circle cx=\"540\" cy=\"205\" r=\"40\"/>\n<ellipse cx=\"330\" cy=\"370\" rx=\"160\" ry=\"95\"/>\n<circle cx=\"215\" cy=\"340\" r=\"70\"/>\n<ellipse cx=\"130\" cy=\"250\" rx=\"42\" ry=\"80\"/><ellipse cx=\"290\" cy=\"250\" rx=\"42\" ry=\"80\"/>\n<circle cx=\"210\" cy=\"215\" r=\"88\"/><circle cx=\"205\" cy=\"130\" r=\"58\"/>\n<ellipse cx=\"210\" cy=\"262\" rx=\"52\" ry=\"38\" fill=\"#fbf4ea\"/></g>\n<circle cx=\"180\" cy=\"210\" r=\"11\" fill=\"#2b2b2b\"/><circle cx=\"240\" cy=\"210\" r=\"11\" fill=\"#2b2b2b\"/>\n<circle cx=\"184\" cy=\"206\" r=\"3.5\" fill=\"#fff\"/><circle cx=\"244\" cy=\"206\" r=\"3.5\" fill=\"#fff\"/>\n<ellipse cx=\"210\" cy=\"248\" rx=\"15\" ry=\"11\" fill=\"#2b2b2b\"/><path d=\"M196 272 q14 12 28 0\" fill=\"none\" stroke=\"#2b2b2b\" stroke-width=\"4\" stroke-linecap=\"round\"/>\n<circle cx=\"160\" cy=\"245\" r=\"12\" fill=\"#f3b8a8\" opacity=\".6\"/><circle cx=\"260\" cy=\"245\" r=\"12\" fill=\"#f3b8a8\" opacity=\".6\"/>\n</g><rect x='560' y='80' width='300' height='120' rx='30' fill='#fff' stroke='#3d7a55' stroke-width='5'/><polygon points='620,200 660,200 610,240' fill='#fff' stroke='#3d7a55' stroke-width='5'/><rect x='615' y='194' width='50' height='10' fill='#fff'/><text x='710.0' y='156.56' font-family='Noto Sans CJK JP' font-weight='700' font-size='46' fill='#24402f' text-anchor='middle'>はじめて</text><text x='700' y='380' font-family='Noto Sans CJK JP' font-weight='700' font-size='110' fill='#24402f' text-anchor='middle'>🏠</text><text x='700' y='480' font-family='Noto Sans CJK JP' font-weight='700' font-size='40' fill='#e0412f' text-anchor='middle'>帰ってからは？</text></svg>",
+   "iy": 290,
+   "ih": 720
+  },
+  {
+   "type": "card",
+   "num": 2,
+   "y": 1070,
+   "lab": "見えないこと",
+   "text": "お店からは<br><span style='color:#ff7a66'>帰ってからが見えない</span>",
+   "sm": "お家の様子は、飼い主さんしか分からない",
+   "bg": {
+    "kind": "image",
+    "file": "/home/claude/fta-media/tools/salon_tiktok/bg_theme/booking.png",
+    "zoom": 0
+   },
+   "voice": "でも、帰ってからの様子は、お店からは見えません。分かるのは、飼い主さんだけ。",
+   "min": 4.4,
+   "pad": 0.75,
+   "pop": true,
+   "punch": true,
+   "illus": "<svg width='860' height='654' viewBox='0 0 920 700' xmlns='http://www.w3.org/2000/svg'><rect x='60' y='160' width='340' height='340' rx='24' fill='#eef5f0' stroke='none' stroke-width='0'/><text x='230' y='300' font-family='Noto Sans CJK JP' font-weight='700' font-size='90' fill='#24402f' text-anchor='middle'>✂</text><text x='230' y='420' font-family='Noto Sans CJK JP' font-weight='700' font-size='44' fill='#24402f' text-anchor='middle'>お店</text><line x1='460' y1='120' x2='460' y2='560' stroke='#e0412f' stroke-width='10' stroke-dasharray='20 14'/><rect x='520' y='160' width='340' height='340' rx='24' fill='#fff7dc' stroke='none' stroke-width='0'/><text x='690' y='300' font-family='Noto Sans CJK JP' font-weight='700' font-size='90' fill='#24402f' text-anchor='middle'>🏠</text><text x='690' y='420' font-family='Noto Sans CJK JP' font-weight='700' font-size='44' fill='#24402f' text-anchor='middle'>お家</text><text x='460' y='630' font-family='Noto Sans CJK JP' font-weight='700' font-size='40' fill='#e0412f' text-anchor='middle'>ここから先は見えない</text></svg>",
+   "iy": 290,
+   "ih": 720
+  },
+  {
+   "type": "card",
+   "num": 3,
+   "y": 1070,
+   "lab": "お迎えのとき",
+   "text": "「様子を見て<br><span class=hl>何かあれば教えて</span>」",
+   "sm": "体調の変化があれば、言ってもらう",
+   "bg": {
+    "kind": "image",
+    "file": "/home/claude/fta-media/tools/salon_tiktok/bg_theme/booking.png",
+    "zoom": 0
+   },
+   "voice": "だから、様子を見て、何かあれば教えてください、と伝えます。",
+   "min": 4.4,
+   "pad": 0.75,
+   "pop": true,
+   "punch": true,
+   "illus": "<svg width='860' height='654' viewBox='0 0 920 700' xmlns='http://www.w3.org/2000/svg'><rect x='70' y='60' width='780' height='200' rx='30' fill='#fff' stroke='#3d7a55' stroke-width='5'/><polygon points='130,260 170,260 120,300' fill='#fff' stroke='#3d7a55' stroke-width='5'/><rect x='125' y='254' width='50' height='10' fill='#fff'/><text x='460.0' y='177.28' font-family='Noto Sans CJK JP' font-weight='700' font-size='48' fill='#24402f' text-anchor='middle'>何かあれば、教えてください</text><rect x='110' y='380' width='300' height='220' rx='24' fill='#eef5f0' stroke='none' stroke-width='0'/><text x='260' y='470' font-family='Noto Sans CJK JP' font-weight='700' font-size='80' fill='#24402f' text-anchor='middle'>🐶</text><text x='260' y='560' font-family='Noto Sans CJK JP' font-weight='700' font-size='36' fill='#24402f' text-anchor='middle'>様子を見る</text><defs><marker id='m430490' markerWidth='5' markerHeight='5' refX='2.5' refY='2.5' orient='auto'><path d='M0 0 L5 2.5 L0 5z' fill='#24402f'/></marker></defs><line x1='430' y1='490' x2='510' y2='490' stroke='#24402f' stroke-width='10' marker-end='url(#m430490)'/><rect x='530' y='380' width='300' height='220' rx='24' fill='#fff7dc' stroke='none' stroke-width='0'/><text x='680' y='470' font-family='Noto Sans CJK JP' font-weight='700' font-size='80' fill='#24402f' text-anchor='middle'>📞</text><text x='680' y='560' font-family='Noto Sans CJK JP' font-weight='700' font-size='36' fill='#24402f' text-anchor='middle'>お店に伝える</text></svg>",
+   "iy": 290,
+   "ih": 720
+  },
+  {
+   "type": "card",
+   "num": 4,
+   "y": 1070,
+   "lab": "聞いたことは",
+   "text": "次の美容の<br><span class=hl>注意点</span>に生かす",
+   "sm": "次に気をつける所にする",
+   "bg": {
+    "kind": "image",
+    "file": "/home/claude/fta-media/tools/salon_tiktok/bg_theme/note.png",
+    "zoom": 0
+   },
+   "voice": "聞いたことを、次の美容の、注意点として生かします。",
+   "min": 4.4,
+   "pad": 0.75,
+   "pop": true,
+   "punch": true,
+   "illus": "<svg width='860' height='654' viewBox='0 0 920 700' xmlns='http://www.w3.org/2000/svg'><rect x='200' y='80' width='520' height='500' rx='24' fill='#fff' stroke='#cfe0d4' stroke-width='5'/><text x='460' y='160' font-family='Noto Sans CJK JP' font-weight='700' font-size='46' fill='#24402f' text-anchor='middle'>次の注意点</text><rect x='250' y='220' width='50' height='50' rx='10' fill='#eef5f0' stroke='#3d7a55' stroke-width='4'/><text x='275' y='260' font-family='Noto Sans CJK JP' font-weight='700' font-size='40' fill='#3d7a55' text-anchor='middle'>✓</text><rect x='330' y='236' width='320' height='20' rx='10' fill='#dfe7e1'/><rect x='250' y='310' width='50' height='50' rx='10' fill='#eef5f0' stroke='#3d7a55' stroke-width='4'/><text x='275' y='350' font-family='Noto Sans CJK JP' font-weight='700' font-size='40' fill='#3d7a55' text-anchor='middle'>✓</text><rect x='330' y='326' width='320' height='20' rx='10' fill='#dfe7e1'/><rect x='250' y='400' width='50' height='50' rx='10' fill='#eef5f0' stroke='#3d7a55' stroke-width='4'/><text x='275' y='440' font-family='Noto Sans CJK JP' font-weight='700' font-size='40' fill='#3d7a55' text-anchor='middle'>✓</text><rect x='330' y='416' width='320' height='20' rx='10' fill='#dfe7e1'/></svg>",
+   "iy": 290,
+   "ih": 720
+  },
+  {
+   "type": "card",
+   "num": 5,
+   "y": 1070,
+   "lab": "良くなること",
+   "text": "気をつける所が<br><span class=hl>先に分かる</span>",
+   "sm": "スタッフも、迷わずに準備できる",
+   "bg": {
+    "kind": "image",
+    "file": "/home/claude/fta-media/tools/salon_tiktok/bg_theme/booking.png",
+    "zoom": 0
+   },
+   "voice": "次に気をつける所が先に分かるので、担当のスタッフも、迷わず準備できます。",
+   "min": 4.4,
+   "pad": 0.75,
+   "pop": true,
+   "punch": true,
+   "illus": "<svg width='860' height='654' viewBox='0 0 920 700' xmlns='http://www.w3.org/2000/svg'><rect x='80' y='140' width='360' height='380' rx='24' fill='#eef5f0' stroke='none' stroke-width='0'/><text x='260' y='280' font-family='Noto Sans CJK JP' font-weight='700' font-size='100' fill='#24402f' text-anchor='middle'>📋</text><text x='260' y='420' font-family='Noto Sans CJK JP' font-weight='700' font-size='44' fill='#3d7a55' text-anchor='middle'>先に分かる</text><rect x='480' y='140' width='360' height='380' rx='24' fill='#fff7dc' stroke='none' stroke-width='0'/><text x='660' y='280' font-family='Noto Sans CJK JP' font-weight='700' font-size='100' fill='#24402f' text-anchor='middle'>😊</text><text x='660' y='420' font-family='Noto Sans CJK JP' font-weight='700' font-size='44' fill='#3d7a55' text-anchor='middle'>迷わず準備</text></svg>",
+   "iy": 290,
+   "ih": 720
+  },
+  {
+   "type": "card",
+   "num": 6,
+   "y": 1070,
+   "lab": "💾 保存",
+   "text": "保存して<br>見返してね",
+   "sm": "帰ったあとの様子を、聞くだけ",
+   "bg": {
+    "kind": "image",
+    "file": "/home/claude/fta-media/tools/salon_tiktok/bg_theme/booking.png",
+    "zoom": 0
+   },
+   "voice": "帰ったあとの様子を、聞くだけです。保存して、見返してね。",
+   "min": 3.6,
+   "pad": 0.8
+  }
+ ],
+ "noAnim": true,
+ "meta": {
+  "kind": "biz",
+  "cat": "repeat",
+  "head": "初めての方には「帰ってからの様子を教えてください」。",
+  "gift": [
+   "hajimete_kit",
+   "初めての方への ひとことメモ"
+  ]
+ }
+}
