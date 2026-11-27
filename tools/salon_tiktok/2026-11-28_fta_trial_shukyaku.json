@@ -1,0 +1,136 @@
+{
+ "tts": "/home/claude/fta-media/tools/voicevox/tts_voices.py",
+ "voiceName": "aoyama",
+ "speed": 1.2,
+ "crf": 14,
+ "size": [
+  720,
+  1280
+ ],
+ "brand": "FUJIWARA TRIMMING ACADEMY",
+ "tag": "トリミングサロンの生産性",
+ "color": {
+  "card": "rgba(36,64,47,.86)",
+  "pill": "rgba(61,107,79,.95)",
+  "lab": "#f6d77a",
+  "labfg": "#24402f",
+  "hl": "#f6d77a",
+  "hlfg": "#24402f"
+ },
+ "out": "FTA_2026-11-28_trial_shukyaku.mp4",
+ "scenes": [
+  {
+   "type": "title",
+   "y": 380,
+   "min": 3.4,
+   "pad": 0.35,
+   "html": "<div style='font-family:Noto Sans CJK JP;font-size:70px;font-weight:900;color:#fff;-webkit-text-stroke:3px #000;paint-order:stroke'>「見られるのに予約が来ない」</div><div style='font-family:Noto Sans CJK JP;font-size:120px;font-weight:900;line-height:1.1;margin-top:16px;color:#f6d77a;-webkit-text-stroke:7px #1b2e22;paint-order:stroke'>最初の1秒は<br>仕上がりの顔</div><div style='display:inline-block;margin-top:22px;background:#e0412f;color:#fff;font-family:Noto Sans CJK JP;font-weight:900;font-size:58px;padding:8px 30px;border-radius:14px'>撮り方を変えるだけ</div>",
+   "bg": {
+    "kind": "video",
+    "file": "/tmp/claude-0/-home-claude/ce93028b-f2d3-5a2d-b5c7-9abb29c3fbe8/scratchpad/r1128/src/IMG_2961.mp4",
+    "start": 6.0,
+    "speed": 1.0
+   },
+   "voice": "見られているのに、予約が来ない。最初の1秒は、仕上がりの顔にします。",
+   "pop": true,
+   "punch": true
+  },
+  {
+   "type": "card",
+   "num": 1,
+   "y": 1070,
+   "lab": "なぜ？",
+   "text": "最初が作業中だと<br><span style='color:#ff7a66'>すぐ離れる</span>",
+   "sm": "「どうなるか」が先に見えないから",
+   "bg": {
+    "kind": "image",
+    "file": "/home/claude/fta-media/tools/salon_tiktok/bg_theme/table.png",
+    "zoom": 0
+   },
+   "voice": "最初が作業中の場面だと、どうなるかが見えず、すぐ離れます。",
+   "min": 4.2,
+   "pad": 0.6,
+   "pop": true,
+   "punch": true,
+   "illus": "<svg width='860' height='654' viewBox='0 0 920 700' xmlns='http://www.w3.org/2000/svg'><rect x='40' y='80' width='400' height='540' rx='24' fill='#fff2ef' stroke='none' stroke-width='0'/><text x='240' y='160' font-family='Noto Sans CJK JP' font-weight='700' font-size='44' fill='#e0412f' text-anchor='middle'>作業から始まる</text><rect x='130' y='210' width='220' height='280' rx='20' fill='#ddd'/><text x='240' y='370' font-family='Noto Sans CJK JP' font-weight='700' font-size='110' fill='#666' text-anchor='middle'>✂</text><text x='240' y='580' font-family='Noto Sans CJK JP' font-weight='700' font-size='44' fill='#e0412f' text-anchor='middle'>すぐ離れる ✕</text><rect x='480' y='80' width='400' height='540' rx='24' fill='#eef5f0' stroke='none' stroke-width='0'/><text x='680' y='160' font-family='Noto Sans CJK JP' font-weight='700' font-size='44' fill='#3d7a55' text-anchor='middle'>仕上がりから始まる</text><rect x='570' y='210' width='220' height='280' rx='20' fill='#fff' stroke='#3d7a55' stroke-width='6'/><text x='680' y='380' font-family='Noto Sans CJK JP' font-weight='700' font-size='130' fill='#24402f' text-anchor='middle'>🐩</text><text x='680' y='580' font-family='Noto Sans CJK JP' font-weight='700' font-size='44' fill='#3d7a55' text-anchor='middle'>見てもらえる ○</text></svg>",
+   "iy": 290,
+   "ih": 720
+  },
+  {
+   "type": "big",
+   "num": 2,
+   "y": 300,
+   "html": "<div style='display:inline-flex;align-items:center;gap:26px;background:rgba(36,64,47,.9);border-radius:28px;padding:22px 36px;box-shadow:0 10px 30px rgba(0,0,0,.3)'><div style='font-size:110px;line-height:1'>📱</div><div style='text-align:left'><div style='font-family:Noto Sans CJK JP;font-size:52px;font-weight:900;color:#f6d77a'>① 目線の高さで</div><div style='font-family:Noto Sans CJK JP;font-size:78px;font-weight:900;color:#fff;line-height:1.2'>正面から寄る</div></div></div>",
+   "bg": {
+    "kind": "video",
+    "file": "/tmp/claude-0/-home-claude/ce93028b-f2d3-5a2d-b5c7-9abb29c3fbe8/scratchpad/r1128/src/IMG_2961.mp4",
+    "start": 0.0,
+    "speed": 1
+   },
+   "voice": "ワンコの目の高さで、正面から、顔に寄って撮ります。",
+   "min": 4.4,
+   "pad": 0.6,
+   "pop": true,
+   "punch": false
+  },
+  {
+   "type": "big",
+   "num": 3,
+   "y": 300,
+   "html": "<div style='display:inline-flex;align-items:center;gap:26px;background:rgba(36,64,47,.9);border-radius:28px;padding:22px 36px;box-shadow:0 10px 30px rgba(0,0,0,.3)'><div style='font-size:110px;line-height:1'>✨</div><div style='text-align:left'><div style='font-family:Noto Sans CJK JP;font-size:52px;font-weight:900;color:#f6d77a'>② いちばん最初に</div><div style='font-family:Noto Sans CJK JP;font-size:78px;font-weight:900;color:#fff;line-height:1.2'>仕上がりの顔</div></div></div>",
+   "bg": {
+    "kind": "video",
+    "file": "/tmp/claude-0/-home-claude/ce93028b-f2d3-5a2d-b5c7-9abb29c3fbe8/scratchpad/r1128/src/IMG_2961.mp4",
+    "start": 8.0,
+    "speed": 1
+   },
+   "voice": "その顔を、動画のいちばん最初に置きます。作業の場面は、そのあとです。",
+   "min": 4.4,
+   "pad": 0.6,
+   "pop": true,
+   "punch": false
+  },
+  {
+   "type": "card",
+   "num": 4,
+   "y": 1070,
+   "lab": "③ 最後に",
+   "text": "どこで予約できるか<br><span class=hl>1行で書く</span>",
+   "sm": "「プロフィールのLINEから予約できます」",
+   "bg": {
+    "kind": "image",
+    "file": "/home/claude/fta-media/tools/salon_tiktok/bg_theme/note.png",
+    "zoom": 0
+   },
+   "voice": "最後に、どこで予約できるかを、1行で書きます。",
+   "min": 4.2,
+   "pad": 0.6,
+   "pop": true,
+   "punch": true,
+   "illus": "<svg width='860' height='654' viewBox='0 0 920 700' xmlns='http://www.w3.org/2000/svg'><rect x='110' y='120' width='700' height='420' rx='24' fill='#fff' stroke='#3d7a55' stroke-width='5'/><text x='460' y='230' font-family='Noto Sans CJK JP' font-weight='700' font-size='50' fill='#24402f' text-anchor='middle'>🐩 仕上がりの顔</text><text x='460' y='330' font-family='Noto Sans CJK JP' font-weight='700' font-size='50' fill='#666' text-anchor='middle'>✂ 作業の場面</text><rect x='170' y='390' width='580' height='100' rx='24' fill='#f6d77a' stroke='none' stroke-width='0'/><text x='460' y='458' font-family='Noto Sans CJK JP' font-weight='700' font-size='40' fill='#24402f' text-anchor='middle'>予約はプロフィールのLINEから</text><text x='460' y='630' font-family='Noto Sans CJK JP' font-weight='700' font-size='46' fill='#3d7a55' text-anchor='middle'>この順番で並べる</text></svg>",
+   "iy": 290,
+   "ih": 720
+  },
+  {
+   "type": "card",
+   "num": 5,
+   "y": 1070,
+   "lab": "💾 保存して見返してね",
+   "text": "最初の1秒は<br><span class=hl>仕上がりの顔</span>",
+   "sm": "明日の1頭で、試してみてください",
+   "bg": {
+    "kind": "image",
+    "file": "/home/claude/fta-media/tools/salon_tiktok/bg_theme/note.png",
+    "zoom": 0
+   },
+   "voice": "最初の1秒は、仕上がりの顔。保存して、次の投稿で試してね。",
+   "min": 3.6,
+   "pad": 0.6,
+   "pop": true,
+   "punch": true,
+   "illus": "<svg width='860' height='654' viewBox='0 0 920 700' xmlns='http://www.w3.org/2000/svg'><text x='460' y='300' font-family='Noto Sans CJK JP' font-weight='700' font-size='200' fill='#24402f' text-anchor='middle'>💾</text><text x='460' y='520' font-family='Noto Sans CJK JP' font-weight='700' font-size='52' fill='#24402f' text-anchor='middle'>保存して、明日の1頭で</text><text x='460' y='600' font-family='Noto Sans CJK JP' font-weight='700' font-size='52' fill='#3d7a55' text-anchor='middle'>試してみてね</text></svg>",
+   "iy": 290,
+   "ih": 720
+  }
+ ]
+}

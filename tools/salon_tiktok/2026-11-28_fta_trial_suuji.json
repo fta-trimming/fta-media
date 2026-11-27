@@ -1,0 +1,123 @@
+{
+ "tts": "/home/claude/fta-media/tools/voicevox/tts_voices.py",
+ "voiceName": "aoyama",
+ "speed": 1.2,
+ "crf": 14,
+ "size": [
+  720,
+  1280
+ ],
+ "brand": "FUJIWARA TRIMMING ACADEMY",
+ "tag": "トリミングサロンの生産性",
+ "color": {
+  "card": "rgba(36,64,47,.86)",
+  "pill": "rgba(61,107,79,.95)",
+  "lab": "#f6d77a",
+  "labfg": "#24402f",
+  "hl": "#f6d77a",
+  "hlfg": "#24402f"
+ },
+ "out": "FTA_2026-11-28_trial_suuji.mp4",
+ "scenes": [
+  {
+   "type": "title",
+   "y": 380,
+   "min": 3.4,
+   "pad": 0.35,
+   "html": "<div style='font-family:Noto Sans CJK JP;font-size:70px;font-weight:900;color:#fff;-webkit-text-stroke:3px #000;paint-order:stroke'>「毎月、何頭でトントン？」</div><div style='font-family:Noto Sans CJK JP;font-size:130px;font-weight:900;line-height:1.1;margin-top:16px;color:#f6d77a;-webkit-text-stroke:7px #1b2e22;paint-order:stroke'>30万÷6,000<br>＝50頭</div><div style='display:inline-block;margin-top:22px;background:#e0412f;color:#fff;font-family:Noto Sans CJK JP;font-weight:900;font-size:58px;padding:8px 30px;border-radius:14px'>（例）割り算1回で分かる</div>",
+   "bg": {
+    "kind": "video",
+    "file": "/tmp/claude-0/-home-claude/ce93028b-f2d3-5a2d-b5c7-9abb29c3fbe8/scratchpad/r1128/src/v1.mp4",
+    "start": 100.0,
+    "speed": 1.0
+   },
+   "voice": "毎月、何頭でトントンか。割り算1回で分かります。",
+   "pop": true,
+   "punch": true
+  },
+  {
+   "type": "card",
+   "num": 1,
+   "y": 1070,
+   "lab": "① 出す",
+   "text": "毎月かかるお金を<br><span class=hl>ざっくり足す</span>",
+   "sm": "家賃・材料・光熱費・人件費など（例）",
+   "bg": {
+    "kind": "image",
+    "file": "/home/claude/fta-media/tools/salon_tiktok/bg_theme/table.png",
+    "zoom": 0
+   },
+   "voice": "まず、毎月かかるお金を、ざっくり足します。例えば、30万円。",
+   "min": 4.2,
+   "pad": 0.6,
+   "pop": true,
+   "punch": true,
+   "illus": "<svg width='860' height='654' viewBox='0 0 920 700' xmlns='http://www.w3.org/2000/svg'><rect x='40' y='90' width='840' height='120' rx='24' fill='#fff' stroke='#3d7a55' stroke-width='4'/><text x='80' y='168' font-family='Noto Sans CJK JP' font-weight='700' font-size='46' fill='#24402f' text-anchor='start'>家賃</text><text x='860' y='170' font-family='Noto Sans CJK JP' font-weight='700' font-size='56' fill='#e0412f' text-anchor='end'>12万</text><rect x='40' y='240' width='840' height='120' rx='24' fill='#fff' stroke='#3d7a55' stroke-width='4'/><text x='80' y='318' font-family='Noto Sans CJK JP' font-weight='700' font-size='46' fill='#24402f' text-anchor='start'>材料・光熱費</text><text x='860' y='320' font-family='Noto Sans CJK JP' font-weight='700' font-size='56' fill='#e0412f' text-anchor='end'>6万</text><rect x='40' y='390' width='840' height='120' rx='24' fill='#fff' stroke='#3d7a55' stroke-width='4'/><text x='80' y='468' font-family='Noto Sans CJK JP' font-weight='700' font-size='46' fill='#24402f' text-anchor='start'>人件費など</text><text x='860' y='470' font-family='Noto Sans CJK JP' font-weight='700' font-size='56' fill='#e0412f' text-anchor='end'>12万</text><rect x='140' y='560' width='640' height='110' rx='24' fill='#f6d77a' stroke='none' stroke-width='0'/><text x='460' y='636' font-family='Noto Sans CJK JP' font-weight='700' font-size='58' fill='#24402f' text-anchor='middle'>合計 30万円（例）</text></svg>",
+   "iy": 290,
+   "ih": 720
+  },
+  {
+   "type": "card",
+   "num": 2,
+   "y": 1070,
+   "lab": "② 割る",
+   "text": "1頭の料金で<br><span class=hl>割る</span>",
+   "sm": "30万円 ÷ 6,000円 ＝ 50頭（例）",
+   "bg": {
+    "kind": "image",
+    "file": "/home/claude/fta-media/tools/salon_tiktok/bg_theme/note.png",
+    "zoom": 0
+   },
+   "voice": "次に、1頭の料金で割ります。30万円わる6000円で、50頭です。",
+   "min": 4.2,
+   "pad": 0.6,
+   "pop": true,
+   "punch": true,
+   "illus": "<svg width='860' height='654' viewBox='0 0 920 700' xmlns='http://www.w3.org/2000/svg'><rect x='40' y='90' width='840' height='120' rx='24' fill='#fff' stroke='#3d7a55' stroke-width='4'/><text x='80' y='168' font-family='Noto Sans CJK JP' font-weight='700' font-size='46' fill='#24402f' text-anchor='start'>毎月かかるお金</text><text x='860' y='170' font-family='Noto Sans CJK JP' font-weight='700' font-size='56' fill='#e0412f' text-anchor='end'>30万円</text><rect x='40' y='240' width='840' height='120' rx='24' fill='#fff' stroke='#3d7a55' stroke-width='4'/><text x='80' y='318' font-family='Noto Sans CJK JP' font-weight='700' font-size='46' fill='#24402f' text-anchor='start'>1頭の料金</text><text x='860' y='320' font-family='Noto Sans CJK JP' font-weight='700' font-size='56' fill='#e0412f' text-anchor='end'>6,000円</text><rect x='40' y='390' width='840' height='120' rx='24' fill='#fff' stroke='#3d7a55' stroke-width='4'/><text x='80' y='468' font-family='Noto Sans CJK JP' font-weight='700' font-size='46' fill='#24402f' text-anchor='start'>30万 ÷ 6,000</text><text x='860' y='470' font-family='Noto Sans CJK JP' font-weight='700' font-size='56' fill='#e0412f' text-anchor='end'>50頭</text><rect x='140' y='560' width='640' height='110' rx='24' fill='#f6d77a' stroke='none' stroke-width='0'/><text x='460' y='636' font-family='Noto Sans CJK JP' font-weight='700' font-size='58' fill='#24402f' text-anchor='middle'>50頭でトントン（例）</text></svg>",
+   "iy": 290,
+   "ih": 720
+  },
+  {
+   "type": "card",
+   "num": 3,
+   "y": 1070,
+   "lab": "③ 1日に直す",
+   "text": "営業日で<br><span class=hl>割る</span>",
+   "sm": "50頭 ÷ 25日 ＝ 1日2頭（例）",
+   "bg": {
+    "kind": "image",
+    "file": "/home/claude/fta-media/tools/salon_tiktok/bg_theme/table.png",
+    "zoom": 0
+   },
+   "voice": "最後に、営業日で割ります。25日なら、1日2頭でトントンです。",
+   "min": 4.2,
+   "pad": 0.6,
+   "pop": true,
+   "punch": true,
+   "illus": "<svg width='860' height='654' viewBox='0 0 920 700' xmlns='http://www.w3.org/2000/svg'><rect x='40' y='90' width='840' height='120' rx='24' fill='#fff' stroke='#3d7a55' stroke-width='4'/><text x='80' y='168' font-family='Noto Sans CJK JP' font-weight='700' font-size='46' fill='#24402f' text-anchor='start'>トントンの頭数</text><text x='860' y='170' font-family='Noto Sans CJK JP' font-weight='700' font-size='56' fill='#e0412f' text-anchor='end'>50頭</text><rect x='40' y='240' width='840' height='120' rx='24' fill='#fff' stroke='#3d7a55' stroke-width='4'/><text x='80' y='318' font-family='Noto Sans CJK JP' font-weight='700' font-size='46' fill='#24402f' text-anchor='start'>営業日</text><text x='860' y='320' font-family='Noto Sans CJK JP' font-weight='700' font-size='56' fill='#e0412f' text-anchor='end'>25日</text><rect x='40' y='390' width='840' height='120' rx='24' fill='#fff' stroke='#3d7a55' stroke-width='4'/><text x='80' y='468' font-family='Noto Sans CJK JP' font-weight='700' font-size='46' fill='#24402f' text-anchor='start'>50 ÷ 25</text><text x='860' y='470' font-family='Noto Sans CJK JP' font-weight='700' font-size='56' fill='#e0412f' text-anchor='end'>1日2頭</text><rect x='140' y='560' width='640' height='110' rx='24' fill='#f6d77a' stroke='none' stroke-width='0'/><text x='460' y='636' font-family='Noto Sans CJK JP' font-weight='700' font-size='58' fill='#24402f' text-anchor='middle'>1日3頭なら17日目でこえる</text></svg>",
+   "iy": 290,
+   "ih": 720
+  },
+  {
+   "type": "card",
+   "num": 4,
+   "y": 1070,
+   "lab": "💾 保存して見返してね",
+   "text": "割り算<br><span class=hl>2回</span>でOK",
+   "sm": "明日の1頭で、試してみてください",
+   "bg": {
+    "kind": "image",
+    "file": "/home/claude/fta-media/tools/salon_tiktok/bg_theme/note.png",
+    "zoom": 0
+   },
+   "voice": "割り算2回で、トントンの頭数が分かります。保存して、自分のお店の数字で試してね。",
+   "min": 3.6,
+   "pad": 0.6,
+   "pop": true,
+   "punch": true,
+   "illus": "<svg width='860' height='654' viewBox='0 0 920 700' xmlns='http://www.w3.org/2000/svg'><text x='460' y='300' font-family='Noto Sans CJK JP' font-weight='700' font-size='200' fill='#24402f' text-anchor='middle'>💾</text><text x='460' y='520' font-family='Noto Sans CJK JP' font-weight='700' font-size='52' fill='#24402f' text-anchor='middle'>保存して、明日の1頭で</text><text x='460' y='600' font-family='Noto Sans CJK JP' font-weight='700' font-size='52' fill='#3d7a55' text-anchor='middle'>試してみてね</text></svg>",
+   "iy": 290,
+   "ih": 720
+  }
+ ]
+}

@@ -1,0 +1,119 @@
+{
+ "tts": "/home/claude/fta-media/tools/voicevox/tts_voices.py",
+ "voiceName": "aoyama",
+ "speed": 1.2,
+ "crf": 14,
+ "size": [
+  720,
+  1280
+ ],
+ "brand": "FUJIWARA TRIMMING ACADEMY",
+ "tag": "トリミングサロンの生産性",
+ "color": {
+  "card": "rgba(36,64,47,.86)",
+  "pill": "rgba(61,107,79,.95)",
+  "lab": "#f6d77a",
+  "labfg": "#24402f",
+  "hl": "#f6d77a",
+  "hlfg": "#24402f"
+ },
+ "out": "FTA_2026-11-28_trial_ikusei.mp4",
+ "scenes": [
+  {
+   "type": "title",
+   "y": 380,
+   "min": 3.4,
+   "pad": 0.35,
+   "html": "<div style='font-family:Noto Sans CJK JP;font-size:70px;font-weight:900;color:#fff;-webkit-text-stroke:3px #000;paint-order:stroke'>「新人さんのドライが遅い…」</div><div style='font-family:Noto Sans CJK JP;font-size:140px;font-weight:900;line-height:1.1;margin-top:16px;color:#f6d77a;-webkit-text-stroke:7px #1b2e22;paint-order:stroke'>短い所→根元</div><div style='display:inline-block;margin-top:22px;background:#e0412f;color:#fff;font-family:Noto Sans CJK JP;font-weight:900;font-size:58px;padding:8px 30px;border-radius:14px'>この順で乾かす</div>",
+   "bg": {
+    "kind": "video",
+    "file": "/tmp/claude-0/-home-claude/ce93028b-f2d3-5a2d-b5c7-9abb29c3fbe8/scratchpad/r1128/src/IMG_1924.mp4",
+    "start": 0.5,
+    "speed": 1.0
+   },
+   "voice": "新人さんのドライが遅い。短い所から、根元から、の順で乾かします。",
+   "pop": true,
+   "punch": true
+  },
+  {
+   "type": "card",
+   "num": 1,
+   "y": 1070,
+   "lab": "① 先に",
+   "text": "タオルとブロワーで<br><span class=hl>水分を飛ばす</span>",
+   "sm": "ここを飛ばすと、ずっと乾かない",
+   "bg": {
+    "kind": "image",
+    "file": "/home/claude/fta-media/tools/salon_tiktok/bg_theme/table.png",
+    "zoom": 0
+   },
+   "voice": "まず、タオルとブロワーで、水分を先に飛ばします。",
+   "min": 4.2,
+   "pad": 0.6,
+   "pop": true,
+   "punch": true,
+   "illus": "<svg width='860' height='654' viewBox='0 0 920 700' xmlns='http://www.w3.org/2000/svg'><rect x='80' y='120' width='340' height='420' rx='24' fill='#eef5f0' stroke='none' stroke-width='0'/><text x='250' y='200' font-family='Noto Sans CJK JP' font-weight='700' font-size='52' fill='#24402f' text-anchor='middle'>タオル</text><rect x='150' y='250' width='200' height='140' rx='20' fill='#fff' stroke='#3d7a55' stroke-width='6'/><text x='250' y='470' font-family='Noto Sans CJK JP' font-weight='700' font-size='40' fill='#3d7a55' text-anchor='middle'>水分を取る</text><rect x='500' y='120' width='340' height='420' rx='24' fill='#eef5f0' stroke='none' stroke-width='0'/><text x='670' y='200' font-family='Noto Sans CJK JP' font-weight='700' font-size='52' fill='#24402f' text-anchor='middle'>ブロワー</text><path d='M560 320 h120 m0 -40 q40 40 0 80' fill='none' stroke='#4b6b8a' stroke-width='24' stroke-linecap='round'/><path d='M720 290 q30 -10 60 0 t60 0' fill='none' stroke='#9cc3e6' stroke-width='8' stroke-linecap='round'/><path d='M720 320 q30 -10 60 0 t60 0' fill='none' stroke='#9cc3e6' stroke-width='8' stroke-linecap='round'/><path d='M720 350 q30 -10 60 0 t60 0' fill='none' stroke='#9cc3e6' stroke-width='8' stroke-linecap='round'/><text x='670' y='470' font-family='Noto Sans CJK JP' font-weight='700' font-size='40' fill='#3d7a55' text-anchor='middle'>水を飛ばす</text><text x='460' y='630' font-family='Noto Sans CJK JP' font-weight='700' font-size='46' fill='#e0412f' text-anchor='middle'>乾かす時間が短くなる</text></svg>",
+   "iy": 290,
+   "ih": 720
+  },
+  {
+   "type": "card",
+   "num": 2,
+   "y": 1070,
+   "lab": "② 次に",
+   "text": "縮れやすい<br><span class=hl>短い所</span>から",
+   "sm": "ひじ・股・耳の裏",
+   "bg": {
+    "kind": "image",
+    "file": "/home/claude/fta-media/tools/salon_tiktok/bg_theme/note.png",
+    "zoom": 0
+   },
+   "voice": "次に、縮れやすい短い所から。ひじ、股、耳の裏です。",
+   "min": 4.2,
+   "pad": 0.6,
+   "pop": true,
+   "punch": true,
+   "illus": "<svg width='860' height='654' viewBox='0 0 920 700' xmlns='http://www.w3.org/2000/svg'><rect x='60' y='80' width='800' height='520' rx='24' fill='#fff7dc' stroke='none' stroke-width='0'/><text x='460' y='160' font-family='Noto Sans CJK JP' font-weight='700' font-size='50' fill='#24402f' text-anchor='middle'>縮れやすい「短い所」から</text><rect x='110' y='240' width='200' height='200' rx='24' fill='#fff' stroke='#3d7a55' stroke-width='5'/><text x='210' y='360' font-family='Noto Sans CJK JP' font-weight='700' font-size='52' fill='#3d7a55' text-anchor='middle'>ひじ</text><rect x='360' y='240' width='200' height='200' rx='24' fill='#fff' stroke='#3d7a55' stroke-width='5'/><text x='460' y='360' font-family='Noto Sans CJK JP' font-weight='700' font-size='52' fill='#3d7a55' text-anchor='middle'>股</text><rect x='610' y='240' width='200' height='200' rx='24' fill='#fff' stroke='#3d7a55' stroke-width='5'/><text x='710' y='360' font-family='Noto Sans CJK JP' font-weight='700' font-size='52' fill='#3d7a55' text-anchor='middle'>耳の裏</text><text x='460' y='540' font-family='Noto Sans CJK JP' font-weight='700' font-size='44' fill='#666' text-anchor='middle'>長い所は、あとから伸ばせる</text></svg>",
+   "iy": 290,
+   "ih": 720
+  },
+  {
+   "type": "big",
+   "num": 3,
+   "y": 300,
+   "html": "<div style='display:inline-flex;align-items:center;gap:26px;background:rgba(36,64,47,.9);border-radius:28px;padding:22px 36px;box-shadow:0 10px 30px rgba(0,0,0,.3)'><div style='font-size:110px;line-height:1'>🪮</div><div style='text-align:left'><div style='font-family:Noto Sans CJK JP;font-size:52px;font-weight:900;color:#f6d77a'>③ 最後に</div><div style='font-family:Noto Sans CJK JP;font-size:78px;font-weight:900;color:#fff;line-height:1.2'>根元から伸ばす</div></div></div><div style='margin-top:16px'><span style='background:#fff;color:#24402f;font-family:Noto Sans CJK JP;font-weight:900;font-size:32px;padding:4px 18px;border-radius:999px'>実際の作業</span></div>",
+   "bg": {
+    "kind": "video",
+    "file": "/tmp/claude-0/-home-claude/ce93028b-f2d3-5a2d-b5c7-9abb29c3fbe8/scratchpad/r1128/src/IMG_1924.mp4",
+    "start": 0.5,
+    "speed": 1
+   },
+   "voice": "ブラシは、根元まで届く深さで。先は、あとから伸びます。",
+   "min": 4.4,
+   "pad": 0.6,
+   "pop": true,
+   "punch": false
+  },
+  {
+   "type": "card",
+   "num": 4,
+   "y": 1070,
+   "lab": "💾 保存して見返してね",
+   "text": "新人さんには<br><span class=hl>「とにかく根元」</span>",
+   "sm": "明日の1頭で、試してみてください",
+   "bg": {
+    "kind": "image",
+    "file": "/home/claude/fta-media/tools/salon_tiktok/bg_theme/note.png",
+    "zoom": 0
+   },
+   "voice": "新人さんには、とにかく根元、のひと言。保存して、明日の1頭で試してね。",
+   "min": 3.6,
+   "pad": 0.6,
+   "pop": true,
+   "punch": true,
+   "illus": "<svg width='860' height='654' viewBox='0 0 920 700' xmlns='http://www.w3.org/2000/svg'><text x='460' y='300' font-family='Noto Sans CJK JP' font-weight='700' font-size='200' fill='#24402f' text-anchor='middle'>💾</text><text x='460' y='520' font-family='Noto Sans CJK JP' font-weight='700' font-size='52' fill='#24402f' text-anchor='middle'>保存して、明日の1頭で</text><text x='460' y='600' font-family='Noto Sans CJK JP' font-weight='700' font-size='52' fill='#3d7a55' text-anchor='middle'>試してみてね</text></svg>",
+   "iy": 290,
+   "ih": 720
+  }
+ ]
+}

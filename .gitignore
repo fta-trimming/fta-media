@@ -10,3 +10,6 @@ tools/fta_ai_reel/*/*/*.wav
 tools/fta_ai_reel/*/*/*.mp4
 tools/fta_ai_reel/*/*/cover.*
 tools/fta_ai_reel/*/*/r.html
+
+# Python のキャッシュ
+__pycache__/
