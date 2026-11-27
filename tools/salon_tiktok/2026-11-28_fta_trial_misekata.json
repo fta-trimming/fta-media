@@ -1,0 +1,140 @@
+{
+ "tts": "/home/claude/fta-media/tools/voicevox/tts_voices.py",
+ "voiceName": "aoyama",
+ "speed": 1.2,
+ "crf": 14,
+ "size": [
+  720,
+  1280
+ ],
+ "brand": "FUJIWARA TRIMMING ACADEMY",
+ "tag": "トリミングサロンの生産性",
+ "color": {
+  "card": "rgba(36,64,47,.86)",
+  "pill": "rgba(61,107,79,.95)",
+  "lab": "#f6d77a",
+  "labfg": "#24402f",
+  "hl": "#f6d77a",
+  "hlfg": "#24402f"
+ },
+ "out": "FTA_2026-11-28_trial_misekata.mp4",
+ "scenes": [
+  {
+   "type": "title",
+   "y": 380,
+   "min": 3.4,
+   "pad": 0.35,
+   "html": "<div style='font-family:Noto Sans CJK JP;font-size:70px;font-weight:900;color:#fff;-webkit-text-stroke:3px #000;paint-order:stroke'>「うちの良さが伝わらない…」</div><div style='font-family:Noto Sans CJK JP;font-size:118px;font-weight:900;line-height:1.1;margin-top:16px;color:#f6d77a;-webkit-text-stroke:7px #1b2e22;paint-order:stroke'>中身はそのまま<br>見せ方を変える</div><div style='display:inline-block;margin-top:22px;background:#e0412f;color:#fff;font-family:Noto Sans CJK JP;font-weight:900;font-size:58px;padding:8px 30px;border-radius:14px'>お店も同じ</div>",
+   "bg": {
+    "kind": "video",
+    "file": "/tmp/claude-0/-home-claude/ce93028b-f2d3-5a2d-b5c7-9abb29c3fbe8/scratchpad/r1128/src/IMG_2961.mp4",
+    "start": 6.0,
+    "speed": 1.0
+   },
+   "voice": "うちの良さが伝わらない。中身はそのままで、見せ方を変えます。",
+   "pop": true,
+   "punch": true
+  },
+  {
+   "type": "card",
+   "num": 1,
+   "y": 1070,
+   "lab": "たとえば",
+   "text": "同じお菓子も<br><span class=hl>箱を変えると</span>売れる",
+   "sm": "中身ではなく、見せ方で選ばれている",
+   "bg": {
+    "kind": "image",
+    "file": "/home/claude/fta-media/tools/salon_tiktok/bg_theme/table.png",
+    "zoom": 0
+   },
+   "voice": "同じお菓子でも、箱を変えると売れます。トリミングサロンも同じです。",
+   "min": 4.2,
+   "pad": 0.6,
+   "pop": true,
+   "punch": true,
+   "illus": "<svg width='860' height='654' viewBox='0 0 920 700' xmlns='http://www.w3.org/2000/svg'><rect x='80' y='120' width='330' height='400' rx='24' fill='#eee' stroke='none' stroke-width='0'/><text x='245' y='330' font-family='Noto Sans CJK JP' font-weight='700' font-size='150' fill='#24402f' text-anchor='middle'>🍪</text><text x='245' y='580' font-family='Noto Sans CJK JP' font-weight='700' font-size='40' fill='#666' text-anchor='middle'>ふつうの袋</text><path d='M450 320 h60 m-14 -14 l14 14 l-14 14' fill='none' stroke='#3d7a55' stroke-width='10' stroke-linecap='round'/><rect x='540' y='100' width='330' height='440' rx='24' fill='#fff7dc' stroke='#d8b24a' stroke-width='6'/><text x='705' y='330' font-family='Noto Sans CJK JP' font-weight='700' font-size='150' fill='#24402f' text-anchor='middle'>🎁</text><text x='705' y='580' font-family='Noto Sans CJK JP' font-weight='700' font-size='40' fill='#24402f' text-anchor='middle'>ギフトの箱</text></svg>",
+   "iy": 290,
+   "ih": 720
+  },
+  {
+   "type": "card",
+   "num": 2,
+   "y": 1070,
+   "lab": "① 名前",
+   "text": "メニュー名を<br><span class=hl>結果の言葉</span>に",
+   "sm": "やることは同じ（例）",
+   "bg": {
+    "kind": "image",
+    "file": "/home/claude/fta-media/tools/salon_tiktok/bg_theme/note.png",
+    "zoom": 0
+   },
+   "voice": "まず、メニューの名前。作業の名前ではなく、結果の言葉にします。",
+   "min": 4.2,
+   "pad": 0.6,
+   "pop": true,
+   "punch": true,
+   "illus": "<svg width='860' height='654' viewBox='0 0 920 700' xmlns='http://www.w3.org/2000/svg'><rect x='40' y='60' width='840' height='250' rx='24' fill='#fff2ef' stroke='none' stroke-width='0'/><text x='90' y='120' font-family='Noto Sans CJK JP' font-weight='700' font-size='40' fill='#e0412f' text-anchor='start'>前</text><text x='460' y='225' font-family='Noto Sans CJK JP' font-weight='700' font-size='52' fill='#666' text-anchor='middle'>炭酸シャンプー</text><path d='M430 330 l30 40 l30 -40z' fill='#3d7a55'/><rect x='40' y='390' width='840' height='250' rx='24' fill='#eef5f0' stroke='none' stroke-width='0'/><text x='90' y='450' font-family='Noto Sans CJK JP' font-weight='700' font-size='40' fill='#3d7a55' text-anchor='start'>後</text><text x='460' y='555' font-family='Noto Sans CJK JP' font-weight='700' font-size='52' fill='#24402f' text-anchor='middle'>においが残りにくいシャンプー</text><text x='460' y='690' font-family='Noto Sans CJK JP' font-weight='700' font-size='32' fill='#666' text-anchor='middle'>（例）言いかえるだけ</text></svg>",
+   "iy": 290,
+   "ih": 720
+  },
+  {
+   "type": "big",
+   "num": 3,
+   "y": 300,
+   "html": "<div style='display:inline-flex;align-items:center;gap:26px;background:rgba(36,64,47,.9);border-radius:28px;padding:22px 36px;box-shadow:0 10px 30px rgba(0,0,0,.3)'><div style='font-size:110px;line-height:1'>📷</div><div style='text-align:left'><div style='font-family:Noto Sans CJK JP;font-size:52px;font-weight:900;color:#f6d77a'>② 写真</div><div style='font-family:Noto Sans CJK JP;font-size:78px;font-weight:900;color:#fff;line-height:1.2'>仕上がりの顔を先に</div></div></div>",
+   "bg": {
+    "kind": "video",
+    "file": "/tmp/claude-0/-home-claude/ce93028b-f2d3-5a2d-b5c7-9abb29c3fbe8/scratchpad/r1128/src/IMG_2961.mp4",
+    "start": 8.0,
+    "speed": 1
+   },
+   "voice": "次に、写真。作業中ではなく、仕上がりの顔を、いちばん最初に。",
+   "min": 4.4,
+   "pad": 0.6,
+   "pop": true,
+   "punch": false
+  },
+  {
+   "type": "card",
+   "num": 4,
+   "y": 1070,
+   "lab": "③ ひと言",
+   "text": "だれに向けたお店か<br><span class=hl>1行で言う</span>",
+   "sm": "「毛が細い子の、ふんわりが得意です」（例）",
+   "bg": {
+    "kind": "image",
+    "file": "/home/claude/fta-media/tools/salon_tiktok/bg_theme/table.png",
+    "zoom": 0
+   },
+   "voice": "最後に、だれに向けたお店かを、1行で言います。",
+   "min": 4.2,
+   "pad": 0.6,
+   "pop": true,
+   "punch": true,
+   "illus": "<svg width='860' height='654' viewBox='0 0 920 700' xmlns='http://www.w3.org/2000/svg'><rect x='40' y='60' width='840' height='250' rx='24' fill='#fff2ef' stroke='none' stroke-width='0'/><text x='90' y='120' font-family='Noto Sans CJK JP' font-weight='700' font-size='40' fill='#e0412f' text-anchor='start'>前</text><text x='460' y='225' font-family='Noto Sans CJK JP' font-weight='700' font-size='52' fill='#666' text-anchor='middle'>ていねいなカットのお店</text><path d='M430 330 l30 40 l30 -40z' fill='#3d7a55'/><rect x='40' y='390' width='840' height='250' rx='24' fill='#eef5f0' stroke='none' stroke-width='0'/><text x='90' y='450' font-family='Noto Sans CJK JP' font-weight='700' font-size='40' fill='#3d7a55' text-anchor='start'>後</text><text x='460' y='555' font-family='Noto Sans CJK JP' font-weight='700' font-size='52' fill='#24402f' text-anchor='middle'>毛が細い子のふんわりが得意</text><text x='460' y='690' font-family='Noto Sans CJK JP' font-weight='700' font-size='32' fill='#666' text-anchor='middle'>（例）当てはまる人が「うちの子だ」と思える</text></svg>",
+   "iy": 290,
+   "ih": 720
+  },
+  {
+   "type": "card",
+   "num": 5,
+   "y": 1070,
+   "lab": "💾 保存して見返してね",
+   "text": "中身は<br><span class=hl>今のままでいい</span>",
+   "sm": "明日の1頭で、試してみてください",
+   "bg": {
+    "kind": "image",
+    "file": "/home/claude/fta-media/tools/salon_tiktok/bg_theme/note.png",
+    "zoom": 0
+   },
+   "voice": "中身は、今のままでいい。名前、写真、ひと言。保存して、1つずつ変えてみてね。",
+   "min": 3.6,
+   "pad": 0.6,
+   "pop": true,
+   "punch": true,
+   "illus": "<svg width='860' height='654' viewBox='0 0 920 700' xmlns='http://www.w3.org/2000/svg'><text x='460' y='300' font-family='Noto Sans CJK JP' font-weight='700' font-size='200' fill='#24402f' text-anchor='middle'>💾</text><text x='460' y='520' font-family='Noto Sans CJK JP' font-weight='700' font-size='52' fill='#24402f' text-anchor='middle'>保存して、明日の1頭で</text><text x='460' y='600' font-family='Noto Sans CJK JP' font-weight='700' font-size='52' fill='#3d7a55' text-anchor='middle'>試してみてね</text></svg>",
+   "iy": 290,
+   "ih": 720
+  }
+ ]
+}
