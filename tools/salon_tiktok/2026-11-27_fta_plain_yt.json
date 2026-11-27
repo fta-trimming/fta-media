@@ -1,0 +1,165 @@
+{
+ "out": "FTA_2026-11-27_plain_yt.mp4",
+ "tts": "/home/claude/fta-media/tools/voicevox/tts_voices.py",
+ "voiceName": "aoyama",
+ "speed": 1.2,
+ "crf": 14,
+ "brand": "FUJIWARA TRIMMING ACADEMY",
+ "tag": "トリミングサロンの生産性",
+ "color": {
+  "card": "rgba(36,64,47,.86)",
+  "pill": "rgba(61,107,79,.95)",
+  "lab": "#f6d77a",
+  "labfg": "#24402f",
+  "hl": "#f6d77a",
+  "hlfg": "#24402f"
+ },
+ "scenes": [
+  {
+   "type": "title",
+   "y": 640,
+   "min": 3.2,
+   "pad": 0.3,
+   "html": "<div style='font-family:Noto Sans CJK JP;font-size:72px;font-weight:900;color:#fff;-webkit-text-stroke:3px #000;paint-order:stroke'>「人によって仕上がりがちがう」</div><div style='font-family:Noto Sans CJK JP;font-size:132px;font-weight:900;line-height:1.15;margin-top:18px;color:#f6d77a;-webkit-text-stroke:6px #1b2e22;paint-order:stroke'>感覚で教えてた</div><div style='display:inline-block;margin-top:24px;background:#e0412f;color:#fff;font-family:Noto Sans CJK JP;font-weight:900;font-size:56px;padding:8px 30px;border-radius:14px'>言葉にすればそろう</div>",
+   "bg": {
+    "kind": "image",
+    "file": "/home/claude/fta-media/tools/salon_tiktok/bg_theme/note.png",
+    "zoom": 0
+   },
+   "voice": "人によって、仕上がりがちがう。原因は、感覚で教えていたこと。言葉にすれば、そろいます。",
+   "pop": true,
+   "punch": true
+  },
+  {
+   "type": "card",
+   "num": 1,
+   "y": 1070,
+   "lab": "よくあること",
+   "text": "同じカットなのに<br><span style='color:#ff7a66'>人ごとにちがう</span>",
+   "sm": "長さも形も、スタッフでバラバラ",
+   "bg": {
+    "kind": "image",
+    "file": "/home/claude/fta-media/tools/salon_tiktok/bg_theme/table.png",
+    "zoom": 0
+   },
+   "voice": "同じカットなのに、スタッフごとに、仕上がりがちがう。",
+   "min": 4.4,
+   "pad": 0.75,
+   "pop": true,
+   "punch": true,
+   "illus": "<svg width='860' height='654' viewBox='0 0 920 700' xmlns='http://www.w3.org/2000/svg'><g transform='translate(20,150) scale(0.7)'>\n<ellipse cx=\"300\" cy=\"545\" rx=\"230\" ry=\"22\" fill=\"#000\" opacity=\".18\"/>\n<g fill=\"#f6ead8\" stroke=\"#d9c3a3\" stroke-width=\"4\">\n<rect x=\"205\" y=\"400\" width=\"44\" height=\"130\" rx=\"20\"/><rect x=\"255\" y=\"410\" width=\"44\" height=\"125\" rx=\"20\"/>\n<rect x=\"355\" y=\"410\" width=\"44\" height=\"125\" rx=\"20\"/><rect x=\"405\" y=\"400\" width=\"44\" height=\"130\" rx=\"20\"/>\n<circle cx=\"227\" cy=\"525\" r=\"30\"/><circle cx=\"277\" cy=\"530\" r=\"30\"/><circle cx=\"377\" cy=\"530\" r=\"30\"/><circle cx=\"427\" cy=\"525\" r=\"30\"/>\n<path d=\"M470 330 q60 -40 70 -110\" fill=\"none\" stroke-width=\"10\"/><circle cx=\"540\" cy=\"205\" r=\"40\"/>\n<ellipse cx=\"330\" cy=\"370\" rx=\"160\" ry=\"95\"/>\n<circle cx=\"215\" cy=\"340\" r=\"70\"/>\n<ellipse cx=\"130\" cy=\"250\" rx=\"42\" ry=\"80\"/><ellipse cx=\"290\" cy=\"250\" rx=\"42\" ry=\"80\"/>\n<circle cx=\"210\" cy=\"215\" r=\"88\"/><circle cx=\"205\" cy=\"130\" r=\"58\"/>\n<ellipse cx=\"210\" cy=\"262\" rx=\"52\" ry=\"38\" fill=\"#fbf4ea\"/></g>\n<circle cx=\"180\" cy=\"210\" r=\"11\" fill=\"#2b2b2b\"/><circle cx=\"240\" cy=\"210\" r=\"11\" fill=\"#2b2b2b\"/>\n<circle cx=\"184\" cy=\"206\" r=\"3.5\" fill=\"#fff\"/><circle cx=\"244\" cy=\"206\" r=\"3.5\" fill=\"#fff\"/>\n<ellipse cx=\"210\" cy=\"248\" rx=\"15\" ry=\"11\" fill=\"#2b2b2b\"/><path d=\"M196 272 q14 12 28 0\" fill=\"none\" stroke=\"#2b2b2b\" stroke-width=\"4\" stroke-linecap=\"round\"/>\n<circle cx=\"160\" cy=\"245\" r=\"12\" fill=\"#f3b8a8\" opacity=\".6\"/><circle cx=\"260\" cy=\"245\" r=\"12\" fill=\"#f3b8a8\" opacity=\".6\"/>\n</g><g transform='translate(310,190) scale(0.62)'>\n<ellipse cx=\"300\" cy=\"545\" rx=\"230\" ry=\"22\" fill=\"#000\" opacity=\".18\"/>\n<g fill=\"#f6ead8\" stroke=\"#d9c3a3\" stroke-width=\"4\">\n<rect x=\"205\" y=\"400\" width=\"44\" height=\"130\" rx=\"20\"/><rect x=\"255\" y=\"410\" width=\"44\" height=\"125\" rx=\"20\"/>\n<rect x=\"355\" y=\"410\" width=\"44\" height=\"125\" rx=\"20\"/><rect x=\"405\" y=\"400\" width=\"44\" height=\"130\" rx=\"20\"/>\n<circle cx=\"227\" cy=\"525\" r=\"30\"/><circle cx=\"277\" cy=\"530\" r=\"30\"/><circle cx=\"377\" cy=\"530\" r=\"30\"/><circle cx=\"427\" cy=\"525\" r=\"30\"/>\n<path d=\"M470 330 q60 -40 70 -110\" fill=\"none\" stroke-width=\"10\"/><circle cx=\"540\" cy=\"205\" r=\"40\"/>\n<ellipse cx=\"330\" cy=\"370\" rx=\"160\" ry=\"95\"/>\n<circle cx=\"215\" cy=\"340\" r=\"70\"/>\n<ellipse cx=\"130\" cy=\"250\" rx=\"42\" ry=\"80\"/><ellipse cx=\"290\" cy=\"250\" rx=\"42\" ry=\"80\"/>\n<circle cx=\"210\" cy=\"215\" r=\"88\"/><circle cx=\"205\" cy=\"130\" r=\"58\"/>\n<ellipse cx=\"210\" cy=\"262\" rx=\"52\" ry=\"38\" fill=\"#fbf4ea\"/></g>\n<circle cx=\"180\" cy=\"210\" r=\"11\" fill=\"#2b2b2b\"/><circle cx=\"240\" cy=\"210\" r=\"11\" fill=\"#2b2b2b\"/>\n<circle cx=\"184\" cy=\"206\" r=\"3.5\" fill=\"#fff\"/><circle cx=\"244\" cy=\"206\" r=\"3.5\" fill=\"#fff\"/>\n<ellipse cx=\"210\" cy=\"248\" rx=\"15\" ry=\"11\" fill=\"#2b2b2b\"/><path d=\"M196 272 q14 12 28 0\" fill=\"none\" stroke=\"#2b2b2b\" stroke-width=\"4\" stroke-linecap=\"round\"/>\n<circle cx=\"160\" cy=\"245\" r=\"12\" fill=\"#f3b8a8\" opacity=\".6\"/><circle cx=\"260\" cy=\"245\" r=\"12\" fill=\"#f3b8a8\" opacity=\".6\"/>\n</g><g transform='translate(580,120) scale(0.78)'>\n<ellipse cx=\"300\" cy=\"545\" rx=\"230\" ry=\"22\" fill=\"#000\" opacity=\".18\"/>\n<g fill=\"#f6ead8\" stroke=\"#d9c3a3\" stroke-width=\"4\">\n<rect x=\"205\" y=\"400\" width=\"44\" height=\"130\" rx=\"20\"/><rect x=\"255\" y=\"410\" width=\"44\" height=\"125\" rx=\"20\"/>\n<rect x=\"355\" y=\"410\" width=\"44\" height=\"125\" rx=\"20\"/><rect x=\"405\" y=\"400\" width=\"44\" height=\"130\" rx=\"20\"/>\n<circle cx=\"227\" cy=\"525\" r=\"30\"/><circle cx=\"277\" cy=\"530\" r=\"30\"/><circle cx=\"377\" cy=\"530\" r=\"30\"/><circle cx=\"427\" cy=\"525\" r=\"30\"/>\n<path d=\"M470 330 q60 -40 70 -110\" fill=\"none\" stroke-width=\"10\"/><circle cx=\"540\" cy=\"205\" r=\"40\"/>\n<ellipse cx=\"330\" cy=\"370\" rx=\"160\" ry=\"95\"/>\n<circle cx=\"215\" cy=\"340\" r=\"70\"/>\n<ellipse cx=\"130\" cy=\"250\" rx=\"42\" ry=\"80\"/><ellipse cx=\"290\" cy=\"250\" rx=\"42\" ry=\"80\"/>\n<circle cx=\"210\" cy=\"215\" r=\"88\"/><circle cx=\"205\" cy=\"130\" r=\"58\"/>\n<ellipse cx=\"210\" cy=\"262\" rx=\"52\" ry=\"38\" fill=\"#fbf4ea\"/></g>\n<circle cx=\"180\" cy=\"210\" r=\"11\" fill=\"#2b2b2b\"/><circle cx=\"240\" cy=\"210\" r=\"11\" fill=\"#2b2b2b\"/>\n<circle cx=\"184\" cy=\"206\" r=\"3.5\" fill=\"#fff\"/><circle cx=\"244\" cy=\"206\" r=\"3.5\" fill=\"#fff\"/>\n<ellipse cx=\"210\" cy=\"248\" rx=\"15\" ry=\"11\" fill=\"#2b2b2b\"/><path d=\"M196 272 q14 12 28 0\" fill=\"none\" stroke=\"#2b2b2b\" stroke-width=\"4\" stroke-linecap=\"round\"/>\n<circle cx=\"160\" cy=\"245\" r=\"12\" fill=\"#f3b8a8\" opacity=\".6\"/><circle cx=\"260\" cy=\"245\" r=\"12\" fill=\"#f3b8a8\" opacity=\".6\"/>\n</g><text x='460' y='80' font-family='Noto Sans CJK JP' font-weight='700' font-size='44' fill='#e0412f' text-anchor='middle'>同じオーダーなのに…</text></svg>",
+   "iy": 290,
+   "ih": 720
+  },
+  {
+   "type": "card",
+   "num": 2,
+   "y": 1070,
+   "lab": "なぜ？",
+   "text": "「このくらい」で<br><span style='color:#ff7a66'>教えている</span>",
+   "sm": "長さの感じ方は、人によってちがう",
+   "bg": {
+    "kind": "image",
+    "file": "/home/claude/fta-media/tools/salon_tiktok/bg_theme/note.png",
+    "zoom": 0
+   },
+   "voice": "このくらい、で教えているからです。長さの感じ方は、人によってちがいます。",
+   "min": 4.4,
+   "pad": 0.75,
+   "pop": true,
+   "punch": true,
+   "illus": "<svg width='860' height='654' viewBox='0 0 920 700' xmlns='http://www.w3.org/2000/svg'><rect x='220' y='60' width='480' height='130' rx='30' fill='#fff' stroke='#3d7a55' stroke-width='5'/><polygon points='280,190 320,190 270,230' fill='#fff' stroke='#3d7a55' stroke-width='5'/><rect x='275' y='184' width='50' height='10' fill='#fff'/><text x='460.0' y='145.16' font-family='Noto Sans CJK JP' font-weight='700' font-size='56' fill='#24402f' text-anchor='middle'>このくらい</text><rect x='60' y='340' width='240' height='220' rx='24' fill='#eef5f0' stroke='none' stroke-width='0'/><text x='180' y='470' font-family='Noto Sans CJK JP' font-weight='700' font-size='50' fill='#e0412f' text-anchor='middle'>1cm?</text><rect x='340' y='340' width='240' height='220' rx='24' fill='#eef5f0' stroke='none' stroke-width='0'/><text x='460' y='470' font-family='Noto Sans CJK JP' font-weight='700' font-size='50' fill='#e0412f' text-anchor='middle'>2cm?</text><rect x='620' y='340' width='240' height='220' rx='24' fill='#eef5f0' stroke='none' stroke-width='0'/><text x='740' y='470' font-family='Noto Sans CJK JP' font-weight='700' font-size='50' fill='#e0412f' text-anchor='middle'>3cm?</text></svg>",
+   "iy": 290,
+   "ih": 720
+  },
+  {
+   "type": "card",
+   "num": 3,
+   "y": 1070,
+   "lab": "こうする",
+   "text": "長さは<br><span class=hl>「◯mm」で伝える</span>",
+   "sm": "アタッチメントなら、だれでも同じ長さ",
+   "bg": {
+    "kind": "image",
+    "file": "/home/claude/fta-media/tools/salon_tiktok/bg_theme/table.png",
+    "zoom": 0
+   },
+   "voice": "長さは、何ミリ、で伝えます。アタッチメントなら、だれでも同じ長さです。",
+   "min": 4.4,
+   "pad": 0.75,
+   "pop": true,
+   "punch": true,
+   "illus": "<svg width='860' height='654' viewBox='0 0 920 700' xmlns='http://www.w3.org/2000/svg'><g transform='translate(100,240) rotate(-20) scale(1.0)'><rect x='0' y='0' width='120' height='330' rx='50' fill='#2b2b2b'/><rect x='18' y='60' width='84' height='26' rx='10' fill='#9be15d'/><rect x='-20' y='-70' width='160' height='90' rx='16' fill='#d0d0d0' stroke='#888' stroke-width='4'/><line x1='-10' y1='-70' x2='-10' y2='-120' stroke='#888' stroke-width='6'/><line x1='6' y1='-70' x2='6' y2='-120' stroke='#888' stroke-width='6'/><line x1='22' y1='-70' x2='22' y2='-120' stroke='#888' stroke-width='6'/><line x1='38' y1='-70' x2='38' y2='-120' stroke='#888' stroke-width='6'/><line x1='54' y1='-70' x2='54' y2='-120' stroke='#888' stroke-width='6'/><line x1='70' y1='-70' x2='70' y2='-120' stroke='#888' stroke-width='6'/><line x1='86' y1='-70' x2='86' y2='-120' stroke='#888' stroke-width='6'/><line x1='102' y1='-70' x2='102' y2='-120' stroke='#888' stroke-width='6'/><line x1='118' y1='-70' x2='118' y2='-120' stroke='#888' stroke-width='6'/><line x1='134' y1='-70' x2='134' y2='-120' stroke='#888' stroke-width='6'/></g><rect x='380' y='110' width='480' height='120' rx='24' fill='#eef5f0' stroke='none' stroke-width='0'/><text x='620' y='190' font-family='Noto Sans CJK JP' font-weight='700' font-size='50' fill='#3d7a55' text-anchor='middle'>背中　◯mm</text><rect x='380' y='260' width='480' height='120' rx='24' fill='#eef5f0' stroke='none' stroke-width='0'/><text x='620' y='340' font-family='Noto Sans CJK JP' font-weight='700' font-size='50' fill='#3d7a55' text-anchor='middle'>足　◯mm</text><rect x='380' y='410' width='480' height='120' rx='24' fill='#fff7dc' stroke='none' stroke-width='0'/><text x='620' y='490' font-family='Noto Sans CJK JP' font-weight='700' font-size='50' fill='#e0412f' text-anchor='middle'>仕上げ　ハサミ</text></svg>",
+   "iy": 290,
+   "ih": 720
+  },
+  {
+   "type": "card",
+   "num": 4,
+   "y": 1070,
+   "lab": "もう1つ",
+   "text": "手順を<br><span class=hl>紙に書く</span>",
+   "sm": "見れば、だれでも同じにできる",
+   "bg": {
+    "kind": "image",
+    "file": "/home/claude/fta-media/tools/salon_tiktok/bg_theme/note.png",
+    "zoom": 0
+   },
+   "voice": "手順を、紙に書いておきます。見れば、だれでも同じにできます。",
+   "min": 4.4,
+   "pad": 0.75,
+   "pop": true,
+   "punch": true,
+   "illus": "<svg width='860' height='654' viewBox='0 0 920 700' xmlns='http://www.w3.org/2000/svg'><rect x='70' y='150' width='280' height='360' rx='24' fill='#fff7dc' stroke='none' stroke-width='0'/><text x='210' y='300' font-family='Noto Sans CJK JP' font-weight='700' font-size='100' fill='#24402f' text-anchor='middle'>💭</text><text x='210' y='440' font-family='Noto Sans CJK JP' font-weight='700' font-size='48' fill='#24402f' text-anchor='middle'>感覚</text><defs><marker id='m380330' markerWidth='5' markerHeight='5' refX='2.5' refY='2.5' orient='auto'><path d='M0 0 L5 2.5 L0 5z' fill='#24402f'/></marker></defs><line x1='380' y1='330' x2='520' y2='330' stroke='#24402f' stroke-width='12' marker-end='url(#m380330)'/><rect x='550' y='110' width='300' height='440' rx='24' fill='#fff' stroke='#cfe0d4' stroke-width='5'/><text x='700' y='180' font-family='Noto Sans CJK JP' font-weight='700' font-size='40' fill='#24402f' text-anchor='middle'>マニュアル</text><text x='590' y='260' font-family='Noto Sans CJK JP' font-weight='700' font-size='32' fill='#3d7a55' text-anchor='start'>① 背中 ◯mm</text><text x='590' y='335' font-family='Noto Sans CJK JP' font-weight='700' font-size='32' fill='#3d7a55' text-anchor='start'>② 足 ◯mm</text><text x='590' y='410' font-family='Noto Sans CJK JP' font-weight='700' font-size='32' fill='#3d7a55' text-anchor='start'>③ 顔 ◯mm</text><text x='590' y='485' font-family='Noto Sans CJK JP' font-weight='700' font-size='32' fill='#3d7a55' text-anchor='start'>④ ハサミ</text></svg>",
+   "iy": 290,
+   "ih": 720
+  },
+  {
+   "type": "card",
+   "num": 5,
+   "y": 1070,
+   "lab": "すると",
+   "text": "教える時間が<br><span class=hl>へる</span>",
+   "sm": "新人さんも、迷わない",
+   "bg": {
+    "kind": "image",
+    "file": "/home/claude/fta-media/tools/salon_tiktok/bg_theme/clock.png",
+    "zoom": 0
+   },
+   "voice": "教える時間がへり、新人さんも、迷いません。",
+   "min": 4.4,
+   "pad": 0.75,
+   "pop": true,
+   "punch": true,
+   "illus": "<svg width='860' height='654' viewBox='0 0 920 700' xmlns='http://www.w3.org/2000/svg'><g transform='translate(20,160) scale(0.7)'>\n<ellipse cx=\"300\" cy=\"545\" rx=\"230\" ry=\"22\" fill=\"#000\" opacity=\".18\"/>\n<g fill=\"#f6ead8\" stroke=\"#d9c3a3\" stroke-width=\"4\">\n<rect x=\"205\" y=\"400\" width=\"44\" height=\"130\" rx=\"20\"/><rect x=\"255\" y=\"410\" width=\"44\" height=\"125\" rx=\"20\"/>\n<rect x=\"355\" y=\"410\" width=\"44\" height=\"125\" rx=\"20\"/><rect x=\"405\" y=\"400\" width=\"44\" height=\"130\" rx=\"20\"/>\n<circle cx=\"227\" cy=\"525\" r=\"30\"/><circle cx=\"277\" cy=\"530\" r=\"30\"/><circle cx=\"377\" cy=\"530\" r=\"30\"/><circle cx=\"427\" cy=\"525\" r=\"30\"/>\n<path d=\"M470 330 q60 -40 70 -110\" fill=\"none\" stroke-width=\"10\"/><circle cx=\"540\" cy=\"205\" r=\"40\"/>\n<ellipse cx=\"330\" cy=\"370\" rx=\"160\" ry=\"95\"/>\n<circle cx=\"215\" cy=\"340\" r=\"70\"/>\n<ellipse cx=\"130\" cy=\"250\" rx=\"42\" ry=\"80\"/><ellipse cx=\"290\" cy=\"250\" rx=\"42\" ry=\"80\"/>\n<circle cx=\"210\" cy=\"215\" r=\"88\"/><circle cx=\"205\" cy=\"130\" r=\"58\"/>\n<ellipse cx=\"210\" cy=\"262\" rx=\"52\" ry=\"38\" fill=\"#fbf4ea\"/></g>\n<circle cx=\"180\" cy=\"210\" r=\"11\" fill=\"#2b2b2b\"/><circle cx=\"240\" cy=\"210\" r=\"11\" fill=\"#2b2b2b\"/>\n<circle cx=\"184\" cy=\"206\" r=\"3.5\" fill=\"#fff\"/><circle cx=\"244\" cy=\"206\" r=\"3.5\" fill=\"#fff\"/>\n<ellipse cx=\"210\" cy=\"248\" rx=\"15\" ry=\"11\" fill=\"#2b2b2b\"/><path d=\"M196 272 q14 12 28 0\" fill=\"none\" stroke=\"#2b2b2b\" stroke-width=\"4\" stroke-linecap=\"round\"/>\n<circle cx=\"160\" cy=\"245\" r=\"12\" fill=\"#f3b8a8\" opacity=\".6\"/><circle cx=\"260\" cy=\"245\" r=\"12\" fill=\"#f3b8a8\" opacity=\".6\"/>\n</g><g transform='translate(310,160) scale(0.7)'>\n<ellipse cx=\"300\" cy=\"545\" rx=\"230\" ry=\"22\" fill=\"#000\" opacity=\".18\"/>\n<g fill=\"#f6ead8\" stroke=\"#d9c3a3\" stroke-width=\"4\">\n<rect x=\"205\" y=\"400\" width=\"44\" height=\"130\" rx=\"20\"/><rect x=\"255\" y=\"410\" width=\"44\" height=\"125\" rx=\"20\"/>\n<rect x=\"355\" y=\"410\" width=\"44\" height=\"125\" rx=\"20\"/><rect x=\"405\" y=\"400\" width=\"44\" height=\"130\" rx=\"20\"/>\n<circle cx=\"227\" cy=\"525\" r=\"30\"/><circle cx=\"277\" cy=\"530\" r=\"30\"/><circle cx=\"377\" cy=\"530\" r=\"30\"/><circle cx=\"427\" cy=\"525\" r=\"30\"/>\n<path d=\"M470 330 q60 -40 70 -110\" fill=\"none\" stroke-width=\"10\"/><circle cx=\"540\" cy=\"205\" r=\"40\"/>\n<ellipse cx=\"330\" cy=\"370\" rx=\"160\" ry=\"95\"/>\n<circle cx=\"215\" cy=\"340\" r=\"70\"/>\n<ellipse cx=\"130\" cy=\"250\" rx=\"42\" ry=\"80\"/><ellipse cx=\"290\" cy=\"250\" rx=\"42\" ry=\"80\"/>\n<circle cx=\"210\" cy=\"215\" r=\"88\"/><circle cx=\"205\" cy=\"130\" r=\"58\"/>\n<ellipse cx=\"210\" cy=\"262\" rx=\"52\" ry=\"38\" fill=\"#fbf4ea\"/></g>\n<circle cx=\"180\" cy=\"210\" r=\"11\" fill=\"#2b2b2b\"/><circle cx=\"240\" cy=\"210\" r=\"11\" fill=\"#2b2b2b\"/>\n<circle cx=\"184\" cy=\"206\" r=\"3.5\" fill=\"#fff\"/><circle cx=\"244\" cy=\"206\" r=\"3.5\" fill=\"#fff\"/>\n<ellipse cx=\"210\" cy=\"248\" rx=\"15\" ry=\"11\" fill=\"#2b2b2b\"/><path d=\"M196 272 q14 12 28 0\" fill=\"none\" stroke=\"#2b2b2b\" stroke-width=\"4\" stroke-linecap=\"round\"/>\n<circle cx=\"160\" cy=\"245\" r=\"12\" fill=\"#f3b8a8\" opacity=\".6\"/><circle cx=\"260\" cy=\"245\" r=\"12\" fill=\"#f3b8a8\" opacity=\".6\"/>\n</g><g transform='translate(600,160) scale(0.7)'>\n<ellipse cx=\"300\" cy=\"545\" rx=\"230\" ry=\"22\" fill=\"#000\" opacity=\".18\"/>\n<g fill=\"#f6ead8\" stroke=\"#d9c3a3\" stroke-width=\"4\">\n<rect x=\"205\" y=\"400\" width=\"44\" height=\"130\" rx=\"20\"/><rect x=\"255\" y=\"410\" width=\"44\" height=\"125\" rx=\"20\"/>\n<rect x=\"355\" y=\"410\" width=\"44\" height=\"125\" rx=\"20\"/><rect x=\"405\" y=\"400\" width=\"44\" height=\"130\" rx=\"20\"/>\n<circle cx=\"227\" cy=\"525\" r=\"30\"/><circle cx=\"277\" cy=\"530\" r=\"30\"/><circle cx=\"377\" cy=\"530\" r=\"30\"/><circle cx=\"427\" cy=\"525\" r=\"30\"/>\n<path d=\"M470 330 q60 -40 70 -110\" fill=\"none\" stroke-width=\"10\"/><circle cx=\"540\" cy=\"205\" r=\"40\"/>\n<ellipse cx=\"330\" cy=\"370\" rx=\"160\" ry=\"95\"/>\n<circle cx=\"215\" cy=\"340\" r=\"70\"/>\n<ellipse cx=\"130\" cy=\"250\" rx=\"42\" ry=\"80\"/><ellipse cx=\"290\" cy=\"250\" rx=\"42\" ry=\"80\"/>\n<circle cx=\"210\" cy=\"215\" r=\"88\"/><circle cx=\"205\" cy=\"130\" r=\"58\"/>\n<ellipse cx=\"210\" cy=\"262\" rx=\"52\" ry=\"38\" fill=\"#fbf4ea\"/></g>\n<circle cx=\"180\" cy=\"210\" r=\"11\" fill=\"#2b2b2b\"/><circle cx=\"240\" cy=\"210\" r=\"11\" fill=\"#2b2b2b\"/>\n<circle cx=\"184\" cy=\"206\" r=\"3.5\" fill=\"#fff\"/><circle cx=\"244\" cy=\"206\" r=\"3.5\" fill=\"#fff\"/>\n<ellipse cx=\"210\" cy=\"248\" rx=\"15\" ry=\"11\" fill=\"#2b2b2b\"/><path d=\"M196 272 q14 12 28 0\" fill=\"none\" stroke=\"#2b2b2b\" stroke-width=\"4\" stroke-linecap=\"round\"/>\n<circle cx=\"160\" cy=\"245\" r=\"12\" fill=\"#f3b8a8\" opacity=\".6\"/><circle cx=\"260\" cy=\"245\" r=\"12\" fill=\"#f3b8a8\" opacity=\".6\"/>\n</g><text x='460' y='80' font-family='Noto Sans CJK JP' font-weight='700' font-size='48' fill='#3d7a55' text-anchor='middle'>仕上がりがそろう</text><rect x='250' y='600' width='420' height='80' rx='40' fill='#24402f' stroke='none' stroke-width='0'/><text x='460' y='655' font-family='Noto Sans CJK JP' font-weight='700' font-size='40' fill='#f6d77a' text-anchor='middle'>新人さんも安心</text></svg>",
+   "iy": 290,
+   "ih": 720
+  },
+  {
+   "type": "card",
+   "num": 6,
+   "y": 1070,
+   "lab": "💾 保存",
+   "text": "保存して<br>見返してね",
+   "sm": "長さは「◯mm」で伝える",
+   "bg": {
+    "kind": "image",
+    "file": "/home/claude/fta-media/tools/salon_tiktok/bg_theme/clock.png",
+    "zoom": 0
+   },
+   "voice": "長さは、何ミリ、で伝える。保存して、見返してね。",
+   "min": 3.6,
+   "pad": 0.8
+  }
+ ],
+ "noAnim": true,
+ "meta": {
+  "kind": "reel",
+  "cat": "staff",
+  "head": "仕上がりがバラバラなのは、感覚で教えているから。",
+  "gift": [
+   "kotoba_kit",
+   "作業を言葉にする マニュアル下書きシート"
+  ]
+ }
+}
