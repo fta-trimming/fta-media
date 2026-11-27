@@ -51,8 +51,8 @@ scenes = [
       '左右が、同じ形になります。新人さんにも、順番で教えられます。', 'note',
       svg(leg_top(300, 300, 'c', LG) + leg_top(620, 300, 'c', LG) + "<line x1='160' y1='300' x2='760' y2='300' stroke='#3d7a55' stroke-width='6' stroke-dasharray='14 10'/>"
           + t(460, 470, '上から見ても、後ろから見ても', 40, G) + t(460, 560, '同じ太さ・同じ丸', 56, LG))),
- card(6, '🎁 プレゼント', '四角→八角→丸<br>後肢の手順シート', 'コメントに「やってみる」と書いてね',
-      '手順シートがほしい方は、コメントで、やってみる、と書いてね。', 'table', gift_illus(), 3.6, 0.8),
+ card(6, '🎁 プレゼント', '四角→八角→丸<br>後肢の手順シート', 'コメントに「手順」と書いてね',
+      '手順シートがほしい方は、コメントで、てじゅん、と書いてね。', 'table', gift_illus(), 3.6, 0.8),
 ]
 cfg = {'out': 'FTA_2026-11-28_shikaku.mp4', 'tts': '/home/claude/fta-media/tools/voicevox/tts_voices.py', 'voiceName': 'aoyama', 'speed': 1.2, 'crf': 14,
        'size': [720, 1280], 'brand': 'FUJIWARA TRIMMING ACADEMY', 'tag': 'トリミングサロンの生産性',

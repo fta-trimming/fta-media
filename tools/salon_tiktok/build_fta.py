@@ -36,14 +36,14 @@ def page(pg, html, path):
     pg.screenshot(path=path, omit_background=True)
 
 scenes = CFG['scenes']
-N = sum(1 for s in scenes if s.get('num'))
+N = CFG.get('numTotal') or sum(1 for s in scenes if s.get('num'))
 with sync_playwright() as p:
     b = p.chromium.launch(executable_path='/opt/pw-browsers/chromium'); pg = b.new_page(viewport={'width': W, 'height': H})
     k = 0
     for i, s in enumerate(scenes):
         html = ''
         if s.get('num'):
-            k += 1
+            k = s.get('numAt') or (k + 1)
             html += f"<div class='hdr'><div class='row'><span>{CFG['brand']}</span><span>{k:02d} / {N:02d}</span></div><div class='ln'></div><span class='pill'>{CFG['tag']}</span></div>"
         t = s['type']
         if s.get('illus'):
