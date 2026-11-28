@@ -1,0 +1,150 @@
+{
+ "out": "FTA_2026-11-28_shikaku_yt.mp4",
+ "tts": "/home/claude/fta-media/tools/voicevox/tts_voices.py",
+ "voiceName": "aoyama",
+ "speed": 1.2,
+ "crf": 14,
+ "size": [
+  720,
+  1280
+ ],
+ "brand": "FUJIWARA TRIMMING ACADEMY",
+ "tag": "トリミングサロンの生産性",
+ "color": {
+  "card": "rgba(36,64,47,.86)",
+  "pill": "rgba(61,107,79,.95)",
+  "lab": "#f6d77a",
+  "labfg": "#24402f",
+  "hl": "#f6d77a",
+  "hlfg": "#24402f"
+ },
+ "scenes": [
+  {
+   "type": "title",
+   "y": 380,
+   "min": 3.4,
+   "pad": 0.35,
+   "html": "<div style='font-family:Noto Sans CJK JP;font-size:70px;font-weight:900;color:#fff;-webkit-text-stroke:3px #000;paint-order:stroke'>「後肢が、左右でそろわない…」</div><div style='font-family:Noto Sans CJK JP;font-size:150px;font-weight:900;line-height:1.1;margin-top:16px;color:#f6d77a;-webkit-text-stroke:7px #1b2e22;paint-order:stroke'>四角→八角→丸</div><div style='display:inline-block;margin-top:22px;background:#e0412f;color:#fff;font-family:Noto Sans CJK JP;font-weight:900;font-size:58px;padding:8px 30px;border-radius:14px'>この順で切るだけ</div>",
+   "bg": {
+    "kind": "video",
+    "file": "/tmp/claude-0/-home-claude/ce93028b-f2d3-5a2d-b5c7-9abb29c3fbe8/scratchpad/r1128/src/v2.mp4",
+    "start": 220.0,
+    "speed": 1.0
+   },
+   "voice": "こうしが、左右でそろわない。四角、八角、丸の順で切ります。",
+   "pop": true,
+   "punch": true
+  },
+  {
+   "type": "card",
+   "num": 1,
+   "y": 1070,
+   "lab": "なぜ？",
+   "text": "いきなり丸く切ると<br><span style='color:#ff7a66'>左右で形が変わる</span>",
+   "sm": "人によって、丸の形がちがう",
+   "bg": {
+    "kind": "image",
+    "file": "/home/claude/fta-media/tools/salon_tiktok/bg_theme/table.png",
+    "zoom": 0
+   },
+   "voice": "いきなり丸く切ると、人によって、左右で形が変わります。",
+   "min": 4.4,
+   "pad": 0.75,
+   "pop": true,
+   "punch": true,
+   "illus": "<svg width='860' height='654' viewBox='0 0 920 700' xmlns='http://www.w3.org/2000/svg'><rect x='30' y='40' width='410' height='600' rx='24' fill='#fff2ef' stroke='none' stroke-width='0'/><text x='235' y='110' font-family='Noto Sans CJK JP' font-weight='700' font-size='50' fill='#e0412f' text-anchor='middle'>いきなり丸</text><path d='M100 330 q 10 -70 70 -64 q 62 10 50 74 q -12 60 -70 52 q -58 -6 -50 -62z' fill='#fff' stroke='#e0412f' stroke-width='10'/><path d='M262 320 q 20 -60 62 -50 q 52 14 40 64 q -6 64 -62 56 q -50 -10 -40 -70z' fill='#fff' stroke='#e0412f' stroke-width='10'/><text x='235' y='520' font-family='Noto Sans CJK JP' font-weight='700' font-size='40' fill='#e0412f' text-anchor='middle'>左右で形がちがう</text><text x='235' y='590' font-family='Noto Sans CJK JP' font-weight='700' font-size='60' fill='#e0412f' text-anchor='middle'>✕</text><rect x='480' y='40' width='410' height='600' rx='24' fill='#eef5f0' stroke='none' stroke-width='0'/><text x='685' y='110' font-family='Noto Sans CJK JP' font-weight='700' font-size='46' fill='#3d7a55' text-anchor='middle'>四角→八角→丸</text><rect x='520' y='180' width='90' height='90' fill='none' stroke='#3d7a55' stroke-width='8'/><polygon points='665,180 705,180 735,210 735,250 705,280 665,280 635,250 635,210' fill='none' stroke='#3d7a55' stroke-width='8'/><circle cx='810' cy='230' r='48' fill='none' stroke='#3d7a55' stroke-width='8'/><circle cx='610' cy='400' r='62' fill='#fff' stroke='#3d7a55' stroke-width='10'/><circle cx='760' cy='400' r='62' fill='#fff' stroke='#3d7a55' stroke-width='10'/><text x='685' y='520' font-family='Noto Sans CJK JP' font-weight='700' font-size='40' fill='#3d7a55' text-anchor='middle'>左右が同じ形</text><text x='685' y='590' font-family='Noto Sans CJK JP' font-weight='700' font-size='60' fill='#3d7a55' text-anchor='middle'>○</text></svg>",
+   "iy": 290,
+   "ih": 720
+  },
+  {
+   "type": "big",
+   "num": 2,
+   "y": 300,
+   "html": "<div style='display:inline-flex;align-items:center;gap:26px;background:rgba(36,64,47,.9);border-radius:28px;padding:22px 36px;box-shadow:0 10px 30px rgba(0,0,0,.3)'><svg width='160' height='160' viewBox='0 0 100 100'><rect x='14' y='14' width='72' height='72' fill='none' stroke='#f6d77a' stroke-width='9'/></svg><div style='text-align:left'><div style='font-family:Noto Sans CJK JP;font-size:52px;font-weight:900;color:#f6d77a'>① 四角</div><div style='font-family:Noto Sans CJK JP;font-size:84px;font-weight:900;color:#fff;line-height:1.2'>面を作る</div></div></div><div style='margin-top:16px'><span style='background:#fff;color:#24402f;font-family:Noto Sans CJK JP;font-weight:900;font-size:32px;padding:4px 18px;border-radius:999px'>実際の作業 ×4倍速</span></div>",
+   "bg": {
+    "kind": "video",
+    "file": "/tmp/claude-0/-home-claude/ce93028b-f2d3-5a2d-b5c7-9abb29c3fbe8/scratchpad/r1128/src/v2.mp4",
+    "start": 4.0,
+    "speed": 4
+   },
+   "voice": "まずアタッチメントで、前、横、後ろの面。これが四角。",
+   "min": 4.4,
+   "pad": 0.6,
+   "pop": true,
+   "punch": false
+  },
+  {
+   "type": "big",
+   "num": 3,
+   "y": 300,
+   "html": "<div style='display:inline-flex;align-items:center;gap:26px;background:rgba(36,64,47,.9);border-radius:28px;padding:22px 36px;box-shadow:0 10px 30px rgba(0,0,0,.3)'><svg width='160' height='160' viewBox='0 0 100 100'><polygon points='35,10 65,10 90,35 90,65 65,90 35,90 10,65 10,35' fill='none' stroke='#f6d77a' stroke-width='9'/></svg><div style='text-align:left'><div style='font-family:Noto Sans CJK JP;font-size:52px;font-weight:900;color:#f6d77a'>② 八角</div><div style='font-family:Noto Sans CJK JP;font-size:84px;font-weight:900;color:#fff;line-height:1.2'>角を落とす</div></div></div><div style='margin-top:16px'><span style='background:#fff;color:#24402f;font-family:Noto Sans CJK JP;font-weight:900;font-size:32px;padding:4px 18px;border-radius:999px'>実際の作業 ×3倍速</span></div>",
+   "bg": {
+    "kind": "video",
+    "file": "/tmp/claude-0/-home-claude/ce93028b-f2d3-5a2d-b5c7-9abb29c3fbe8/scratchpad/r1128/src/v2.mp4",
+    "start": 134.0,
+    "speed": 3
+   },
+   "voice": "次にハサミで、四つの角だけ落とす。これで八角。",
+   "min": 4.4,
+   "pad": 0.6,
+   "pop": true,
+   "punch": false
+  },
+  {
+   "type": "big",
+   "num": 4,
+   "y": 300,
+   "html": "<div style='display:inline-flex;align-items:center;gap:26px;background:rgba(36,64,47,.9);border-radius:28px;padding:22px 36px;box-shadow:0 10px 30px rgba(0,0,0,.3)'><svg width='160' height='160' viewBox='0 0 100 100'><circle cx='50' cy='50' r='40' fill='none' stroke='#f6d77a' stroke-width='9'/></svg><div style='text-align:left'><div style='font-family:Noto Sans CJK JP;font-size:52px;font-weight:900;color:#f6d77a'>③ 丸</div><div style='font-family:Noto Sans CJK JP;font-size:84px;font-weight:900;color:#fff;line-height:1.2'>角を取る</div></div></div><div style='margin-top:16px'><span style='background:#fff;color:#24402f;font-family:Noto Sans CJK JP;font-weight:900;font-size:32px;padding:4px 18px;border-radius:999px'>実際の作業 ×3倍速</span></div>",
+   "bg": {
+    "kind": "video",
+    "file": "/tmp/claude-0/-home-claude/ce93028b-f2d3-5a2d-b5c7-9abb29c3fbe8/scratchpad/r1128/src/v2.mp4",
+    "start": 176.0,
+    "speed": 3
+   },
+   "voice": "最後に、八角の角を取ると、丸です。",
+   "min": 4.4,
+   "pad": 0.6,
+   "pop": true,
+   "punch": false
+  },
+  {
+   "type": "card",
+   "num": 5,
+   "y": 1070,
+   "lab": "すると",
+   "text": "左右が<br><span class=hl>同じ形</span>になる",
+   "sm": "新人さんにも、順番で教えられる",
+   "bg": {
+    "kind": "image",
+    "file": "/home/claude/fta-media/tools/salon_tiktok/bg_theme/note.png",
+    "zoom": 0
+   },
+   "voice": "左右が、同じ形になります。新人さんにも、順番で教えられます。",
+   "min": 4.4,
+   "pad": 0.75,
+   "pop": true,
+   "punch": true,
+   "illus": "<svg width='860' height='654' viewBox='0 0 920 700' xmlns='http://www.w3.org/2000/svg'><circle cx='300' cy='300' r='62' fill='#fff' stroke='#3d7a55' stroke-width='10'/><circle cx='620' cy='300' r='62' fill='#fff' stroke='#3d7a55' stroke-width='10'/><line x1='160' y1='300' x2='760' y2='300' stroke='#3d7a55' stroke-width='6' stroke-dasharray='14 10'/><text x='460' y='470' font-family='Noto Sans CJK JP' font-weight='700' font-size='40' fill='#24402f' text-anchor='middle'>上から見ても、後ろから見ても</text><text x='460' y='560' font-family='Noto Sans CJK JP' font-weight='700' font-size='56' fill='#3d7a55' text-anchor='middle'>同じ太さ・同じ丸</text></svg>",
+   "iy": 290,
+   "ih": 720
+  },
+  {
+   "type": "card",
+   "num": "6",
+   "y": "1070",
+   "lab": "💾 保存",
+   "text": "保存して<br>見返してね",
+   "sm": "後肢は、四角→八角→丸",
+   "bg": {
+    "kind": "image",
+    "file": "/home/claude/fta-media/tools/salon_tiktok/bg_theme/table.png",
+    "zoom": 0
+   },
+   "voice": "こうしは、四角、八角、丸。保存して、見返してね。",
+   "min": 3.6,
+   "pad": 0.8,
+   "pop": true,
+   "punch": true
+  }
+ ]
+}
