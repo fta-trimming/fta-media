@@ -1,6 +1,6 @@
 # 11/28 藤原さん「眼がしょぼしょぼネタを試しに作って。動画は顔を洗っているシーン」→ 生産性（育成）版の試し
 import json, os, sys
-HERE = os.path.dirname(os.path.abspath(__file__)); sys.path.insert(0, HERE)
+HERE = os.path.dirname(os.path.abspath(__file__)); sys.path.insert(0, HERE); sys.path.insert(0, os.path.join(HERE, '..', 'zagaku'))
 src = open(os.path.join(HERE, 'make_trial1128.py')).read().split('CFG = {}')[0]
 sys.argv = ['x', '/tmp/claude-0/-home-claude/ce93028b-f2d3-5a2d-b5c7-9abb29c3fbe8/scratchpad/eye']
 exec(src)
@@ -29,7 +29,7 @@ CFG = [
  demo(2, '② ドライヤー', '熱が目に当たる', 'ふたつめは、ドライヤーの熱。顔を乾かすとき、熱い風が、目に当たり続けていることがあります。', P('d4749.mp4'), 0.5, 1, '💨', True),
  demo(3, '③ ピン', 'スリッカー・コーム', 'みっつめは、スリッカーやコームのピン。知らないうちに、目の近くに当たっていることがあります。', P('d4749.mp4'), 7.0, 1, '🪮', True),
  card(4, '新人さんに', '目の周りは<br>' + HL('指でガード'), '顔を洗う・乾かす・とかすとき',
-      '新人さんには、目の周りは、指でガード、とひと言。顔を洗う、乾かす、とかす、どれも同じです。', 'note', illus('guard')),
+      '新人さんには、目の周りは、指でガード、とひと言。顔を洗う、乾かす、とかす、どれも同じです。', 'note', __import__('importlib').import_module('eye_guard_svg').guard_svg(850, 718), 5.0),
  endcard(5, '原因は<br>' + HL('3つ'), 'シャンプー、ドライヤー、ピン。保存して、新人さんと見返してね。'),
 ]
 base = {k: v for k, v in json.load(open(os.path.join(HERE, '2026-11-28_fta_trial_ikusei.json'))).items() if k not in ('scenes', 'out')}

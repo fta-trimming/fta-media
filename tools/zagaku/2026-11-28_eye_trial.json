@@ -1,9 +1,60 @@
-{"out": "/home/claude/fta-media/tools/zagaku/CUT_zagaku_eye_trial.mp4", "title": "トイプードルの顔カット｜目が開かない原因3つ", "brand": "@naohide_fujiwara", "voiceName": "aoyama", "speed": 1.15,
+{
+ "out": "/home/claude/fta-media/tools/zagaku/CUT_zagaku_eye_trial.mp4",
+ "title": "トイプードルの顔カット｜目が開かない原因3つ",
+ "brand": "@naohide_fujiwara",
+ "voiceName": "aoyama",
+ "speed": 1.15,
  "scenes": [
-  {"kind": "video", "file": "/tmp/claude-0/-home-claude/ce93028b-f2d3-5a2d-b5c7-9abb29c3fbe8/scratchpad/eye/w4838.mp4", "start": 3.0, "cy": 380, "cap": "目が開かない原因、<br><span class='y'>シャンプーだけ？</span>", "voice": "トリミングのあと、目がしょぼしょぼ。原因は、シャンプーだけでしょうか。", "min": 3.4, "pad": 0.4},
-  {"kind": "video", "file": "/tmp/claude-0/-home-claude/ce93028b-f2d3-5a2d-b5c7-9abb29c3fbe8/scratchpad/eye/w4838.mp4", "start": 9.0, "cy": 380, "badge": "① 顔を洗うとき", "cap": "シャンプーの<br><span class='y'>原液が目に入る</span>", "voice": "ひとつめは、シャンプーの原液。顔を洗うときに、目に入ります。"},
-  {"kind": "video", "file": "/tmp/claude-0/-home-claude/ce93028b-f2d3-5a2d-b5c7-9abb29c3fbe8/scratchpad/eye/d4749.mp4", "start": 0.5, "cy": 120, "badge": "② 顔を乾かすとき", "cap": "ドライヤーの<br><span class='y'>熱い風が目に当たる</span>", "voice": "ふたつめは、ドライヤーの熱。顔を乾かすとき、風が目に当たり続けます。"},
-  {"kind": "video", "file": "/tmp/claude-0/-home-claude/ce93028b-f2d3-5a2d-b5c7-9abb29c3fbe8/scratchpad/eye/d4749.mp4", "start": 7.0, "cy": 120, "badge": "③ とかすとき", "cap": "スリッカー・コームの<br><span class='y'>ピンが目の近くに</span>", "voice": "みっつめは、スリッカーやコームのピン。知らないうちに、目の近くに当たります。"},
-  {"kind": "illus", "illus": "<svg viewBox='0 0 900 900'><path d='M300 380 q150 -130 300 0 q-150 130 -300 0z' fill='#fff' stroke='#3a271d' stroke-width='12'/><circle cx='450' cy='380' r='52' fill='#3a271d'/><path d='M270 560 q180 -70 360 0' fill='none' stroke='#e8b48a' stroke-width='90' stroke-linecap='round'/><text x='450' y='760' font-size='64' font-weight='900' text-anchor='middle' fill='#3a271d' font-family='Noto Sans CJK JP'>洗う・乾かす・とかす</text></svg>", "cap": "目の周りは<br><span class='y'>指でガード</span>", "voice": "洗う、乾かす、とかす。目の周りは、指でガードしてから。"},
-  {"kind": "illus", "illus": "<svg viewBox='0 0 900 900'><text x='450' y='420' font-size='260' text-anchor='middle'>💾</text><text x='450' y='640' font-size='60' font-weight='900' text-anchor='middle' fill='#3a271d' font-family='Noto Sans CJK JP'>フォローは @naohide_fujiwara</text></svg>", "cap": "保存して<br><span class='y'>次の顔カットで</span>", "voice": "保存して、次の顔カットで見返してね。", "min": 3.2}
- ]}
+  {
+   "kind": "video",
+   "file": "/tmp/claude-0/-home-claude/ce93028b-f2d3-5a2d-b5c7-9abb29c3fbe8/scratchpad/eye/w4838.mp4",
+   "start": 3.0,
+   "cy": 380,
+   "cap": "目が開かない原因、<br><span class='y'>シャンプーだけ？</span>",
+   "voice": "トリミングのあと、目がしょぼしょぼ。原因は、シャンプーだけでしょうか。",
+   "min": 3.4,
+   "pad": 0.4
+  },
+  {
+   "kind": "video",
+   "file": "/tmp/claude-0/-home-claude/ce93028b-f2d3-5a2d-b5c7-9abb29c3fbe8/scratchpad/eye/w4838.mp4",
+   "start": 9.0,
+   "cy": 380,
+   "badge": "① 顔を洗うとき",
+   "cap": "シャンプーの<br><span class='y'>原液が目に入る</span>",
+   "voice": "ひとつめは、シャンプーの原液。顔を洗うときに、目に入ります。"
+  },
+  {
+   "kind": "video",
+   "file": "/tmp/claude-0/-home-claude/ce93028b-f2d3-5a2d-b5c7-9abb29c3fbe8/scratchpad/eye/d4749.mp4",
+   "start": 0.5,
+   "cy": 120,
+   "badge": "② 顔を乾かすとき",
+   "cap": "ドライヤーの<br><span class='y'>熱い風が目に当たる</span>",
+   "voice": "ふたつめは、ドライヤーの熱。顔を乾かすとき、風が目に当たり続けます。"
+  },
+  {
+   "kind": "video",
+   "file": "/tmp/claude-0/-home-claude/ce93028b-f2d3-5a2d-b5c7-9abb29c3fbe8/scratchpad/eye/d4749.mp4",
+   "start": 7.0,
+   "cy": 120,
+   "badge": "③ とかすとき",
+   "cap": "スリッカー・コームの<br><span class='y'>ピンが目の近くに</span>",
+   "voice": "みっつめは、スリッカーやコームのピン。知らないうちに、目の近くに当たります。"
+  },
+  {
+   "kind": "illus",
+   "illus": "<svg xmlns='http://www.w3.org/2000/svg' width='900' height='760' viewBox='0 0 900 760'><rect x='14' y='14' width='428' height='600' rx='26' fill='#fff2ef' stroke='#e0412f' stroke-width='5'/><text x='228' y='76' font-size='42' font-weight='900' text-anchor='middle' fill='#e0412f' font-family='Noto Sans CJK JP'>✕ そのまま</text><defs><clipPath id='cl'><rect x='14' y='14' width='428' height='600' rx='26'/></clipPath><clipPath id='cr'><rect x='458' y='14' width='428' height='600' rx='26'/></clipPath></defs><g clip-path='url(#cl)'><g transform='translate(228 380) scale(0.68)'><ellipse cx='-215' cy='40' rx='80' ry='150' fill='#9a5f35'/><ellipse cx='215' cy='40' rx='80' ry='150' fill='#9a5f35'/><circle cx='205' cy='-10' r='56' fill='#e3a56c'/><circle cx='195' cy='49' r='56' fill='#e3a56c'/><circle cx='166' cy='102' r='56' fill='#e3a56c'/><circle cx='120' cy='144' r='56' fill='#e3a56c'/><circle cx='63' cy='171' r='56' fill='#e3a56c'/><circle cx='0' cy='180' r='56' fill='#e3a56c'/><circle cx='-63' cy='171' r='56' fill='#e3a56c'/><circle cx='-120' cy='144' r='56' fill='#e3a56c'/><circle cx='-166' cy='102' r='56' fill='#e3a56c'/><circle cx='-195' cy='49' r='56' fill='#e3a56c'/><circle cx='-205' cy='-10' r='56' fill='#e3a56c'/><circle cx='-195' cy='-69' r='56' fill='#e3a56c'/><circle cx='-166' cy='-122' r='56' fill='#e3a56c'/><circle cx='-120' cy='-164' r='56' fill='#e3a56c'/><circle cx='-63' cy='-191' r='56' fill='#e3a56c'/><circle cx='-0' cy='-200' r='56' fill='#e3a56c'/><circle cx='63' cy='-191' r='56' fill='#e3a56c'/><circle cx='120' cy='-164' r='56' fill='#e3a56c'/><circle cx='166' cy='-122' r='56' fill='#e3a56c'/><circle cx='195' cy='-69' r='56' fill='#e3a56c'/><ellipse cx='0' cy='-10' rx='215' ry='200' fill='#e3a56c'/><ellipse cx='0' cy='95' rx='108' ry='82' fill='#f3cfa2'/><ellipse cx='0' cy='65' rx='30' ry='23' fill='#2b1d16'/><path d='M0 88 v20 m0 0 q-22 20 -44 4 m44 -4 q22 20 44 4' fill='none' stroke='#2b1d16' stroke-width='6' stroke-linecap='round'/><ellipse cx='-95' cy='-30' rx='30' ry='27' fill='#2b1d16'/><circle cx='-86' cy='-39' r='8' fill='#fff'/><ellipse cx='95' cy='-30' rx='30' ry='27' fill='#2b1d16'/><circle cx='104' cy='-39' r='8' fill='#fff'/></g></g><g transform='translate(268 262) rotate(28) scale(0.9)'><rect x='0' y='0' width='165' height='24' rx='8' fill='#3d5a80'/><rect x='8' y='20' width='7' height='52' rx='3' fill='#8a939c'/><rect x='25' y='20' width='7' height='52' rx='3' fill='#8a939c'/><rect x='42' y='20' width='7' height='52' rx='3' fill='#8a939c'/><rect x='59' y='20' width='7' height='52' rx='3' fill='#8a939c'/><rect x='76' y='20' width='7' height='52' rx='3' fill='#8a939c'/><rect x='93' y='20' width='7' height='52' rx='3' fill='#8a939c'/><rect x='110' y='20' width='7' height='52' rx='3' fill='#8a939c'/><rect x='127' y='20' width='7' height='52' rx='3' fill='#8a939c'/><rect x='144' y='20' width='7' height='52' rx='3' fill='#8a939c'/></g><path transform='translate(298 352)' d='M0 -26 l8 16 l18 -6 l-8 16 l16 10 l-18 4 l2 18 l-14 -10 l-12 14 l-2 -18 l-18 -2 l14 -12 l-10 -16 l18 2z' fill='#ffd0c8' stroke='#e0412f' stroke-width='3'/><text x='228' y='585' font-size='34' font-weight='900' text-anchor='middle' fill='#e0412f' font-family='Noto Sans CJK JP'>ピンが目に当たる</text><rect x='458' y='14' width='428' height='600' rx='26' fill='#eef7f0' stroke='#2e9a5b' stroke-width='5'/><text x='672' y='76' font-size='42' font-weight='900' text-anchor='middle' fill='#2e9a5b' font-family='Noto Sans CJK JP'>○ 指でガード</text><g clip-path='url(#cr)'><g transform='translate(672 380) scale(0.68)'><ellipse cx='-215' cy='40' rx='80' ry='150' fill='#9a5f35'/><ellipse cx='215' cy='40' rx='80' ry='150' fill='#9a5f35'/><circle cx='205' cy='-10' r='56' fill='#e3a56c'/><circle cx='195' cy='49' r='56' fill='#e3a56c'/><circle cx='166' cy='102' r='56' fill='#e3a56c'/><circle cx='120' cy='144' r='56' fill='#e3a56c'/><circle cx='63' cy='171' r='56' fill='#e3a56c'/><circle cx='0' cy='180' r='56' fill='#e3a56c'/><circle cx='-63' cy='171' r='56' fill='#e3a56c'/><circle cx='-120' cy='144' r='56' fill='#e3a56c'/><circle cx='-166' cy='102' r='56' fill='#e3a56c'/><circle cx='-195' cy='49' r='56' fill='#e3a56c'/><circle cx='-205' cy='-10' r='56' fill='#e3a56c'/><circle cx='-195' cy='-69' r='56' fill='#e3a56c'/><circle cx='-166' cy='-122' r='56' fill='#e3a56c'/><circle cx='-120' cy='-164' r='56' fill='#e3a56c'/><circle cx='-63' cy='-191' r='56' fill='#e3a56c'/><circle cx='-0' cy='-200' r='56' fill='#e3a56c'/><circle cx='63' cy='-191' r='56' fill='#e3a56c'/><circle cx='120' cy='-164' r='56' fill='#e3a56c'/><circle cx='166' cy='-122' r='56' fill='#e3a56c'/><circle cx='195' cy='-69' r='56' fill='#e3a56c'/><ellipse cx='0' cy='-10' rx='215' ry='200' fill='#e3a56c'/><ellipse cx='0' cy='95' rx='108' ry='82' fill='#f3cfa2'/><ellipse cx='0' cy='65' rx='30' ry='23' fill='#2b1d16'/><path d='M0 88 v20 m0 0 q-22 20 -44 4 m44 -4 q22 20 44 4' fill='none' stroke='#2b1d16' stroke-width='6' stroke-linecap='round'/><ellipse cx='-95' cy='-30' rx='30' ry='27' fill='#2b1d16'/><circle cx='-86' cy='-39' r='8' fill='#fff'/><ellipse cx='95' cy='-30' rx='30' ry='27' fill='#2b1d16'/><circle cx='104' cy='-39' r='8' fill='#fff'/></g></g><path d='M886 250 L820 262 Q796 270 794 300 L798 340 Q830 362 886 356 Z' fill='#f1c7a5' stroke='#b07a55' stroke-width='4' stroke-linejoin='round'/><path d='M806 296 L700 304 Q680 306 680 322 Q680 338 700 338 L812 334 Z' fill='#f1c7a5' stroke='#b07a55' stroke-width='4' stroke-linejoin='round'/><path d='M684 310 q2 -6 16 -6 q4 10 0 26 q-14 2 -16 -6z' fill='#fbe3d3' stroke='#b07a55' stroke-width='3'/><g transform='translate(705 210) rotate(28) scale(0.9)'><rect x='0' y='0' width='165' height='24' rx='8' fill='#3d5a80'/><rect x='8' y='20' width='7' height='52' rx='3' fill='#8a939c'/><rect x='25' y='20' width='7' height='52' rx='3' fill='#8a939c'/><rect x='42' y='20' width='7' height='52' rx='3' fill='#8a939c'/><rect x='59' y='20' width='7' height='52' rx='3' fill='#8a939c'/><rect x='76' y='20' width='7' height='52' rx='3' fill='#8a939c'/><rect x='93' y='20' width='7' height='52' rx='3' fill='#8a939c'/><rect x='110' y='20' width='7' height='52' rx='3' fill='#8a939c'/><rect x='127' y='20' width='7' height='52' rx='3' fill='#8a939c'/><rect x='144' y='20' width='7' height='52' rx='3' fill='#8a939c'/></g><path transform='translate(742 300)' d='M0 -26 l8 16 l18 -6 l-8 16 l16 10 l-18 4 l2 18 l-14 -10 l-12 14 l-2 -18 l-18 -2 l14 -12 l-10 -16 l18 2z' fill='#f6d77a' stroke='#e0a400' stroke-width='3'/><circle cx='737' cy='368' r='34' fill='none' stroke='#2e9a5b' stroke-width='6' stroke-dasharray='10 7'/><text x='672' y='585' font-size='34' font-weight='900' text-anchor='middle' fill='#2e9a5b' font-family='Noto Sans CJK JP'>ピンは指に当たる</text><text x='450' y='700' font-size='46' font-weight='900' text-anchor='middle' fill='#24402f' font-family='Noto Sans CJK JP'>人さし指を、目の上のふちに</text><text x='450' y='748' font-size='32' font-weight='700' text-anchor='middle' fill='#6b6b6b' font-family='Noto Sans CJK JP'>洗う・乾かす・とかす、どれも同じ</text></svg>",
+   "cap": "目の周りは<br><span class='y'>指でガード</span>",
+   "voice": "洗う、乾かす、とかす。目の周りは、指でガードしてから。",
+   "min": 5.0
+  },
+  {
+   "kind": "illus",
+   "illus": "<svg viewBox='0 0 900 900'><text x='450' y='420' font-size='260' text-anchor='middle'>💾</text><text x='450' y='640' font-size='60' font-weight='900' text-anchor='middle' fill='#3a271d' font-family='Noto Sans CJK JP'>フォローは @naohide_fujiwara</text></svg>",
+   "cap": "保存して<br><span class='y'>次の顔カットで</span>",
+   "voice": "保存して、次の顔カットで見返してね。",
+   "min": 3.2
+  }
+ ]
+}
