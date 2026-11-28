@@ -13,3 +13,6 @@ tools/fta_ai_reel/*/*/r.html
 
 # Python のキャッシュ
 __pycache__/
+
+# 作業でできた動画（ここには置かない）
+tools/zagaku/*.mp4

@@ -1,0 +1,132 @@
+{
+ "tts": "/home/claude/fta-media/tools/voicevox/tts_voices.py",
+ "voiceName": "aoyama",
+ "speed": 1.2,
+ "crf": 14,
+ "size": [
+  720,
+  1280
+ ],
+ "brand": "FUJIWARA TRIMMING ACADEMY",
+ "tag": "トリミングサロンの生産性",
+ "color": {
+  "card": "rgba(36,64,47,.86)",
+  "pill": "rgba(61,107,79,.95)",
+  "lab": "#f6d77a",
+  "labfg": "#24402f",
+  "hl": "#f6d77a",
+  "hlfg": "#24402f"
+ },
+ "out": "FTA_2026-11-28_trial_eye.mp4",
+ "scenes": [
+  {
+   "type": "title",
+   "y": 380,
+   "min": 3.4,
+   "pad": 0.35,
+   "html": "<div style='font-family:Noto Sans CJK JP;font-size:70px;font-weight:900;color:#fff;-webkit-text-stroke:3px #000;paint-order:stroke'>「目が開かない…」</div><div style='font-family:Noto Sans CJK JP;font-size:140px;font-weight:900;line-height:1.1;margin-top:16px;color:#f6d77a;-webkit-text-stroke:7px #1b2e22;paint-order:stroke'>原因は<br>3つある</div><div style='display:inline-block;margin-top:22px;background:#e0412f;color:#fff;font-family:Noto Sans CJK JP;font-weight:900;font-size:58px;padding:8px 30px;border-radius:14px'>シャンプーだけじゃない</div>",
+   "bg": {
+    "kind": "video",
+    "file": "/tmp/claude-0/-home-claude/ce93028b-f2d3-5a2d-b5c7-9abb29c3fbe8/scratchpad/eye/w4838.mp4",
+    "start": 0.5,
+    "speed": 1.0
+   },
+   "voice": "トリミングのあと、目がしょぼしょぼして開かない。原因は、シャンプーだけではありません。",
+   "pop": true,
+   "punch": true
+  },
+  {
+   "type": "big",
+   "num": 1,
+   "y": 300,
+   "html": "<div style='display:inline-flex;align-items:center;gap:26px;background:rgba(36,64,47,.9);border-radius:28px;padding:22px 36px;box-shadow:0 10px 30px rgba(0,0,0,.3)'><div style='font-size:110px;line-height:1'>🧴</div><div style='text-align:left'><div style='font-family:Noto Sans CJK JP;font-size:52px;font-weight:900;color:#f6d77a'>① シャンプー</div><div style='font-family:Noto Sans CJK JP;font-size:78px;font-weight:900;color:#fff;line-height:1.2'>原液が目に入る</div></div></div><div style='margin-top:16px'><span style='background:#fff;color:#24402f;font-family:Noto Sans CJK JP;font-weight:900;font-size:32px;padding:4px 18px;border-radius:999px'>実際の作業</span></div>",
+   "bg": {
+    "kind": "video",
+    "file": "/tmp/claude-0/-home-claude/ce93028b-f2d3-5a2d-b5c7-9abb29c3fbe8/scratchpad/eye/w4838.mp4",
+    "start": 9.0,
+    "speed": 1
+   },
+   "voice": "ひとつめは、よく言われる、シャンプーの原液。顔を洗うときは、目の周りに気をつけます。",
+   "min": 4.4,
+   "pad": 0.6,
+   "pop": true,
+   "punch": false
+  },
+  {
+   "type": "big",
+   "num": 2,
+   "y": 300,
+   "html": "<div style='display:inline-flex;align-items:center;gap:26px;background:rgba(36,64,47,.9);border-radius:28px;padding:22px 36px;box-shadow:0 10px 30px rgba(0,0,0,.3)'><div style='font-size:110px;line-height:1'>💨</div><div style='text-align:left'><div style='font-family:Noto Sans CJK JP;font-size:52px;font-weight:900;color:#f6d77a'>② ドライヤー</div><div style='font-family:Noto Sans CJK JP;font-size:78px;font-weight:900;color:#fff;line-height:1.2'>熱が目に当たる</div></div></div><div style='margin-top:16px'><span style='background:#fff;color:#24402f;font-family:Noto Sans CJK JP;font-weight:900;font-size:32px;padding:4px 18px;border-radius:999px'>実際の作業</span></div>",
+   "bg": {
+    "kind": "video",
+    "file": "/tmp/claude-0/-home-claude/ce93028b-f2d3-5a2d-b5c7-9abb29c3fbe8/scratchpad/eye/d4749.mp4",
+    "start": 0.5,
+    "speed": 1
+   },
+   "voice": "ふたつめは、ドライヤーの熱。顔を乾かすとき、熱い風が、目に当たり続けていることがあります。",
+   "min": 4.4,
+   "pad": 0.6,
+   "pop": true,
+   "punch": false
+  },
+  {
+   "type": "big",
+   "num": 3,
+   "y": 300,
+   "html": "<div style='display:inline-flex;align-items:center;gap:26px;background:rgba(36,64,47,.9);border-radius:28px;padding:22px 36px;box-shadow:0 10px 30px rgba(0,0,0,.3)'><div style='font-size:110px;line-height:1'>🪮</div><div style='text-align:left'><div style='font-family:Noto Sans CJK JP;font-size:52px;font-weight:900;color:#f6d77a'>③ ピン</div><div style='font-family:Noto Sans CJK JP;font-size:78px;font-weight:900;color:#fff;line-height:1.2'>スリッカー・コーム</div></div></div><div style='margin-top:16px'><span style='background:#fff;color:#24402f;font-family:Noto Sans CJK JP;font-weight:900;font-size:32px;padding:4px 18px;border-radius:999px'>実際の作業</span></div>",
+   "bg": {
+    "kind": "video",
+    "file": "/tmp/claude-0/-home-claude/ce93028b-f2d3-5a2d-b5c7-9abb29c3fbe8/scratchpad/eye/d4749.mp4",
+    "start": 7.0,
+    "speed": 1
+   },
+   "voice": "みっつめは、スリッカーやコームのピン。知らないうちに、目の近くに当たっていることがあります。",
+   "min": 4.4,
+   "pad": 0.6,
+   "pop": true,
+   "punch": false
+  },
+  {
+   "type": "card",
+   "num": 4,
+   "y": 1070,
+   "lab": "新人さんに",
+   "text": "目の周りは<br><span class=hl>指でガード</span>",
+   "sm": "顔を洗う・乾かす・とかすとき",
+   "bg": {
+    "kind": "image",
+    "file": "/home/claude/fta-media/tools/salon_tiktok/bg_theme/note.png",
+    "zoom": 0
+   },
+   "voice": "新人さんには、目の周りは、指でガード、とひと言。顔を洗う、乾かす、とかす、どれも同じです。",
+   "min": 4.2,
+   "pad": 0.6,
+   "pop": true,
+   "punch": true,
+   "illus": "<svg width='860' height='654' viewBox='0 0 920 700' xmlns='http://www.w3.org/2000/svg'><rect x='60' y='60' width='800' height='600' rx='24' fill='#fff7dc' stroke='none' stroke-width='0'/><path d='M390 300 q 70 -60 140 0 q -70 60 -140 0z' fill='#fff' stroke='#24402f' stroke-width='8'/><circle cx='460' cy='300' r='24' fill='#24402f'/><path d='M330 400 q130 -40 260 0' fill='none' stroke='#e8b48a' stroke-width='46' stroke-linecap='round'/><text x='460' y='560' font-family='Noto Sans CJK JP' font-weight='700' font-size='56' fill='#24402f' text-anchor='middle'>目の周りは、指でガード</text></svg>",
+   "iy": 290,
+   "ih": 720
+  },
+  {
+   "type": "card",
+   "num": 5,
+   "y": 1070,
+   "lab": "💾 保存して見返してね",
+   "text": "原因は<br><span class=hl>3つ</span>",
+   "sm": "明日の1頭で、試してみてください",
+   "bg": {
+    "kind": "image",
+    "file": "/home/claude/fta-media/tools/salon_tiktok/bg_theme/note.png",
+    "zoom": 0
+   },
+   "voice": "シャンプー、ドライヤー、ピン。保存して、新人さんと見返してね。",
+   "min": 3.6,
+   "pad": 0.6,
+   "pop": true,
+   "punch": true,
+   "illus": "<svg width='860' height='654' viewBox='0 0 920 700' xmlns='http://www.w3.org/2000/svg'><text x='460' y='300' font-family='Noto Sans CJK JP' font-weight='700' font-size='200' fill='#24402f' text-anchor='middle'>💾</text><text x='460' y='520' font-family='Noto Sans CJK JP' font-weight='700' font-size='52' fill='#24402f' text-anchor='middle'>保存して、明日の1頭で</text><text x='460' y='600' font-family='Noto Sans CJK JP' font-weight='700' font-size='52' fill='#3d7a55' text-anchor='middle'>試してみてね</text></svg>",
+   "iy": 290,
+   "ih": 720
+  }
+ ]
+}
